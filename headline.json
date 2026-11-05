@@ -1,0 +1,12 @@
+{
+ "packages": 50,
+ "downloads_last_month": 19646724,
+ "third_party_not_in_readme": 7,
+ "telemetry": 5,
+ "telemetry_undisclosed": 2,
+ "telemetry_config_key_only": 1,
+ "exec": 20,
+ "home_dir": 16,
+ "secret_env": 24,
+ "no_readme": 2
+}

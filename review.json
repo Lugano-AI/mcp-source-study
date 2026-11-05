@@ -1,0 +1,33 @@
+{
+  "reviewed_on": "2026-10-20",
+  "method": "Every package flagged by scan.py was read by hand at the cited file and line. Findings below are the ones that survived. Everything else the scanner flagged was a documentation link, a test fixture, an OAuth redirect allowlist, an example domain, or the vendor's own product.",
+  "telemetry": {
+    "figma-developer-mcp": {"host": "us.i.posthog.com", "what": "Source contains a PostHog host and hardcoded project key; the cited code includes FRAMELINK_TELEMETRY=off and DO_NOT_TRACK opt-outs plus redaction logic.", "readme_disclosure": "none"},
+    "exa-mcp-server": {"host": "api.agnost.ai", "what": "Source contains an Agnost MCP analytics SDK call; the cited call site disables tool inputs, outputs, and errors.", "readme_disclosure": "none"},
+    "nx-mcp": {"host": "www.google-analytics.com", "what": "Source contains Google Analytics Measurement Protocol references with fields including user_id, editor, OS, app, and Nx versions.", "readme_disclosure": "config key only (disableTelemetry); what is sent and where is not described"},
+    "n8n-mcp": {"host": "telemetry.n8n-mcp.com", "what": "Source names a first-party telemetry endpoint.", "readme_disclosure": "documented"},
+    "@alisaitteke/photoshop-mcp": {"host": "hey.sideguard.io", "what": "Source names a Rybbit analytics host.", "readme_disclosure": "documented, with opt-out"}
+  },
+  "third_party_endpoints_not_in_readme": {
+    "@upstash/context7-mcp": ["login.microsoftonline.com: source fetches Entra JWKS for JWT validation; Entra is not mentioned in the sampled README"],
+    "@sentry/mcp-server": ["ai-gateway.vercel.sh, openrouter.ai, api.vercel.com: source includes bundled AI SDK provider defaults; the package ships without a README"],
+    "comfyui-mcp": ["api.atlascloud.ai, api.x.ai, api.z.ai, hf-mirror.com: source names model-provider endpoints that the sampled README does not name (Kimi, MiniMax, OpenRouter, Civitai, and Ollama are named)"],
+    "hostinger-api-mcp": ["api.ipify.org: a bundled skill contains the instruction `curl -s https://api.ipify.org`"],
+    "figma-developer-mcp": ["us.i.posthog.com (see telemetry)"],
+    "exa-mcp-server": ["api.agnost.ai (see telemetry)"],
+    "nx-mcp": ["www.google-analytics.com (see telemetry)"]
+  },
+  "notable": {
+    "comfyui-mcp": "Source defines `panel_add_mcp`, which writes new MCP-server entries to the user's ~/.claude.json.",
+    "@sentry/mcp-server": "No README in the published tarball; package.json was the documentation baseline checked in this study.",
+    "@supabase/mcp-server-supabase": "No README in the published tarball."
+  },
+  "false_positives_dropped": {
+    "@winor30/mcp-server-datadog": "app.datadoghq.com is a dashboard link in tool output, not telemetry.",
+    "@zereight/mcp-gitlab": "chatgpt.com and claude.com are OAuth redirect allowlist entries.",
+    "@browserless.io/mcp": "All flagged hosts are OAuth callback allowlist entries.",
+    "@storybook/mcp": "opencollective.com is a funding link.",
+    "@notionhq/notion-mcp-server": "git.io appears inside a bundled dependency banner.",
+    "@alisaitteke/photoshop-mcp openrouter.ai": "A user-selected provider, documented."
+  }
+}

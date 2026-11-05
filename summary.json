@@ -1,0 +1,10 @@
+{
+ "packages": 50,
+ "with_undocumented_hosts_in_code": 13,
+ "with_telemetry_hosts": 7,
+ "with_exec": 20,
+ "with_home_dir": 16,
+ "with_secret_env": 24,
+ "with_eval": 11,
+ "total_downloads_last_month": 19646724
+}

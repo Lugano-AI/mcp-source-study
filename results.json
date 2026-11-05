@@ -1,0 +1,7510 @@
+[
+ {
+  "package": "@storybook/mcp",
+  "version": "10.6.2",
+  "files_scanned": 1,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "js.org"
+  ],
+  "hosts": [
+   {
+    "host": "opencollective.com",
+    "registrable": "opencollective.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 44,
+      "comment": false,
+      "text": "url: \"https://opencollective.com/storybook\""
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "dist/index.js",
+     "line": 1199,
+     "text": "let manifestUrl = getManifestUrlFromRequest(request, path), response = await fetch(manifestUrl);"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 1,
+   "undocumented_hosts_in_code": [
+    "opencollective.com"
+   ],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 9140670
+ },
+ {
+  "package": "@upstash/context7-mcp",
+  "version": "4.4.4",
+  "files_scanned": 26,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "amazon.com",
+   "ampcode.com",
+   "anthropic.com",
+   "boltai.com",
+   "cline.bot",
+   "context7.com",
+   "cursor.com",
+   "devin.ai",
+   "envoyproxy.io",
+   "factory.ai",
+   "github.com",
+   "github.io",
+   "jetbrains.com",
+   "kiro.dev",
+   "lmstudio.ai",
+   "microsoft.com",
+   "modelcontextprotocol.io",
+   "npmjs.com",
+   "opencode.ai",
+   "perplexity.ai",
+   "qodo.ai",
+   "roocode.com",
+   "shields.io",
+   "smithery.ai",
+   "trae.ai",
+   "upstash.com",
+   "vercel.com",
+   "visualstudio.com",
+   "vscode.dev",
+   "warp.dev",
+   "x.com",
+   "youtu.be",
+   "youtube.com",
+   "zed.dev"
+  ],
+  "hosts": [
+   {
+    "host": "clerk.context7.com",
+    "registrable": "context7.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/lib/constants.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/lib/constants.js",
+      "line": 9,
+      "comment": false,
+      "text": "const DEFAULT_OAUTH_AUTH_SERVER_URL = \"https://clerk.context7.com\";"
+     }
+    ]
+   },
+   {
+    "host": "context7.com",
+    "registrable": "context7.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/index.js",
+     "dist/lib/api.js",
+     "dist/lib/constants.js",
+     "dist/lib/utils.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 186,
+      "comment": false,
+      "text": "websiteUrl: \"https://context7.com\","
+     },
+     {
+      "file": "dist/lib/constants.js",
+      "line": 7,
+      "comment": false,
+      "text": "const CONTEXT7_BASE_URL = \"https://context7.com\";"
+     },
+     {
+      "file": "dist/lib/constants.js",
+      "line": 30,
+      "comment": false,
+      "text": "src: \"https://context7.com/context7-icon-green.svg\","
+     }
+    ]
+   },
+   {
+    "host": "integrations.vercel.com",
+    "registrable": "vercel.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/lib/vercelMarketplaceJwt.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/lib/vercelMarketplaceJwt.js",
+      "line": 2,
+      "comment": false,
+      "text": "const VERCEL_INTEGRATIONS_ORIGIN = \"https://integrations.vercel.com\";"
+     }
+    ]
+   },
+   {
+    "host": "login.microsoftonline.com",
+    "registrable": "microsoftonline.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/lib/jwt.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/lib/jwt.js",
+      "line": 15,
+      "comment": false,
+      "text": "const entraJwks = jose.createRemoteJWKSet(new URL(\"https://login.microsoftonline.com/common/discovery/v2.0/keys\"));"
+     },
+     {
+      "file": "dist/lib/jwt.js",
+      "line": 130,
+      "comment": false,
+      "text": "const issuer = `https://login.microsoftonline.com/${entraTenantId}/v2.0`;"
+     }
+    ]
+   },
+   {
+    "host": "mcp.context7.com",
+    "registrable": "context7.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/lib/constants.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/lib/constants.js",
+      "line": 8,
+      "comment": false,
+      "text": "const MCP_RESOURCE_URL = \"https://mcp.context7.com\";"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "dist/index.js",
+     "line": 652,
+     "text": "stdioApiKey = cliOptions.apiKey || process.env.CONTEXT7_API_KEY;"
+    },
+    {
+     "file": "dist/lib/constants.js",
+     "line": 25,
+     "text": "export const OPENAI_APPS_CHALLENGE_TOKEN = process.env.OPENAI_APPS_CHALLENGE_TOKEN;"
+    },
+    {
+     "file": "dist/lib/oauth-token-validation.js",
+     "line": 30,
+     "text": "export function isOpaqueOAuthTokenValidationEnabled(raw = process.env.MCP_OAUTH_TOKEN_VALIDATION) {"
+    },
+    {
+     "file": "dist/lib/encryption.js",
+     "line": 12,
+     "text": "const key = process.env.MCP_CLIENT_IP_ASSERTION_KEY;"
+    }
+   ],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "dist/index.js",
+     "line": 559,
+     "text": "const upstream = await observeUpstreamRequest(\"oauth_metadata\", () => fetch(`${authServerUrl}/.well-known/oauth-authorization-server`, {"
+    },
+    {
+     "file": "dist/lib/mcp-subscription-telemetry.js",
+     "line": 400,
+     "text": "return handler.fetch(request, options);"
+    },
+    {
+     "file": "dist/lib/mcp-subscription-telemetry.js",
+     "line": 414,
+     "text": "const response = await operation.run(() => handler.fetch(request, options));"
+    },
+    {
+     "file": "dist/lib/oauth-token-validation.js",
+     "line": 76,
+     "text": "return await observeUpstreamRequest(\"auth_check\", () => fetch(`${CONTEXT7_API_BASE_URL}${AUTH_CHECK_PATH}`, {"
+    },
+    {
+     "file": "dist/lib/jwt.js",
+     "line": 39,
+     "text": "const res = await fetch(`${CONTEXT7_API_BASE_URL}/v2/entra/config/${encodeURIComponent(audience)}`);"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "CONTEXT7_API_KEY",
+   "MCP_CLIENT_IP_ASSERTION_KEY",
+   "MCP_OAUTH_TOKEN_VALIDATION",
+   "OPENAI_APPS_CHALLENGE_TOKEN"
+  ],
+  "summary": {
+   "hosts_in_code": 5,
+   "undocumented_hosts_in_code": [
+    "microsoftonline.com"
+   ],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 4,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 2640895
+ },
+ {
+  "package": "hostinger-api-mcp",
+  "version": "3.3.1",
+  "files_scanned": 68,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "brew.sh",
+   "chocolatey.org",
+   "github.com",
+   "hostinger.com",
+   "monarx.com",
+   "nodejs.org"
+  ],
+  "hosts": [
+   {
+    "host": "api.ipify.org",
+    "registrable": "ipify.org",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "src/core/skills.js",
+     "src/core/skills.ts"
+    ],
+    "evidence": [
+     {
+      "file": "src/core/skills.js",
+      "line": 277,
+      "comment": false,
+      "text": "\"text\": \"---\\nname: migrate-to-hosting\\ndescription: \\\"Move an existing website from another host to Hostinger web hosting (Shared, Cloud or Agency plans) witho"
+     },
+     {
+      "file": "src/core/skills.ts",
+      "line": 291,
+      "comment": false,
+      "text": "\"text\": \"---\\nname: migrate-to-hosting\\ndescription: \\\"Move an existing website from another host to Hostinger web hosting (Shared, Cloud or Agency plans) witho"
+     }
+    ]
+   },
+   {
+    "host": "auth.hostinger.com",
+    "registrable": "hostinger.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "src/core/oauth.js",
+     "src/core/oauth.ts",
+     "src/core/runtime.js",
+     "src/core/runtime.ts"
+    ],
+    "evidence": [
+     {
+      "file": "src/core/oauth.ts",
+      "line": 25,
+      "comment": false,
+      "text": "const DEFAULT_ISSUER = 'https://auth.hostinger.com';"
+     },
+     {
+      "file": "src/core/runtime.js",
+      "line": 3440,
+      "comment": false,
+      "text": "OAUTH_ISSUER         OAuth server base URL (default: https://auth.hostinger.com)"
+     },
+     {
+      "file": "src/core/runtime.ts",
+      "line": 3492,
+      "comment": false,
+      "text": "OAUTH_ISSUER         OAuth server base URL (default: https://auth.hostinger.com)"
+     }
+    ]
+   },
+   {
+    "host": "developers.hostinger.com",
+    "registrable": "hostinger.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "src/core/runtime.js",
+     "src/core/runtime.ts"
+    ],
+    "evidence": [
+     {
+      "file": "src/core/runtime.js",
+      "line": 82,
+      "comment": false,
+      "text": "this.baseUrl = process.env.API_BASE_URL || \"https://developers.hostinger.com\";"
+     },
+     {
+      "file": "src/core/runtime.ts",
+      "line": 123,
+      "comment": false,
+      "text": "this.baseUrl = process.env.API_BASE_URL || \"https://developers.hostinger.com\";"
+     }
+    ]
+   },
+   {
+    "host": "hpanel.hostinger.com",
+    "registrable": "hostinger.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "src/core/runtime.js",
+     "src/core/runtime.ts"
+    ],
+    "evidence": [
+     {
+      "file": "src/core/runtime.js",
+      "line": 1299,
+      "comment": false,
+      "text": "throw new Error('Website is not empty. WordPress import can only be performed on empty sites. Please visit hPanel (https://hpanel.hostinger.com) and remove all "
+     },
+     {
+      "file": "src/core/runtime.ts",
+      "line": 1336,
+      "comment": false,
+      "text": "throw new Error('Website is not empty. WordPress import can only be performed on empty sites. Please visit hPanel (https://hpanel.hostinger.com) and remove all "
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "build.js",
+     "line": 3,
+     "text": "import { exec } from 'child_process';"
+    },
+    {
+     "file": "src/core/oauth.ts",
+     "line": 5,
+     "text": "import { exec } from 'child_process';"
+    },
+    {
+     "file": "src/core/skills.js",
+     "line": 77,
+     "text": "\"text\": \"#!/usr/bin/env node\\n// Hostinger Headless \u2014 bootstrap.\\n// Verifies the Hostinger MCP server is reachable and drives the OAuth sign-in,\\n// emitting o"
+    },
+    {
+     "file": "src/core/oauth.js",
+     "line": 5,
+     "text": "import { exec } from \"child_process\";"
+    },
+    {
+     "file": "src/core/skills.ts",
+     "line": 91,
+     "text": "\"text\": \"#!/usr/bin/env node\\n// Hostinger Headless \u2014 bootstrap.\\n// Verifies the Hostinger MCP server is reachable and drives the OAuth sign-in,\\n// emitting o"
+    }
+   ],
+   "home_dir": [
+    {
+     "file": "src/core/oauth.ts",
+     "line": 329,
+     "text": "const base = process.env['APPDATA'] || os.homedir();"
+    },
+    {
+     "file": "src/core/oauth.ts",
+     "line": 332,
+     "text": "return path.join(os.homedir(), '.config', CREDENTIALS_DIR_NAME, CREDENTIALS_FILE_NAME);"
+    },
+    {
+     "file": "src/core/skills.js",
+     "line": 63,
+     "text": "\"text\": \"---\\nname: hostinger-headless\\ndescription: \\\"Orchestrator for the Hostinger Headless build flow \u2014 build and deploy a real website on the user's Hostin"
+    },
+    {
+     "file": "src/core/skills.js",
+     "line": 77,
+     "text": "\"text\": \"#!/usr/bin/env node\\n// Hostinger Headless \u2014 bootstrap.\\n// Verifies the Hostinger MCP server is reachable and drives the OAuth sign-in,\\n// emitting o"
+    },
+    {
+     "file": "src/core/skills.js",
+     "line": 133,
+     "text": "\"text\": \"#!/usr/bin/env node\\n// Hostinger Headless run log: records a build as it happens and writes reports/<run>.json + .html.\\n//\\n//   node run-log.mjs <do"
+    }
+   ],
+   "secret_env": [
+    {
+     "file": "src/core/skills.js",
+     "line": 77,
+     "text": "\"text\": \"#!/usr/bin/env node\\n// Hostinger Headless \u2014 bootstrap.\\n// Verifies the Hostinger MCP server is reachable and drives the OAuth sign-in,\\n// emitting o"
+    },
+    {
+     "file": "src/core/skills.ts",
+     "line": 91,
+     "text": "\"text\": \"#!/usr/bin/env node\\n// Hostinger Headless \u2014 bootstrap.\\n// Verifies the Hostinger MCP server is reachable and drives the OAuth sign-in,\\n// emitting o"
+    },
+    {
+     "file": "skills/headless/connect/bootstrap.mjs",
+     "line": 50,
+     "text": "if (process.env.HOSTINGER_API_TOKEN || process.env.API_TOKEN) {"
+    }
+   ],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "src/core/oauth.ts",
+     "line": 156,
+     "text": "await axios.post(`${this.issuer}${REVOKE_PATH}`, params.toString(), {"
+    },
+    {
+     "file": "src/core/oauth.ts",
+     "line": 201,
+     "text": "const resp = await axios.post<OAuthTokenResponse>(`${this.issuer}${TOKEN_PATH}`, params.toString(), {"
+    },
+    {
+     "file": "src/core/oauth.ts",
+     "line": 227,
+     "text": "const resp = await axios.post<OAuthTokenResponse>(`${this.issuer}${TOKEN_PATH}`, params.toString(), {"
+    },
+    {
+     "file": "src/core/oauth.ts",
+     "line": 252,
+     "text": "const resp = await axios.post<{ client_id?: string }>(`${this.issuer}${REGISTER_PATH}`, {"
+    },
+    {
+     "file": "src/core/runtime.js",
+     "line": 361,
+     "text": "const response = await axios(config);"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "build.js",
+     "line": 52,
+     "text": "fs.writeFileSync('./dist/package.json', JSON.stringify(packageJson, null, 2));"
+    },
+    {
+     "file": "src/core/runtime.js",
+     "line": 1013,
+     "text": "fs.rmSync(prepared.tempDir, { recursive: true, force: true });"
+    },
+    {
+     "file": "src/core/runtime.js",
+     "line": 1985,
+     "text": "fs.unlinkSync(archivePath);"
+    },
+    {
+     "file": "src/core/runtime.js",
+     "line": 2281,
+     "text": "fs.unlinkSync(archivePath);"
+    },
+    {
+     "file": "src/core/runtime.js",
+     "line": 2712,
+     "text": "fs.unlinkSync(archivePath);"
+    }
+   ]
+  },
+  "secret_env_names": [
+   "HOSTINGER_API_TOKEN"
+  ],
+  "summary": {
+   "hosts_in_code": 4,
+   "undocumented_hosts_in_code": [
+    "ipify.org"
+   ],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": true,
+   "eval": false,
+   "secret_env": 1,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 741258
+ },
+ {
+  "package": "@notionhq/notion-mcp-server",
+  "version": "2.5.2",
+  "files_scanned": 17,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "modelcontextprotocol.io",
+   "notion.com",
+   "notion.so"
+  ],
+  "hosts": [
+   {
+    "host": "api.notion.com",
+    "registrable": "notion.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "bin/cli.mjs",
+     "scripts/start-server.ts"
+    ],
+    "evidence": [
+     {
+      "file": "bin/cli.mjs",
+      "line": 223,
+      "comment": false,
+      "text": "`}function LD(e){if(!e.unsafeDisableAuth)return[];let t=[\"WARNING: --unsafe-disable-auth disables bearer token authentication. A malicious website may be able t"
+     },
+     {
+      "file": "scripts/start-server.ts",
+      "line": 263,
+      "comment": false,
+      "text": "const res = await fetch('https://api.notion.com/v1/users/me', {"
+     }
+    ]
+   },
+   {
+    "host": "git.io",
+    "registrable": "git.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "bin/cli.mjs"
+    ],
+    "evidence": [
+     {
+      "file": "bin/cli.mjs",
+      "line": 10,
+      "comment": false,
+      "text": "}`)(e,gd,this,t,i);return o}function J5(e,t,r){if(!e||typeof e!=\"object\"&&typeof e!=\"function\")throw new TypeError(\"argument obj must be object\");var n=Object.g"
+     },
+     {
+      "file": "bin/cli.mjs",
+      "line": 50,
+      "comment": false,
+      "text": "`}UI.exports=tH;function tH(e,t,r){var n=r||{},i=n.env||process.env.NODE_ENV||\"development\",o=n.onerror;return function(a){var s,c,u;if(!a&&NI(t)){Ib(\"cannot 40"
+     }
+    ]
+   },
+   {
+    "host": "www.notion.so",
+    "registrable": "notion.so",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "bin/cli.mjs",
+     "scripts/start-server.ts"
+    ],
+    "evidence": [
+     {
+      "file": "bin/cli.mjs",
+      "line": 223,
+      "comment": false,
+      "text": "`}function LD(e){if(!e.unsafeDisableAuth)return[];let t=[\"WARNING: --unsafe-disable-auth disables bearer token authentication. A malicious website may be able t"
+     },
+     {
+      "file": "scripts/start-server.ts",
+      "line": 272,
+      "comment": false,
+      "text": "console.log(`Notion integration settings: https://www.notion.so/profile/integrations/internal/${data.id}`)"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "bin/cli.mjs",
+     "line": 192,
+     "text": "`))}let s=this.extractResponseType(t.responses);try{return{name:i,description:a,inputSchema:o,...s?{returnSchema:s}:{}}}catch(c){return console.warn(`Failed to "
+    },
+    {
+     "file": "bin/cli.mjs",
+     "line": 223,
+     "text": "`}function LD(e){if(!e.unsafeDisableAuth)return[];let t=[\"WARNING: --unsafe-disable-auth disables bearer token authentication. A malicious website may be able t"
+    },
+    {
+     "file": "scripts/start-server.ts",
+     "line": 49,
+     "text": "authToken = options.authToken || process.env.AUTH_TOKEN || randomBytes(32).toString('hex')"
+    },
+    {
+     "file": "scripts/start-server.ts",
+     "line": 50,
+     "text": "if (!options.authToken && !process.env.AUTH_TOKEN) {"
+    },
+    {
+     "file": "scripts/start-server.ts",
+     "line": 113,
+     "text": "const hasEnvNotionToken = Boolean(process.env.NOTION_TOKEN || process.env.OPENAPI_MCP_HEADERS)"
+    }
+   ],
+   "eval": [
+    {
+     "file": "bin/cli.mjs",
+     "line": 7,
+     "text": "\\x1B[36mat `+r[i].toString()+\"\\x1B[39m\";return n}return t&&(n+=\" \\x1B[36m\"+tx(t)+\"\\x1B[39m\"),n}function tx(e){return j5(C5,e[0])+\":\"+e[1]+\":\"+e[2]}function yd()"
+    },
+    {
+     "file": "src/openapi-mcp-server/openapi/parser.ts",
+     "line": 353,
+     "text": "// const zodSchema = eval(zodSchemaStr) as z.ZodType"
+    }
+   ],
+   "network_calls": [
+    {
+     "file": "bin/cli.mjs",
+     "line": 101,
+     "text": "`,nae=El.encode(Eo),iae=2,f1=class{constructor(t,r){let{escapeName:n}=this.constructor,i=x.isString(r),o=`Content-Disposition: form-data; name=\"${n(t)}\"${!i&&r."
+    },
+    {
+     "file": "bin/cli.mjs",
+     "line": 223,
+     "text": "`}function LD(e){if(!e.unsafeDisableAuth)return[];let t=[\"WARNING: --unsafe-disable-auth disables bearer token authentication. A malicious website may be able t"
+    },
+    {
+     "file": "bin/cli.mjs",
+     "line": 532,
+     "text": "axios/dist/node/axios.cjs:"
+    },
+    {
+     "file": "scripts/start-server.ts",
+     "line": 263,
+     "text": "const res = await fetch('https://api.notion.com/v1/users/me', {"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "scripts/start-server.ts",
+     "line": 53,
+     "text": "fs.writeFileSync(authTokenFilePath, authToken, { mode: 0o600 })"
+    }
+   ]
+  },
+  "secret_env_names": [
+   "AUTH_TOKEN",
+   "ENABLE_TOKEN_PASSTHROUGH",
+   "NOTION_TOKEN"
+  ],
+  "summary": {
+   "hosts_in_code": 3,
+   "undocumented_hosts_in_code": [
+    "git.io"
+   ],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": true,
+   "secret_env": 3,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 699166
+ },
+ {
+  "package": "firecrawl-mcp",
+  "version": "3.33.4",
+  "files_scanned": 7,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "caw.tech",
+   "cursor.com",
+   "data.tools",
+   "example.com",
+   "firecrawl.dev",
+   "ghcr.io",
+   "github.com",
+   "githubusercontent.com",
+   "klavis.ai",
+   "knacklabs.ai",
+   "mcp.so",
+   "monitor.page",
+   "shields.io",
+   "vscode.dev",
+   "your-domain.com"
+  ],
+  "hosts": [
+   {
+    "host": "api.firecrawl.dev",
+    "registrable": "firecrawl.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/index.js",
+     "dist/server.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/server.js",
+      "line": 2837,
+      "comment": false,
+      "text": "var DEFAULT_API_URL = \"https://api.firecrawl.dev\";"
+     },
+     {
+      "file": "dist/server.js",
+      "line": 5091,
+      "comment": false,
+      "text": "const DEFAULT_CLOUD_API_URL = \"https://api.firecrawl.dev\";"
+     },
+     {
+      "file": "dist/index.js",
+      "line": 2838,
+      "comment": false,
+      "text": "var DEFAULT_API_URL = \"https://api.firecrawl.dev\";"
+     }
+    ]
+   },
+   {
+    "host": "docs.firecrawl.dev",
+    "registrable": "firecrawl.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/index.js",
+     "dist/server.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/server.js",
+      "line": 3314,
+      "comment": false,
+      "text": "docs_url: \"https://docs.firecrawl.dev/features/developer\""
+     },
+     {
+      "file": "dist/server.js",
+      "line": 3665,
+      "comment": false,
+      "text": "var MCP_CONNECTION_GUIDE_URL = \"https://docs.firecrawl.dev/mcp-server\";"
+     },
+     {
+      "file": "dist/server.js",
+      "line": 4152,
+      "comment": false,
+      "text": "docs_url: \"https://docs.firecrawl.dev/developer-guides/usage-guides/choosing-the-data-extractor\""
+     }
+    ]
+   },
+   {
+    "host": "firecrawl.dev",
+    "registrable": "firecrawl.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 6959,
+      "comment": false,
+      "text": "\"No FIRECRAWL_API_KEY or FIRECRAWL_API_URL set \\u2014 running in keyless mode. firecrawl_scrape and firecrawl_search are free (rate-limited per IP) against the "
+     }
+    ]
+   },
+   {
+    "host": "mcp.firecrawl.dev",
+    "registrable": "firecrawl.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/index.js",
+     "dist/server.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/server.js",
+      "line": 3689,
+      "comment": false,
+      "text": "- Set the header: Authorization: Bearer YOUR_API_KEY on https://mcp.firecrawl.dev/v2/mcp"
+     },
+     {
+      "file": "dist/server.js",
+      "line": 3708,
+      "comment": false,
+      "text": "var INVALID_OAUTH_MESSAGE = \"This Firecrawl account connection is no longer valid.\\nFix: Reconnect the existing Firecrawl server in the client, or set that exis"
+     },
+     {
+      "file": "dist/index.js",
+      "line": 3690,
+      "comment": false,
+      "text": "- Set the header: Authorization: Bearer YOUR_API_KEY on https://mcp.firecrawl.dev/v2/mcp"
+     }
+    ]
+   },
+   {
+    "host": "www.firecrawl.dev",
+    "registrable": "firecrawl.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/index.js",
+     "dist/server.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/server.js",
+      "line": 3671,
+      "comment": false,
+      "text": "var KEYLESS_SIGNUP_FALLBACK_URL = \"https://www.firecrawl.dev/signin?utm_source=keyless&utm_medium=mcp&redirect=%2Fapp%2Fapi-keys\";"
+     },
+     {
+      "file": "dist/server.js",
+      "line": 3707,
+      "comment": false,
+      "text": "var INVALID_API_KEY_MESSAGE = \"The Firecrawl API key is invalid or revoked.\\nFix: Replace the key on the existing Firecrawl MCP server, then start a new session"
+     },
+     {
+      "file": "dist/server.js",
+      "line": 3860,
+      "comment": false,
+      "text": "var DATA_SOURCES_SETTINGS_URL = \"https://www.firecrawl.dev/app/settings?tab=data-sources\";"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "dist/index.js",
+     "line": 6120,
+     "text": "const secret = process.env.MCP_DELEGATED_CREDENTIAL_SECRET?.trim();"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 6196,
+     "text": "return normalizeHeader(process.env.FIRECRAWL_OAUTH_TOKEN) ?? normalizeHeader(process.env.FIRECRAWL_API_KEY);"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 6365,
+     "text": "return normalizeHeader(process.env.FIRECRAWL_OAUTH_INTROSPECT_SECRET);"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 6957,
+     "text": "if (transport === \"stdio\" && !process.env.FIRECRAWL_API_KEY && !process.env.FIRECRAWL_API_URL) {"
+    }
+   ],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "dist/server.js",
+     "line": 105,
+     "text": "import { fetch as fetch2 } from \"undici\";"
+    },
+    {
+     "file": "dist/server.js",
+     "line": 1655,
+     "text": "const honoResponse = await this.#honoApp.fetch(webRequest, {"
+    },
+    {
+     "file": "dist/server.js",
+     "line": 2601,
+     "text": "\"node-fetch\","
+    },
+    {
+     "file": "dist/server.js",
+     "line": 2610,
+     "text": "\"undici\","
+    },
+    {
+     "file": "dist/server.js",
+     "line": 2859,
+     "text": "const response = await fetch(url, {"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "FIRECRAWL_API_KEY",
+   "FIRECRAWL_OAUTH_INTROSPECT_SECRET",
+   "FIRECRAWL_OAUTH_TOKEN",
+   "MCP_DELEGATED_CREDENTIAL_SECRET"
+  ],
+  "summary": {
+   "hosts_in_code": 5,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 4,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 625831
+ },
+ {
+  "package": "@azure/mcp",
+  "version": "3.0.0",
+  "files_scanned": 2,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "amazon.com",
+   "claude.com",
+   "cursor.com",
+   "github.com",
+   "jetbrains.com",
+   "microsoft.app",
+   "microsoft.com",
+   "modelcontextprotocol.io",
+   "visualstudio.com",
+   "windows.net",
+   "windsurf.com"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [
+    {
+     "file": "index.js",
+     "line": 183,
+     "text": "const { execSync } = require('child_process')"
+    },
+    {
+     "file": "index.js",
+     "line": 201,
+     "text": "execSync(installCommand, installOptions)"
+    },
+    {
+     "file": "index.js",
+     "line": 206,
+     "text": "execSync(`${installCommand} --prefer-online`, installOptions)"
+    }
+   ],
+   "home_dir": [
+    {
+     "file": "index.js",
+     "line": 53,
+     "text": "// touches the home directory: os.homedir() throws when HOME is unset and the"
+    },
+    {
+     "file": "index.js",
+     "line": 70,
+     "text": ": path.join(os.homedir(), 'AppData', 'Local')"
+    },
+    {
+     "file": "index.js",
+     "line": 73,
+     "text": "return path.join(os.homedir(), 'Library', 'Caches')"
+    },
+    {
+     "file": "index.js",
+     "line": 78,
+     "text": "return xdgCacheHome && path.isAbsolute(xdgCacheHome) ? xdgCacheHome : path.join(os.homedir(), '.cache')"
+    }
+   ],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": [
+    {
+     "file": "index.js",
+     "line": 143,
+     "text": "fs.writeFileSync(lockPath, String(process.pid), { flag: 'wx' })"
+    },
+    {
+     "file": "index.js",
+     "line": 154,
+     "text": "fs.rmSync(lockPath, { force: true })"
+    },
+    {
+     "file": "index.js",
+     "line": 266,
+     "text": "fs.rmSync(lockPath, { force: true })"
+    }
+   ]
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": true,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": false,
+   "fs_write": true
+  },
+  "downloads_last_month": 558323
+ },
+ {
+  "package": "@zereight/mcp-gitlab",
+  "version": "2.3.4",
+  "files_scanned": 76,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "badgen.net",
+   "claude.ai",
+   "cursor.com",
+   "deepwiki.com",
+   "example.com",
+   "github.com",
+   "github.io",
+   "gitlab.com",
+   "mcpindex.ai",
+   "mcptoplist.com",
+   "ngrok.com",
+   "npmjs.com",
+   "shields.io",
+   "star-history.com",
+   "vscode.dev"
+  ],
+  "hosts": [
+   {
+    "host": "chatgpt.com",
+    "registrable": "chatgpt.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "build/oauth-consent.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/oauth-consent.js",
+      "line": 28,
+      "comment": false,
+      "text": "\"https://chatgpt.com/connector_platform_oauth_redirect\","
+     },
+     {
+      "file": "build/oauth-consent.js",
+      "line": 29,
+      "comment": false,
+      "text": "\"https://chatgpt.com/connector/oauth/*\","
+     }
+    ]
+   },
+   {
+    "host": "claude.com",
+    "registrable": "claude.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "build/oauth-consent.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/oauth-consent.js",
+      "line": 27,
+      "comment": false,
+      "text": "\"https://claude.com/api/mcp/auth_callback\","
+     }
+    ]
+   },
+   {
+    "host": "zereight.github.io",
+    "registrable": "github.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "build/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/index.js",
+      "line": 149,
+      "comment": false,
+      "text": "const SERVER_WEBSITE_URL = \"https://zereight.github.io/gitlab-mcp/\";"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "build/oauth.js",
+     "line": 8,
+     "text": "import { execFile } from \"child_process\";"
+    },
+    {
+     "file": "build/utils/version-check.js",
+     "line": 1,
+     "text": "import { execFile } from \"node:child_process\";"
+    }
+   ],
+   "home_dir": [
+    {
+     "file": "build/auth-cli.js",
+     "line": 80,
+     "text": "path.join(os.homedir(), \".gitlab-mcp-token.json\");"
+    },
+    {
+     "file": "build/index.js",
+     "line": 978,
+     "text": "// Resolve cookie path once using os.homedir() for cross-platform support"
+    },
+    {
+     "file": "build/index.js",
+     "line": 981,
+     "text": "? path.join(os.homedir(), GITLAB_AUTH_COOKIE_PATH.slice(2))"
+    },
+    {
+     "file": "build/oauth.js",
+     "line": 66,
+     "text": "return path.join(os.homedir(), `.gitlab-mcp-oauth-${port}.key`);"
+    },
+    {
+     "file": "build/oauth.js",
+     "line": 233,
+     "text": "config.tokenStoragePath || path.join(os.homedir(), \".gitlab-mcp-token.json\");"
+    }
+   ],
+   "secret_env": [
+    {
+     "file": "build/config.js",
+     "line": 23,
+     "text": "envToken: process.env.GITLAB_PERSONAL_ACCESS_TOKEN,"
+    },
+    {
+     "file": "build/config.js",
+     "line": 24,
+     "text": "filePath: process.env.GITLAB_PERSONAL_ACCESS_TOKEN_FILE,"
+    },
+    {
+     "file": "build/oauth.js",
+     "line": 661,
+     "text": "const timeoutSeconds = Number.parseInt(process.env.GITLAB_OAUTH_TOKEN_SCRIPT_TIMEOUT_SECONDS || \"30\", 10);"
+    },
+    {
+     "file": "build/oauth.js",
+     "line": 897,
+     "text": "const clientSecret = process.env.GITLAB_OAUTH_CLIENT_SECRET;"
+    },
+    {
+     "file": "build/oauth.js",
+     "line": 899,
+     "text": "const tokenStoragePath = process.env.GITLAB_OAUTH_TOKEN_PATH;"
+    }
+   ],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "build/oauth-proxy.js",
+     "line": 494,
+     "text": "const response = await fetch(`${this._gitlabBaseUrl}/oauth/token`, {"
+    },
+    {
+     "file": "build/oauth-proxy.js",
+     "line": 561,
+     "text": "const res = await fetch(`${this._gitlabBaseUrl}/api/v4/groups?min_access_level=10&per_page=100&page=${page}`, {"
+    },
+    {
+     "file": "build/oauth-proxy.js",
+     "line": 597,
+     "text": "const response = await fetch(`${this._gitlabBaseUrl}/oauth/token`, {"
+    },
+    {
+     "file": "build/oauth-proxy.js",
+     "line": 617,
+     "text": "let res = await fetch(`${this._gitlabBaseUrl}/oauth/token/info`, {"
+    },
+    {
+     "file": "build/oauth-proxy.js",
+     "line": 627,
+     "text": "res = await fetch(`${this._gitlabBaseUrl}/oauth/token/info?access_token=${encodeURIComponent(token)}`);"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "build/index.js",
+     "line": 7796,
+     "text": "fs.rmSync(savePath, { force: true });"
+    },
+    {
+     "file": "build/oauth.js",
+     "line": 90,
+     "text": "fs.unlinkSync(keyPath);"
+    },
+    {
+     "file": "build/oauth.js",
+     "line": 103,
+     "text": "fs.unlinkSync(keyPath);"
+    },
+    {
+     "file": "build/oauth.js",
+     "line": 347,
+     "text": "fs.writeFileSync(this.tokenStoragePath, JSON.stringify(tokenData, null, 2), { mode: 0o600 } // Restrict access to owner only"
+    },
+    {
+     "file": "build/oauth.js",
+     "line": 771,
+     "text": "fs.unlinkSync(this.tokenStoragePath);"
+    }
+   ]
+  },
+  "secret_env_names": [
+   "DOWNLOAD_TOKEN_SECRET",
+   "DOWNLOAD_TOKEN_TTL",
+   "GITLAB_OAUTH_CLIENT_SECRET",
+   "GITLAB_OAUTH_TOKEN_PATH",
+   "GITLAB_OAUTH_TOKEN_SCRIPT",
+   "GITLAB_OAUTH_TOKEN_SCRIPT_TIMEOUT_SECONDS",
+   "GITLAB_PERSONAL_ACCESS_TOKEN",
+   "GITLAB_PERSONAL_ACCESS_TOKEN_FILE"
+  ],
+  "summary": {
+   "hosts_in_code": 3,
+   "undocumented_hosts_in_code": [
+    "chatgpt.com",
+    "claude.com"
+   ],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": true,
+   "eval": false,
+   "secret_env": 8,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 526272
+ },
+ {
+  "package": "@sentry/mcp-server",
+  "version": "0.42.0",
+  "files_scanned": 83,
+  "bundled_deps": false,
+  "readme": false,
+  "documented_domains": [
+   "github.com"
+  ],
+  "hosts": [
+   {
+    "host": "ai-gateway.vercel.sh",
+    "registrable": "vercel.sh",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/index.cjs",
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 8950,
+      "comment": false,
+      "text": "const baseURL = (_b8$1 = withoutTrailingSlash(options.baseURL)) != null ? _b8$1 : \"https://ai-gateway.vercel.sh/v3/ai\";"
+     },
+     {
+      "file": "dist/index.cjs",
+      "line": 8949,
+      "comment": false,
+      "text": "const baseURL = (_b8$1 = withoutTrailingSlash(options.baseURL)) != null ? _b8$1 : \"https://ai-gateway.vercel.sh/v3/ai\";"
+     }
+    ]
+   },
+   {
+    "host": "ai-sdk.dev",
+    "registrable": "ai-sdk.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/index.cjs",
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 11165,
+      "comment": false,
+      "text": "const moreInfoURL = \"https://ai-sdk.dev/unauthenticated-ai-gateway\";"
+     },
+     {
+      "file": "dist/index.cjs",
+      "line": 11164,
+      "comment": false,
+      "text": "const moreInfoURL = \"https://ai-sdk.dev/unauthenticated-ai-gateway\";"
+     }
+    ]
+   },
+   {
+    "host": "api.vercel.com",
+    "registrable": "vercel.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/token-util-BRoQwIG6.cjs",
+     "dist/token-util-batRsXGA.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/token-util-batRsXGA.js",
+      "line": 296,
+      "comment": false,
+      "text": "const url = `https://api.vercel.com/v1/projects/${projectId}/token?source=vercel-oidc-refresh${teamId ? `&teamId=${teamId}` : \"\"}`;"
+     },
+     {
+      "file": "dist/token-util-BRoQwIG6.cjs",
+      "line": 296,
+      "comment": false,
+      "text": "const url = `https://api.vercel.com/v1/projects/${projectId}/token?source=vercel-oidc-refresh${teamId ? `&teamId=${teamId}` : \"\"}`;"
+     }
+    ]
+   },
+   {
+    "host": "docs.sentry.io",
+    "registrable": "sentry.io",
+    "in_code": true,
+    "telemetry": true,
+    "documented": true,
+    "files": [
+     "dist/index.cjs",
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 40625,
+      "comment": false,
+      "text": "const baseUrl = \"https://docs.sentry.io\";"
+     },
+     {
+      "file": "dist/index.js",
+      "line": 40658,
+      "comment": false,
+      "text": "output += \"- Links in the documentation are relative to https://docs.sentry.io\\n\";"
+     },
+     {
+      "file": "dist/index.cjs",
+      "line": 40624,
+      "comment": false,
+      "text": "const baseUrl = \"https://docs.sentry.io\";"
+     }
+    ]
+   },
+   {
+    "host": "i.imgur.com",
+    "registrable": "imgur.com",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/index.cjs",
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 1237,
+      "comment": true,
+      "text": "* ![A preview of an ANSI color formatter.](https://i.imgur.com/I8LlBUf.png)"
+     },
+     {
+      "file": "dist/index.js",
+      "line": 1277,
+      "comment": true,
+      "text": "* ![A preview of ansiColorFormatter.](https://i.imgur.com/I8LlBUf.png)"
+     },
+     {
+      "file": "dist/index.cjs",
+      "line": 1236,
+      "comment": true,
+      "text": "* ![A preview of an ANSI color formatter.](https://i.imgur.com/I8LlBUf.png)"
+     }
+    ]
+   },
+   {
+    "host": "jsonlines.org",
+    "registrable": "jsonlines.org",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/index.cjs",
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 1294,
+      "comment": true,
+      "text": "* [JSON Lines]: https://jsonlines.org/"
+     },
+     {
+      "file": "dist/index.js",
+      "line": 1384,
+      "comment": true,
+      "text": "* [JSON Lines]: https://jsonlines.org/"
+     },
+     {
+      "file": "dist/index.cjs",
+      "line": 1293,
+      "comment": true,
+      "text": "* [JSON Lines]: https://jsonlines.org/"
+     }
+    ]
+   },
+   {
+    "host": "logtape.org",
+    "registrable": "logtape.org",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/index.cjs",
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 1617,
+      "comment": false,
+      "text": "meta.info(\"LogTape loggers are configured.  Note that LogTape itself uses the meta logger, which has category {metaLoggerCategory}.  The meta logger purposes to"
+     },
+     {
+      "file": "dist/index.cjs",
+      "line": 1616,
+      "comment": false,
+      "text": "meta.info(\"LogTape loggers are configured.  Note that LogTape itself uses the meta logger, which has category {metaLoggerCategory}.  The meta logger purposes to"
+     }
+    ]
+   },
+   {
+    "host": "mcp.sentry.dev",
+    "registrable": "sentry.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/index.cjs",
+     "dist/index.js",
+     "dist/version-NjstoynH.js",
+     "dist/version-_1CmW0BF.cjs"
+    ],
+    "evidence": [
+     {
+      "file": "dist/version-_1CmW0BF.cjs",
+      "line": 4,
+      "comment": false,
+      "text": "const USER_AGENT = `sentry-mcp/${LIB_VERSION} (https://mcp.sentry.dev)`;"
+     },
+     {
+      "file": "dist/index.js",
+      "line": 32757,
+      "comment": false,
+      "text": "\"examples\": [\"https://mcp.sentry.dev/mcp\"]"
+     },
+     {
+      "file": "dist/index.js",
+      "line": 40539,
+      "comment": false,
+      "text": "const host = context$1.mcpUrl || \"https://mcp.sentry.dev\";"
+     }
+    ]
+   },
+   {
+    "host": "openrouter.ai",
+    "registrable": "openrouter.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/index.cjs",
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 28880,
+      "comment": false,
+      "text": "const OPENROUTER_BASE_URL = \"https://openrouter.ai/api/v1\";"
+     },
+     {
+      "file": "dist/index.cjs",
+      "line": 28879,
+      "comment": false,
+      "text": "const OPENROUTER_BASE_URL = \"https://openrouter.ai/api/v1\";"
+     }
+    ]
+   },
+   {
+    "host": "sentry.sentry.io",
+    "registrable": "sentry.io",
+    "in_code": true,
+    "telemetry": true,
+    "documented": true,
+    "files": [
+     "dist/index.cjs",
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 43680,
+      "comment": false,
+      "text": "\"get_sentry_resource(url='https://sentry.sentry.io/preprod/snapshots/123/')\","
+     },
+     {
+      "file": "dist/index.js",
+      "line": 43681,
+      "comment": false,
+      "text": "\"get_sentry_resource(url='https://sentry.sentry.io/preprod/snapshots/123/?selectedSnapshot=login_screen.png')\","
+     },
+     {
+      "file": "dist/index.cjs",
+      "line": 43679,
+      "comment": false,
+      "text": "\"get_sentry_resource(url='https://sentry.sentry.io/preprod/snapshots/123/')\","
+     }
+    ]
+   },
+   {
+    "host": "slsa.dev",
+    "registrable": "slsa.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/index.cjs",
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 32790,
+      "comment": false,
+      "text": "var description$70 = \"This group describes attributes specific to artifacts. Artifacts are files or other immutable objects that are intended for distribution. "
+     },
+     {
+      "file": "dist/index.cjs",
+      "line": 32789,
+      "comment": false,
+      "text": "var description$70 = \"This group describes attributes specific to artifacts. Artifacts are files or other immutable objects that are intended for distribution. "
+     }
+    ]
+   },
+   {
+    "host": "vercel.com",
+    "registrable": "vercel.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/index.cjs",
+     "dist/index.js",
+     "dist/token-util-BRoQwIG6.cjs",
+     "dist/token-util-batRsXGA.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/token-util-batRsXGA.js",
+      "line": 170,
+      "comment": false,
+      "text": "const VERCEL_ISSUER = \"https://vercel.com\";"
+     },
+     {
+      "file": "dist/token-util-BRoQwIG6.cjs",
+      "line": 170,
+      "comment": false,
+      "text": "const VERCEL_ISSUER = \"https://vercel.com\";"
+     },
+     {
+      "file": "dist/index.js",
+      "line": 8279,
+      "comment": false,
+      "text": "Create a new API key: https://vercel.com/d?to=%2F%5Bteam%5D%2F%7E%2Fai%2Fapi-keys"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "dist/device-code-flow-afx1qvK6.cjs",
+     "line": 5,
+     "text": "const node_child_process = require_chunk.__toESM(require(\"node:child_process\"));"
+    },
+    {
+     "file": "dist/device-code-flow-mwBASRbi.js",
+     "line": 4,
+     "text": "import { exec } from \"node:child_process\";"
+    }
+   ],
+   "home_dir": [
+    {
+     "file": "dist/token-util-batRsXGA.js",
+     "line": 58,
+     "text": "case \"darwin\": return import_path.default.join(import_os$1.default.homedir(), \"Library/Application Support\");"
+    },
+    {
+     "file": "dist/token-util-batRsXGA.js",
+     "line": 59,
+     "text": "case \"linux\": return import_path.default.join(import_os$1.default.homedir(), \".local/share\");"
+    },
+    {
+     "file": "dist/token-util-BRoQwIG6.cjs",
+     "line": 58,
+     "text": "case \"darwin\": return import_path.default.join(import_os$1.default.homedir(), \"Library/Application Support\");"
+    },
+    {
+     "file": "dist/token-util-BRoQwIG6.cjs",
+     "line": 59,
+     "text": "case \"linux\": return import_path.default.join(import_os$1.default.homedir(), \".local/share\");"
+    },
+    {
+     "file": "dist/token-cache-ATUcs1cg.cjs",
+     "line": 11,
+     "text": "return node_path.join(node_os.homedir(), \".sentry\", \"mcp.json\");"
+    }
+   ],
+   "secret_env": [
+    {
+     "file": "dist/token-3xpHVxQo.js",
+     "line": 43,
+     "text": "process.env.VERCEL_OIDC_TOKEN = maybeToken.token;"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 8186,
+     "text": "const token = (0, import_get_context$1.getContext)().headers?.[\"x-vercel-oidc-token\"] ?? process.env.VERCEL_OIDC_TOKEN;"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 28811,
+     "text": "if (process.env.OPENAI_API_KEY) headers.set(\"api-key\", process.env.OPENAI_API_KEY);"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 28903,
+     "text": "apiKey: process.env.OPENROUTER_API_KEY,"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 28951,
+     "text": "process.env.ANTHROPIC_API_KEY,"
+    }
+   ],
+   "eval": [
+    {
+     "file": "dist/index.js",
+     "line": 55081,
+     "text": "const validate = new Function(`${names_1.default.self}`, `${names_1.default.scope}`, sourceCode)(this, this.scope.get());"
+    },
+    {
+     "file": "dist/index.cjs",
+     "line": 55080,
+     "text": "const validate = new Function(`${names_1.default.self}`, `${names_1.default.scope}`, sourceCode)(this, this.scope.get());"
+    }
+   ],
+   "network_calls": [
+    {
+     "file": "dist/device-code-flow-afx1qvK6.cjs",
+     "line": 19,
+     "text": "const resp = await fetch(url, {"
+    },
+    {
+     "file": "dist/device-code-flow-afx1qvK6.cjs",
+     "line": 46,
+     "text": "const resp = await fetch(url, {"
+    },
+    {
+     "file": "dist/token-util-batRsXGA.js",
+     "line": 177,
+     "text": "const response = await fetch(discoveryUrl, { headers: { \"user-agent\": userAgent } });"
+    },
+    {
+     "file": "dist/token-util-batRsXGA.js",
+     "line": 187,
+     "text": "return await fetch(tokenEndpoint, {"
+    },
+    {
+     "file": "dist/token-util-batRsXGA.js",
+     "line": 297,
+     "text": "const res = await fetch(url, {"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "dist/token-util-batRsXGA.js",
+     "line": 331,
+     "text": "fs.writeFileSync(tokenPath, tokenJson);"
+    },
+    {
+     "file": "dist/token-util-BRoQwIG6.cjs",
+     "line": 331,
+     "text": "fs.writeFileSync(tokenPath, tokenJson);"
+    },
+    {
+     "file": "dist/token-cache-DbZp4rvg.js",
+     "line": 31,
+     "text": "await fs.writeFile(tmpPath, JSON.stringify(data, null, 2), {"
+    }
+   ]
+  },
+  "secret_env_names": [
+   "ANTHROPIC_API_KEY",
+   "OPENAI_API_KEY",
+   "OPENROUTER_API_KEY",
+   "VERCEL_OIDC_TOKEN"
+  ],
+  "summary": {
+   "hosts_in_code": 10,
+   "undocumented_hosts_in_code": [
+    "ai-sdk.dev",
+    "logtape.org",
+    "openrouter.ai",
+    "slsa.dev",
+    "vercel.com",
+    "vercel.sh"
+   ],
+   "telemetry_hosts": [
+    "docs.sentry.io",
+    "sentry.sentry.io"
+   ],
+   "exec": true,
+   "home_dir": true,
+   "eval": true,
+   "secret_env": 4,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 462862
+ },
+ {
+  "package": "@ui5/mcp-server",
+  "version": "0.3.2",
+  "files_scanned": 83,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "cline.bot",
+   "coveralls.io",
+   "example.com",
+   "fury.io",
+   "github.com",
+   "github.io",
+   "modelcontextprotocol.io",
+   "nodejs.org",
+   "npmjs.com",
+   "ondemand.com",
+   "openui5.org",
+   "reuse.so",
+   "sap.com",
+   "shields.io",
+   "slack.com",
+   "stackoverflow.com"
+  ],
+  "hosts": [
+   {
+    "host": "api.qunitjs.com",
+    "registrable": "qunitjs.com",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "resources/template-js/webapp/test-lt1_124/integration/opaTests.qunit.js",
+     "resources/template-js/webapp/test-lt1_124/unit/unitTests.qunit.js",
+     "resources/template-ts/webapp/test-lt1_124/integration/opaTests.qunit.ts",
+     "resources/template-ts/webapp/test-lt1_124/unit/unitTests.qunit.ts"
+    ],
+    "evidence": [
+     {
+      "file": "resources/template-js/webapp/test-lt1_124/unit/unitTests.qunit.js",
+      "line": 3,
+      "comment": true,
+      "text": "// https://api.qunitjs.com/config/autostart/"
+     },
+     {
+      "file": "resources/template-js/webapp/test-lt1_124/integration/opaTests.qunit.js",
+      "line": 2,
+      "comment": true,
+      "text": "// https://api.qunitjs.com/config/autostart/"
+     },
+     {
+      "file": "resources/template-ts/webapp/test-lt1_124/unit/unitTests.qunit.ts",
+      "line": 2,
+      "comment": true,
+      "text": "// https://api.qunitjs.com/config/autostart/"
+     }
+    ]
+   },
+   {
+    "host": "openui5.org",
+    "registrable": "openui5.org",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "lib/tools/get_api_reference/createUriForSymbol.js"
+    ],
+    "evidence": [
+     {
+      "file": "lib/tools/get_api_reference/createUriForSymbol.js",
+      "line": 5,
+      "comment": false,
+      "text": "[\"openui5\", \"https://openui5.org\"],"
+     }
+    ]
+   },
+   {
+    "host": "sdk.openui5.org",
+    "registrable": "openui5.org",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "lib/tools/get_api_reference/lib/apiReferenceResources.js",
+     "lib/utils/cdnHelper.js"
+    ],
+    "evidence": [
+     {
+      "file": "lib/utils/cdnHelper.js",
+      "line": 37,
+      "comment": false,
+      "text": "baseUrl = \"https://sdk.openui5.org\";"
+     },
+     {
+      "file": "lib/tools/get_api_reference/lib/apiReferenceResources.js",
+      "line": 72,
+      "comment": true,
+      "text": "// Create a base URL like \"https://ui5.sap.com/1.120.30\" or \"https://sdk.openui5.org/1.120.30\""
+     }
+    ]
+   },
+   {
+    "host": "ui5.sap.com",
+    "registrable": "sap.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "lib/resources/documentation/getDocumentation.js",
+     "lib/tools/get_api_reference/createUriForSymbol.js",
+     "lib/tools/get_api_reference/lib/apiReferenceResources.js",
+     "lib/tools/run_ui5_linter/resultContext.js",
+     "lib/utils/cdnHelper.js"
+    ],
+    "evidence": [
+     {
+      "file": "lib/utils/cdnHelper.js",
+      "line": 40,
+      "comment": false,
+      "text": "baseUrl = \"https://ui5.sap.com\";"
+     },
+     {
+      "file": "lib/resources/documentation/getDocumentation.js",
+      "line": 39,
+      "comment": false,
+      "text": "`Expected format: https://ui5.sap.com/[<version>/]topic/<loio-identifier>.`);"
+     },
+     {
+      "file": "lib/tools/get_api_reference/createUriForSymbol.js",
+      "line": 4,
+      "comment": false,
+      "text": "[\"sapui5\", \"https://ui5.sap.com\"],"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [
+    {
+     "file": "lib/utils/dataStorageHelper.js",
+     "line": 25,
+     "text": "return path.join(os.homedir(), \".ui5\");"
+    }
+   ],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "lib/utils/cdnHelper.js",
+     "line": 56,
+     "text": "const response = await fetch(url);"
+    },
+    {
+     "file": "lib/tools/create_ui5_app/ODataMetadata.js",
+     "line": 56,
+     "text": "const response = await fetch(url, { signal: AbortSignal.timeout(10000) });"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 3,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": true,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 362686
+ },
+ {
+  "package": "@supabase/mcp-server-supabase",
+  "version": "0.14.0",
+  "files_scanned": 22,
+  "bundled_deps": false,
+  "readme": false,
+  "documented_domains": [
+   "github.com"
+  ],
+  "hosts": [
+   {
+    "host": "api.supabase.com",
+    "registrable": "supabase.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/chunk-I7QY5ONI.cjs",
+     "dist/chunk-Y5HKS7Z3.js",
+     "dist/cli.cjs",
+     "dist/cli.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/chunk-Y5HKS7Z3.js",
+      "line": 49,
+      "comment": false,
+      "text": "`;default:throw new Error(`unsupported log service type: ${n}`)}}import J from\"openapi-fetch\";import{z as V}from\"zod/v4\";function R(n,p,d={}){return J({baseUrl:"
+     },
+     {
+      "file": "dist/cli.js",
+      "line": 2,
+      "comment": false,
+      "text": "import{a as S,c as b,d as O,g as _}from\"./chunk-QSCBBEAT.js\";import{a as E}from\"./chunk-Y5HKS7Z3.js\";import{a as L}from\"./chunk-XE4XPC4G.js\";import\"./chunk-LU6L"
+     },
+     {
+      "file": "dist/chunk-I7QY5ONI.cjs",
+      "line": 49,
+      "comment": false,
+      "text": "`;default:throw new Error(`unsupported log service type: ${n}`)}}var _openapifetch = require('openapi-fetch'); var _openapifetch2 = _interopRequireDefault(_open"
+     }
+    ]
+   },
+   {
+    "host": "api.supabase.gr",
+    "registrable": "supabase.gr",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/cli.cjs",
+     "dist/cli.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/cli.js",
+      "line": 2,
+      "comment": false,
+      "text": "import{a as S,c as b,d as O,g as _}from\"./chunk-QSCBBEAT.js\";import{a as E}from\"./chunk-Y5HKS7Z3.js\";import{a as L}from\"./chunk-XE4XPC4G.js\";import\"./chunk-LU6L"
+     },
+     {
+      "file": "dist/cli.cjs",
+      "line": 2,
+      "comment": false,
+      "text": "\"use strict\"; function _nullishCoalesce(lhs, rhsFn) { if (lhs != null) { return lhs; } else { return rhsFn(); } } function _optionalChain(ops) { let lastAccessL"
+     }
+    ]
+   },
+   {
+    "host": "supabase.com",
+    "registrable": "supabase.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/chunk-I7QY5ONI.cjs",
+     "dist/chunk-Y5HKS7Z3.js",
+     "dist/cli.cjs",
+     "dist/cli.js",
+     "dist/index.d.cts"
+    ],
+    "evidence": [
+     {
+      "file": "dist/chunk-Y5HKS7Z3.js",
+      "line": 49,
+      "comment": false,
+      "text": "`;default:throw new Error(`unsupported log service type: ${n}`)}}import J from\"openapi-fetch\";import{z as V}from\"zod/v4\";function R(n,p,d={}){return J({baseUrl:"
+     },
+     {
+      "file": "dist/index.d.cts",
+      "line": 124,
+      "comment": true,
+      "text": "* Example: `https://supabase.com/dashboard/mcp/secrets?ref={ref}&name={name}`."
+     },
+     {
+      "file": "dist/cli.js",
+      "line": 2,
+      "comment": false,
+      "text": "import{a as S,c as b,d as O,g as _}from\"./chunk-QSCBBEAT.js\";import{a as E}from\"./chunk-Y5HKS7Z3.js\";import{a as L}from\"./chunk-XE4XPC4G.js\";import\"./chunk-LU6L"
+     }
+    ]
+   },
+   {
+    "host": "supabase.gr",
+    "registrable": "supabase.gr",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/cli.cjs",
+     "dist/cli.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/cli.js",
+      "line": 2,
+      "comment": false,
+      "text": "import{a as S,c as b,d as O,g as _}from\"./chunk-QSCBBEAT.js\";import{a as E}from\"./chunk-Y5HKS7Z3.js\";import{a as L}from\"./chunk-XE4XPC4G.js\";import\"./chunk-LU6L"
+     },
+     {
+      "file": "dist/cli.cjs",
+      "line": 2,
+      "comment": false,
+      "text": "\"use strict\"; function _nullishCoalesce(lhs, rhsFn) { if (lhs != null) { return lhs; } else { return rhsFn(); } } function _optionalChain(ops) { let lastAccessL"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "dist/cli.js",
+     "line": 2,
+     "text": "import{a as S,c as b,d as O,g as _}from\"./chunk-QSCBBEAT.js\";import{a as E}from\"./chunk-Y5HKS7Z3.js\";import{a as L}from\"./chunk-XE4XPC4G.js\";import\"./chunk-LU6L"
+    },
+    {
+     "file": "dist/cli.cjs",
+     "line": 2,
+     "text": "\"use strict\"; function _nullishCoalesce(lhs, rhsFn) { if (lhs != null) { return lhs; } else { return rhsFn(); } } function _optionalChain(ops) { let lastAccessL"
+    }
+   ],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "dist/chunk-QSCBBEAT.js",
+     "line": 1,
+     "text": "import{a as nt,d as rt}from\"./chunk-XE4XPC4G.js\";import{a as ue,b as st,c as at,d as it,e as pe,f as Ae,g as Re,h as ct,o as lt,p as ut,s as pt,u as De}from\"./c"
+    },
+    {
+     "file": "dist/cli.js",
+     "line": 2,
+     "text": "import{a as S,c as b,d as O,g as _}from\"./chunk-QSCBBEAT.js\";import{a as E}from\"./chunk-Y5HKS7Z3.js\";import{a as L}from\"./chunk-XE4XPC4G.js\";import\"./chunk-LU6L"
+    },
+    {
+     "file": "dist/chunk-A3TWEVBP.cjs",
+     "line": 1,
+     "text": "\"use strict\";Object.defineProperty(exports, \"__esModule\", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default:"
+    },
+    {
+     "file": "dist/cli.cjs",
+     "line": 2,
+     "text": "\"use strict\"; function _nullishCoalesce(lhs, rhsFn) { if (lhs != null) { return lhs; } else { return rhsFn(); } } function _optionalChain(ops) { let lastAccessL"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "SUPABASE_ACCESS_TOKEN"
+  ],
+  "summary": {
+   "hosts_in_code": 4,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 1,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 352071
+ },
+ {
+  "package": "figma-developer-mcp",
+  "version": "0.13.2",
+  "files_scanned": 9,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "cursor.sh",
+   "figma.com",
+   "framelink.ai",
+   "github.com",
+   "modelcontextprotocol.io",
+   "npmcharts.com",
+   "shields.io",
+   "star-history.com",
+   "twitter.com",
+   "youtu.be",
+   "youtube.com"
+  ],
+  "hosts": [
+   {
+    "host": "us.i.posthog.com",
+    "registrable": "posthog.com",
+    "in_code": true,
+    "telemetry": true,
+    "documented": false,
+    "files": [
+     "dist/chunk-BMERTI2I.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/chunk-BMERTI2I.js",
+      "line": 1,
+      "comment": false,
+      "text": "import{b as ye,g as we,l as ve}from\"./chunk-F7NB5NCX.js\";import{a as w,b as j}from\"./chunk-Q77VG2BX.js\";import{a as _,b as q,c as he}from\"./chunk-CPSYXR2U.js\";i"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "dist/chunk-CPSYXR2U.js",
+     "line": 1,
+     "text": "import c from\"fs\";import y from\"path\";var u=Symbol.for(\"framelink.errorMeta\");function l(r,n){if(r&&typeof r==\"object\"){let e=r[u]??{};r[u]={...e,...n}}throw r}"
+    },
+    {
+     "file": "dist/chunk-BMERTI2I.js",
+     "line": 9,
+     "text": "Configuration:`),console.log(`- ENV_FILE: ${t} (source: ${m.envFile})`),r.useOAuth?(console.log(`- FIGMA_OAUTH_TOKEN: ${Me(r.figmaOAuthToken)} (source: ${m.figm"
+    },
+    {
+     "file": "dist/chunk-BMERTI2I.js",
+     "line": 17,
+     "text": "${T}`}]}}catch(s){let l=s instanceof Error?s.message:String(s);return w.error(`Error downloading images from ${e.fileKey}:`,s),{isError:!0,content:[{type:\"text\""
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 1,
+   "undocumented_hosts_in_code": [
+    "posthog.com"
+   ],
+   "telemetry_hosts": [
+    "us.i.posthog.com"
+   ],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 336096
+ },
+ {
+  "package": "n8n-mcp",
+  "version": "2.94.3",
+  "files_scanned": 240,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "aiadvisors.pl",
+   "codecov.io",
+   "github.com",
+   "n8n-mcp.com",
+   "npmjs.com",
+   "opensource.org",
+   "railway.com",
+   "shields.io",
+   "youtube.com"
+  ],
+  "hosts": [
+   {
+    "host": "api-staging.n8n.io",
+    "registrable": "n8n.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/community/community-node-fetcher.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/community/community-node-fetcher.js",
+      "line": 35,
+      "comment": false,
+      "text": ": 'https://api-staging.n8n.io/api/community-nodes';"
+     }
+    ]
+   },
+   {
+    "host": "api.n8n.io",
+    "registrable": "n8n.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/community/community-node-fetcher.js",
+     "dist/templates/template-fetcher.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/templates/template-fetcher.js",
+      "line": 11,
+      "comment": false,
+      "text": "this.baseUrl = 'https://api.n8n.io/api/templates';"
+     },
+     {
+      "file": "dist/community/community-node-fetcher.js",
+      "line": 34,
+      "comment": false,
+      "text": "? 'https://api.n8n.io/api/community-nodes'"
+     }
+    ]
+   },
+   {
+    "host": "docs.n8n.io",
+    "registrable": "n8n.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/utils/enhanced-documentation-fetcher.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/utils/enhanced-documentation-fetcher.js",
+      "line": 518,
+      "comment": false,
+      "text": "return `https://docs.n8n.io/${urlPath}`;"
+     }
+    ]
+   },
+   {
+    "host": "n8n-mcp.com",
+    "registrable": "n8n-mcp.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/mcp/server.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/mcp/server.js",
+      "line": 176,
+      "comment": false,
+      "text": "websiteUrl: \"https://n8n-mcp.com\""
+     }
+    ]
+   },
+   {
+    "host": "n8n.io",
+    "registrable": "n8n.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/mcp/handlers-n8n-manager.js",
+     "dist/templates/template-repository.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/mcp/handlers-n8n-manager.js",
+      "line": 2657,
+      "comment": false,
+      "text": "templateUrl: `https://n8n.io/workflows/${input.templateId}`"
+     },
+     {
+      "file": "dist/mcp/handlers-n8n-manager.js",
+      "line": 2777,
+      "comment": false,
+      "text": "templateUrl: template.url || `https://n8n.io/workflows/${input.templateId}`,"
+     },
+     {
+      "file": "dist/templates/template-repository.js",
+      "line": 121,
+      "comment": false,
+      "text": "const url = `https://n8n.io/workflows/${workflow.id}`;"
+     }
+    ]
+   },
+   {
+    "host": "telemetry.n8n-mcp.com",
+    "registrable": "n8n-mcp.com",
+    "in_code": true,
+    "telemetry": true,
+    "documented": true,
+    "files": [
+     "dist/telemetry/telemetry-types.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/telemetry/telemetry-types.js",
+      "line": 20,
+      "comment": false,
+      "text": "URL: 'https://telemetry.n8n-mcp.com',"
+     }
+    ]
+   },
+   {
+    "host": "www.n8n-mcp.com",
+    "registrable": "n8n-mcp.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/mcp/server.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/mcp/server.js",
+      "line": 161,
+      "comment": false,
+      "text": "src: \"https://www.n8n-mcp.com/logo.png\","
+     },
+     {
+      "file": "dist/mcp/server.js",
+      "line": 166,
+      "comment": false,
+      "text": "src: \"https://www.n8n-mcp.com/logo-128.png\","
+     },
+     {
+      "file": "dist/mcp/server.js",
+      "line": 171,
+      "comment": false,
+      "text": "src: \"https://www.n8n-mcp.com/logo-48.png\","
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "dist/utils/enhanced-documentation-fetcher.js",
+     "line": 10,
+     "text": "const child_process_1 = require(\"child_process\");"
+    }
+   ],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "dist/http-server.js",
+     "line": 25,
+     "text": "if (process.env.AUTH_TOKEN) {"
+    },
+    {
+     "file": "dist/http-server.js",
+     "line": 27,
+     "text": "return process.env.AUTH_TOKEN;"
+    },
+    {
+     "file": "dist/http-server.js",
+     "line": 29,
+     "text": "if (process.env.AUTH_TOKEN_FILE) {"
+    },
+    {
+     "file": "dist/http-server.js",
+     "line": 31,
+     "text": "const token = (0, fs_1.readFileSync)(process.env.AUTH_TOKEN_FILE, 'utf-8').trim();"
+    },
+    {
+     "file": "dist/http-server.js",
+     "line": 32,
+     "text": "logger_1.logger.info(`Loaded AUTH_TOKEN from file: ${process.env.AUTH_TOKEN_FILE}`);"
+    }
+   ],
+   "eval": [
+    {
+     "file": "dist/services/node-specific-validators.js",
+     "line": 2110,
+     "text": "{ pattern: /(?<![.\\w$])eval\\s*\\(/, message: 'Avoid eval() - it\\'s a security risk' },"
+    },
+    {
+     "file": "dist/services/node-specific-validators.js",
+     "line": 2112,
+     "text": "{ pattern: /(?:window|globalThis)\\s*\\.\\s*eval\\s*\\(/, message: 'Avoid eval() - it\\'s a security risk' },"
+    },
+    {
+     "file": "dist/services/config-validator.js",
+     "line": 384,
+     "text": "if (language !== 'python' && (code?.includes('eval(') || code?.includes('exec('))) {"
+    }
+   ],
+   "network_calls": [
+    {
+     "file": "dist/utils/ssrf-protection.js",
+     "line": 46,
+     "text": "const undici_1 = require(\"undici\");"
+    },
+    {
+     "file": "dist/utils/npm-version-checker.js",
+     "line": 20,
+     "text": "const response = await fetch('https://registry.npmjs.org/n8n-mcp/latest', {"
+    },
+    {
+     "file": "dist/scripts/generate-community-docs.js",
+     "line": 10,
+     "text": "const community_node_fetcher_1 = require(\"../community/community-node-fetcher\");"
+    },
+    {
+     "file": "dist/templates/template-service.js",
+     "line": 234,
+     "text": "logger_1.logger.info(`Update mode: ${templatesToFetch.length} new templates to fetch (skipping ${templates.length - templatesToFetch.length} existing)`);"
+    },
+    {
+     "file": "dist/community/community-node-service.js",
+     "line": 7,
+     "text": "const community_node_fetcher_1 = require(\"./community-node-fetcher\");"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "dist/scripts/mine-workflow-patterns.js",
+     "line": 418,
+     "text": "fs.writeFileSync(outputPath, JSON.stringify(output, null, 2));"
+    },
+    {
+     "file": "dist/templates/batch-processor.js",
+     "line": 111,
+     "text": "fs.unlinkSync(inputFile);"
+    },
+    {
+     "file": "dist/templates/batch-processor.js",
+     "line": 128,
+     "text": "fs.unlinkSync(inputFile);"
+    },
+    {
+     "file": "dist/templates/batch-processor.js",
+     "line": 146,
+     "text": "fs.unlinkSync(inputFile);"
+    },
+    {
+     "file": "dist/templates/batch-processor.js",
+     "line": 252,
+     "text": "fs.writeFileSync(errorFilePath, errorContent);"
+    }
+   ]
+  },
+  "secret_env_names": [
+   "AUTH_TOKEN",
+   "AUTH_TOKEN_FILE",
+   "MCP_AUTH_TOKEN",
+   "N8N_API_KEY",
+   "N8N_MCP_ACCESS_TOKEN",
+   "N8N_MCP_LLM_API_KEY",
+   "N8N_MCP_TELEMETRY_KEY",
+   "OPENAI_API_KEY"
+  ],
+  "summary": {
+   "hosts_in_code": 7,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [
+    "telemetry.n8n-mcp.com"
+   ],
+   "exec": true,
+   "home_dir": false,
+   "eval": true,
+   "secret_env": 8,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 305791
+ },
+ {
+  "package": "xcodebuildmcp",
+  "version": "2.7.0",
+  "files_scanned": 367,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "agentaudit.dev",
+   "apple.com",
+   "deepwiki.com",
+   "fury.io",
+   "github.com",
+   "modelcontextprotocol.io",
+   "nodejs.org",
+   "opensource.org",
+   "shields.io",
+   "xcodebuildmcp.com"
+  ],
+  "hosts": [
+   {
+    "host": "xcodebuildmcp.com",
+    "registrable": "xcodebuildmcp.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "build/core/structured-output-schema.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/core/structured-output-schema.js",
+      "line": 7,
+      "comment": false,
+      "text": "const COMMON_DEFS_ID = \"https://xcodebuildmcp.com/schemas/structured-output/_defs/common.schema.json\";"
+     },
+     {
+      "file": "build/core/structured-output-schema.js",
+      "line": 207,
+      "comment": false,
+      "text": "$id: `https://xcodebuildmcp.com/schemas/structured-output/${ref.schema}/${ref.version}.registration.schema.json`,"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "build/test-utils/mock-executors.js",
+     "line": 1,
+     "text": "import { ChildProcess } from \"child_process\";"
+    },
+    {
+     "file": "build/snapshot-tests/harness.js",
+     "line": 1,
+     "text": "import { spawnSync } from \"node:child_process\";"
+    },
+    {
+     "file": "build/snapshot-tests/harness.js",
+     "line": 32,
+     "text": "const result = spawnSync("
+    },
+    {
+     "file": "build/snapshot-tests/harness.js",
+     "line": 80,
+     "text": "return spawnSync(\"node\", commandArgs, {"
+    },
+    {
+     "file": "build/snapshot-tests/xcode-ide-availability.js",
+     "line": 1,
+     "text": "import { execSync } from \"node:child_process\";"
+    }
+   ],
+   "home_dir": [
+    {
+     "file": "build/snapshot-tests/normalize.js",
+     "line": 183,
+     "text": "const home = os.homedir();"
+    },
+    {
+     "file": "build/utils/log-paths.js",
+     "line": 3,
+     "text": "const APP_DIR = path.join(os.homedir(), \"Library\", \"Developer\", \"XcodeBuildMCP\");"
+    },
+    {
+     "file": "build/utils/build-utils.js",
+     "line": 10,
+     "text": "return path.join(os.homedir(), \"Library\", \"Caches\", \"org.swift.swiftpm\");"
+    },
+    {
+     "file": "build/utils/build-preflight.js",
+     "line": 17,
+     "text": "const home = os.homedir();"
+    },
+    {
+     "file": "build/utils/path.js",
+     "line": 8,
+     "text": "return homedir();"
+    }
+   ],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "build/utils/xcodemake.js",
+     "line": 70,
+     "text": "const response = await deps.fetch(XCODEMAKE_DOWNLOAD_URL);"
+    },
+    {
+     "file": "build/cli/commands/upgrade.js",
+     "line": 127,
+     "text": "response = await fetch(url, {"
+    },
+    {
+     "file": "build/cli/commands/upgrade.js",
+     "line": 173,
+     "text": "response = await fetch(url, {"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "build/snapshot-tests/fixture-io.js",
+     "line": 175,
+     "text": "fs.writeFileSync(fixturePath, actual, \"utf8\");"
+    },
+    {
+     "file": "build/utils/workspace-filesystem-lifecycle.js",
+     "line": 95,
+     "text": "await fs.writeFile(markerPath, String(now));"
+    },
+    {
+     "file": "build/utils/workspace-filesystem-lifecycle.js",
+     "line": 123,
+     "text": "await fs.unlink(filePath);"
+    },
+    {
+     "file": "build/utils/workspace-filesystem-lifecycle.js",
+     "line": 269,
+     "text": "await fs.rm(bundle.path, { recursive: true, force: true });"
+    },
+    {
+     "file": "build/utils/workspace-filesystem-lifecycle.js",
+     "line": 353,
+     "text": "await fs.rm(path.join(root, entry.name), { recursive: true, force: true });"
+    }
+   ]
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 1,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": true,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 253777
+ },
+ {
+  "package": "@serdnaley/metabase-mcp",
+  "version": "0.2.0",
+  "files_scanned": 1,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "example.com",
+   "github.com",
+   "metabase.com",
+   "openapi-ts.dev"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "dist/index.js",
+     "line": 28418,
+     "text": "apiKey: process.env.METABASE_API_KEY,"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 28420,
+     "text": "password: process.env.METABASE_PASSWORD,"
+    }
+   ],
+   "eval": [
+    {
+     "file": "dist/index.js",
+     "line": 2892,
+     "text": "const makeValidate = new Function(`${names_1.default.self}`, `${names_1.default.scope}`, sourceCode);"
+    }
+   ],
+   "network_calls": [
+    {
+     "file": "dist/index.js",
+     "line": 28435,
+     "text": "return typeof process === \"object\" && Number.parseInt(process?.versions?.node?.substring(0, 2)) >= 18 && process.versions.undici;"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 28881,
+     "text": "const res = await fetch(`${baseUrl}/api/session`, {"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "METABASE_API_KEY",
+   "METABASE_PASSWORD"
+  ],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": true,
+   "secret_env": 2,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 240728
+ },
+ {
+  "package": "nx-mcp",
+  "version": "0.25.0",
+  "files_scanned": 1,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "cursor.com",
+   "github.com",
+   "modelcontextprotocol.io",
+   "nx.dev",
+   "shields.io",
+   "warp.dev"
+  ],
+  "hosts": [
+   {
+    "host": "cloud.nx.app",
+    "registrable": "nx.app",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "main.js"
+    ],
+    "evidence": [
+     {
+      "file": "main.js",
+      "line": 249,
+      "comment": false,
+      "text": "`}),n}function MF(t){return t?`Opening project graph for ${t}. There can only be one graph visualization open at a time so avoid similar tool calls unless the u"
+     }
+    ]
+   },
+   {
+    "host": "nx.dev",
+    "registrable": "nx.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "main.js"
+    ],
+    "evidence": [
+     {
+      "file": "main.js",
+      "line": 224,
+      "comment": false,
+      "text": "It controls sync generators that modify files automatically, with options to apply changes automatically or require user confirmation.</>`,e+=`\"sync\" : ${JSON.s"
+     }
+    ]
+   },
+   {
+    "host": "www.google-analytics.com",
+    "registrable": "google-analytics.com",
+    "in_code": true,
+    "telemetry": true,
+    "documented": false,
+    "files": [
+     "main.js"
+    ],
+    "evidence": [
+     {
+      "file": "main.js",
+      "line": 298,
+      "comment": false,
+      "text": "`;var RO=[\"!nx_available_plugins\",\"!nx_workspace_path\",\"!nx_workspace\",\"!nx_project_details\",\"!nx_generators\",\"!nx_generator_schema\"];var XK=require(\"fs\");var e"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "main.js",
+     "line": 182,
+     "text": "${r.stack}`}else{if(typeof e==\"string\")return`${t}: ${e}`;if(e)return`${t}: ${e.toString()}`}return t}var S9=require(\"child_process\");function k9(t,e=\"SIGTERM\")"
+    },
+    {
+     "file": "main.js",
+     "line": 249,
+     "text": "`}),n}function MF(t){return t?`Opening project graph for ${t}. There can only be one graph visualization open at a time so avoid similar tool calls unless the u"
+    },
+    {
+     "file": "main.js",
+     "line": 250,
+     "text": "`).filter(a=>a.trim()!==\"\").map(a=>{let[s,c,u]=a.split(\" - \").map(l=>l.trim());return{name:s.replace(\"refs/heads/\",\"\"),time:c,email:u}}).filter(a=>a.email.inclu"
+    },
+    {
+     "file": "main.js",
+     "line": 298,
+     "text": "`;var RO=[\"!nx_available_plugins\",\"!nx_workspace_path\",\"!nx_workspace\",\"!nx_project_details\",\"!nx_generators\",\"!nx_generator_schema\"];var XK=require(\"fs\");var e"
+    }
+   ],
+   "home_dir": [
+    {
+     "file": "main.js",
+     "line": 37,
+     "text": "`),o=o.replace(/\\\\r/g,\"\\r\")),e[i]=o}return e}function F0e(t){let e=Q5(t),r=xr.configDotenv({path:e});if(!r.parsed){let a=new Error(`MISSING_DATA: Cannot parse $"
+    },
+    {
+     "file": "main.js",
+     "line": 249,
+     "text": "`}),n}function MF(t){return t?`Opening project graph for ${t}. There can only be one graph visualization open at a time so avoid similar tool calls unless the u"
+    }
+   ],
+   "secret_env": [
+    {
+     "file": "main.js",
+     "line": 37,
+     "text": "`),o=o.replace(/\\\\r/g,\"\\r\")),e[i]=o}return e}function F0e(t){let e=Q5(t),r=xr.configDotenv({path:e});if(!r.parsed){let a=new Error(`MISSING_DATA: Cannot parse $"
+    },
+    {
+     "file": "main.js",
+     "line": 249,
+     "text": "`}),n}function MF(t){return t?`Opening project graph for ${t}. There can only be one graph visualization open at a time so avoid similar tool calls unless the u"
+    }
+   ],
+   "eval": [
+    {
+     "file": "main.js",
+     "line": 13,
+     "text": "\\x1B[36mat `+r[i].toString()+\"\\x1B[39m\";return n}return e&&(n+=\" \\x1B[36m\"+yR(e)+\"\\x1B[39m\"),n}function yR(t){return dve(fve,t[0])+\":\"+t[1]+\":\"+t[2]}function TC"
+    }
+   ],
+   "network_calls": [
+    {
+     "file": "main.js",
+     "line": 183,
+     "text": "${t.cause.message}`:(t.name===\"ProjectsWithNoNameError\"||t.name===\"MultipleProjectsWithSameNameError\"||t.name===\"ProjectWithExistingNameError\")&&t.message?t.mes"
+    },
+    {
+     "file": "main.js",
+     "line": 249,
+     "text": "`}),n}function MF(t){return t?`Opening project graph for ${t}. There can only be one graph visualization open at a time so avoid similar tool calls unless the u"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "main.js",
+     "line": 305,
+     "text": "`),i+=t.charAt(o);return r&&n&&(i=`${r}${i}${n}`),i}function bj(t){return hse(t,{stringWidth:e=>[...e].length,stripAnsi:Cj,wrap:Ise})}var Dd=require(\"path\"),f_="
+    }
+   ]
+  },
+  "secret_env_names": [
+   "DOTENV_KEY",
+   "NX_CLOUD_ACCESS_TOKEN"
+  ],
+  "summary": {
+   "hosts_in_code": 3,
+   "undocumented_hosts_in_code": [
+    "google-analytics.com"
+   ],
+   "telemetry_hosts": [
+    "www.google-analytics.com"
+   ],
+   "exec": true,
+   "home_dir": true,
+   "eval": true,
+   "secret_env": 2,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 236569
+ },
+ {
+  "package": "@google-cloud/observability-mcp",
+  "version": "0.2.3",
+  "files_scanned": 1,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "google.com",
+   "modelcontextprotocol.io"
+  ],
+  "hosts": [
+   {
+    "host": "mathiasbynens.be",
+    "registrable": "mathiasbynens.be",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/bundle.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/bundle.js",
+      "line": 6499,
+      "comment": true,
+      "text": "// For test cases: https://mathiasbynens.be/demo/url-regex"
+     }
+    ]
+   },
+   {
+    "host": "www.safaribooksonline.com",
+    "registrable": "safaribooksonline.com",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/bundle.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/bundle.js",
+      "line": 6503,
+      "comment": true,
+      "text": "// optimized https://www.safaribooksonline.com/library/view/regular-expressions-cookbook/9780596802837/ch07s16.html"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [
+    {
+     "file": "dist/bundle.js",
+     "line": 32824,
+     "text": "const extensionDir = join2(os.homedir(), \".gemini\", \"extensions\", \"observability-mcp\");"
+    }
+   ],
+   "secret_env": [],
+   "eval": [
+    {
+     "file": "dist/bundle.js",
+     "line": 2942,
+     "text": "const makeValidate = new Function(`${names_1.default.self}`, `${names_1.default.scope}`, sourceCode);"
+    },
+    {
+     "file": "dist/bundle.js",
+     "line": 9553,
+     "text": "const makeValidate = new Function(`${names_1.default.self}`, `${names_1.default.scope}`, sourceCode);"
+    }
+   ],
+   "network_calls": [],
+   "fs_write": [
+    {
+     "file": "dist/bundle.js",
+     "line": 29358,
+     "text": "shim.fs.writeFile(languageFile, serializedLocale, \"utf-8\", function(err) {"
+    },
+    {
+     "file": "dist/bundle.js",
+     "line": 32839,
+     "text": "await fs.writeFile(extensionFile, JSON.stringify(extensionJson, null, 2));"
+    },
+    {
+     "file": "dist/bundle.js",
+     "line": 32842,
+     "text": "await fs.writeFile(geminiMdDestPath, geminiMd);"
+    }
+   ]
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": true,
+   "eval": true,
+   "secret_env": 0,
+   "network_calls": false,
+   "fs_write": true
+  },
+  "downloads_last_month": 195702
+ },
+ {
+  "package": "openinputbridge-mcp",
+  "version": "0.1.1",
+  "files_scanned": 5,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "anthropic.com",
+   "claude.com",
+   "github.com",
+   "mozilla.org",
+   "npmjs.com"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [
+    {
+     "file": "dist/bridge.js",
+     "line": 8,
+     "text": "import { spawn } from \"node:child_process\";"
+    }
+   ],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": false,
+   "fs_write": false
+  },
+  "downloads_last_month": 190641
+ },
+ {
+  "package": "@mastra/mcp-docs-server",
+  "version": "1.3.8",
+  "files_scanned": 3,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "discord.gg",
+   "github.com",
+   "mastra.ai",
+   "modelcontextprotocol.io"
+  ],
+  "hosts": [
+   {
+    "host": "mastra.ai",
+    "registrable": "mastra.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/src-Baf8l9Sp.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/src-Baf8l9Sp.js",
+      "line": 456,
+      "comment": false,
+      "text": "const response = await fetch(\"https://mastra.ai/api/course/register\", {"
+     },
+     {
+      "file": "dist/src-Baf8l9Sp.js",
+      "line": 480,
+      "comment": false,
+      "text": "const response = await fetch(\"https://mastra.ai/api/course/update\", {"
+     },
+     {
+      "file": "dist/src-Baf8l9Sp.js",
+      "line": 662,
+      "comment": false,
+      "text": "statusReport += `- Course status Url: **https://mastra.ai/course/${deviceId}**\\n`;"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [
+    {
+     "file": "dist/src-Baf8l9Sp.js",
+     "line": 51,
+     "text": "const cacheDir = path$1.join(os$1.homedir(), \".cache\", \"mastra\", \"mcp-docs-server-logs\");"
+    },
+    {
+     "file": "dist/src-Baf8l9Sp.js",
+     "line": 422,
+     "text": "const cacheDir = path.join(os.homedir(), \".cache\", \"mastra\");"
+    },
+    {
+     "file": "dist/src-Baf8l9Sp.js",
+     "line": 508,
+     "text": "const stateDirPath = path.join(os.homedir(), \".cache\", \"mastra\", \"course\");"
+    },
+    {
+     "file": "dist/src-Baf8l9Sp.js",
+     "line": 1265,
+     "text": "HOME: process.env.HOME"
+    }
+   ],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "dist/src-Baf8l9Sp.js",
+     "line": 456,
+     "text": "const response = await fetch(\"https://mastra.ai/api/course/register\", {"
+    },
+    {
+     "file": "dist/src-Baf8l9Sp.js",
+     "line": 480,
+     "text": "const response = await fetch(\"https://mastra.ai/api/course/update\", {"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "dist/src-Baf8l9Sp.js",
+     "line": 452,
+     "text": "await fs.writeFile(deviceIdPath, toWrite, \"utf-8\");"
+    },
+    {
+     "file": "dist/src-Baf8l9Sp.js",
+     "line": 497,
+     "text": "await fs.writeFile(statePath, JSON.stringify(state, null, 2), \"utf-8\");"
+    },
+    {
+     "file": "dist/src-Baf8l9Sp.js",
+     "line": 770,
+     "text": "await fs.unlink(statePath);"
+    }
+   ]
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 1,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": true,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 157845
+ },
+ {
+  "package": "@ericthered926/duckduckgo-mcp-server",
+  "version": "0.6.0",
+  "files_scanned": 1,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "modelcontextprotocol.io",
+   "npmjs.com",
+   "shields.io"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": false,
+   "fs_write": false
+  },
+  "downloads_last_month": 138436
+ },
+ {
+  "package": "@metamask/device-mcp",
+  "version": "0.5.0",
+  "files_scanned": 224,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "browserstack.com",
+   "fbidb.io",
+   "github.com",
+   "github.io",
+   "modelcontextprotocol.io"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [
+    {
+     "file": "dist/backends/idb-backend.cjs",
+     "line": 18,
+     "text": "const node_child_process_1 = require(\"node:child_process\");"
+    },
+    {
+     "file": "dist/backends/idb-backend.mjs",
+     "line": 13,
+     "text": "import { execFile as execFileCb, spawn } from \"node:child_process\";"
+    },
+    {
+     "file": "dist/backends/adb-backend.cjs",
+     "line": 18,
+     "text": "const node_child_process_1 = require(\"node:child_process\");"
+    },
+    {
+     "file": "dist/backends/adb-backend.mjs",
+     "line": 13,
+     "text": "import { spawn } from \"node:child_process\";"
+    },
+    {
+     "file": "dist/utils/exec.cjs",
+     "line": 6,
+     "text": "const node_child_process_1 = require(\"node:child_process\");"
+    }
+   ],
+   "home_dir": [
+    {
+     "file": "dist/utils/platform.cjs",
+     "line": 148,
+     "text": "const home = process.env.HOME ?? '';"
+    },
+    {
+     "file": "dist/utils/platform.cjs",
+     "line": 203,
+     "text": "const home = process.env.HOME ?? '';"
+    },
+    {
+     "file": "dist/utils/platform.mjs",
+     "line": 139,
+     "text": "const home = process.env.HOME ?? '';"
+    },
+    {
+     "file": "dist/utils/platform.mjs",
+     "line": 194,
+     "text": "const home = process.env.HOME ?? '';"
+    }
+   ],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "dist/backends/webdriver-client.mjs",
+     "line": 76,
+     "text": "const response = await fetch(`${__classPrivateFieldGet(this, _WebDriverClient_baseUrl, \"f\")}/status`, {"
+    },
+    {
+     "file": "dist/backends/webdriver-client.mjs",
+     "line": 106,
+     "text": "const response = await fetch(url, { headers: __classPrivateFieldGet(this, _WebDriverClient_headers, \"f\") });"
+    },
+    {
+     "file": "dist/backends/webdriver-client.mjs",
+     "line": 110,
+     "text": "const response = await fetch(url, {"
+    },
+    {
+     "file": "dist/backends/webdriver-client.mjs",
+     "line": 118,
+     "text": "const response = await fetch(url, {"
+    },
+    {
+     "file": "dist/backends/webdriver-client.mjs",
+     "line": 143,
+     "text": "const response = await fetch(url, {"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": true,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 123616
+ },
+ {
+  "package": "comfyui-mcp",
+  "version": "0.52.206",
+  "files_scanned": 412,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "artokun.io",
+   "comfy.org",
+   "discord.gg",
+   "dstack.ai",
+   "example.com",
+   "github.com",
+   "glama.ai",
+   "install-runpod.sh",
+   "modelcontextprotocol.io",
+   "nodejs.org",
+   "npmjs.com",
+   "runpod.io",
+   "runpod.net",
+   "shields.io"
+  ],
+  "hosts": [
+   {
+    "host": "abcd-3000.proxy.runpod.net",
+    "registrable": "runpod.net",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/transport/cli.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/transport/cli.js",
+      "line": 231,
+      "comment": false,
+      "text": "\"Pass a full http(s) URL, e.g. https://abcd-3000.proxy.runpod.net or http://127.0.0.1:8188.\", { url, reason });"
+     }
+    ]
+   },
+   {
+    "host": "abcdef0123456789abcdef0123456789.trycloudflare.com",
+    "registrable": "trycloudflare.com",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/comfyui/fetch.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/comfyui/fetch.js",
+      "line": 164,
+      "comment": true,
+      "text": "// `http://abcdef0123456789abcdef0123456789.trycloudflare.com` has a 32-char"
+     }
+    ]
+   },
+   {
+    "host": "api.atlascloud.ai",
+    "registrable": "atlascloud.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/code-provider-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/code-provider-auth.js",
+      "line": 35,
+      "comment": false,
+      "text": "export const ATLASCLOUD_DEFAULT_BASE = \"https://api.atlascloud.ai/v1\";"
+     }
+    ]
+   },
+   {
+    "host": "api.comfy.org",
+    "registrable": "comfy.org",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/services/process-control.js",
+     "dist/services/registry-client.js",
+     "dist/services/skill-generator.js",
+     "scripts/gen-manager-name-collisions.mjs"
+    ],
+    "evidence": [
+     {
+      "file": "scripts/gen-manager-name-collisions.mjs",
+      "line": 155,
+      "comment": false,
+      "text": "const res = await fetch(`https://api.comfy.org/nodes?page=${page}&limit=100`);"
+     },
+     {
+      "file": "dist/services/process-control.js",
+      "line": 2173,
+      "comment": true,
+      "text": "// without being a path \u2014 `--comfy-api-base https://api.comfy.org` is not"
+     },
+     {
+      "file": "dist/services/skill-generator.js",
+      "line": 96,
+      "comment": false,
+      "text": "const url = `https://api.comfy.org/nodes/${encodeURIComponent(registryId)}`;"
+     }
+    ]
+   },
+   {
+    "host": "api.githubcopilot.com",
+    "registrable": "githubcopilot.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/orchestrator/copilot-backend.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/orchestrator/copilot-backend.js",
+      "line": 67,
+      "comment": false,
+      "text": "\"https://api.githubcopilot.com\";"
+     }
+    ]
+   },
+   {
+    "host": "api.kimi.ai",
+    "registrable": "kimi.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/code-provider-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/code-provider-auth.js",
+      "line": 224,
+      "comment": false,
+      "text": "const KIMI_CODE_GLOBAL_BASE = \"https://api.kimi.ai/coding/v1\";"
+     }
+    ]
+   },
+   {
+    "host": "api.kimi.com",
+    "registrable": "kimi.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/code-provider-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/code-provider-auth.js",
+      "line": 15,
+      "comment": true,
+      "text": "* The old constant was `https://api.kimi.com/oauth/token`, which does not exist"
+     },
+     {
+      "file": "dist/services/code-provider-auth.js",
+      "line": 32,
+      "comment": false,
+      "text": "export const KIMI_CODE_DEFAULT_BASE = \"https://api.kimi.com/coding/v1\";"
+     }
+    ]
+   },
+   {
+    "host": "api.minimax.io",
+    "registrable": "minimax.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/code-provider-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/code-provider-auth.js",
+      "line": 34,
+      "comment": false,
+      "text": "export const MINIMAX_DEFAULT_BASE = \"https://api.minimax.io/v1\";"
+     },
+     {
+      "file": "dist/services/code-provider-auth.js",
+      "line": 481,
+      "comment": true,
+      "text": "* /v1/chat/completions at the global endpoint (https://api.minimax.io/v1);"
+     }
+    ]
+   },
+   {
+    "host": "api.minimaxi.com",
+    "registrable": "minimaxi.com",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/code-provider-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/code-provider-auth.js",
+      "line": 483,
+      "comment": true,
+      "text": "* (https://api.minimaxi.com/v1) or any other OpenAI-compatible host. Auth is a"
+     }
+    ]
+   },
+   {
+    "host": "api.moonshot.ai",
+    "registrable": "moonshot.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/orchestrator/rate-limit.js",
+     "dist/services/code-provider-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/code-provider-auth.js",
+      "line": 33,
+      "comment": false,
+      "text": "export const MOONSHOT_DEFAULT_BASE = \"https://api.moonshot.ai/v1\";"
+     },
+     {
+      "file": "dist/orchestrator/rate-limit.js",
+      "line": 9,
+      "comment": true,
+      "text": "//   \u26a0\ufe0f The kimi-k3 turn failed: ollama backend: https://api.moonshot.ai/v1/chat/"
+     }
+    ]
+   },
+   {
+    "host": "api.runpod.io",
+    "registrable": "runpod.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/services/runpod-client.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/runpod-client.js",
+      "line": 16,
+      "comment": false,
+      "text": "const RUNPOD_GRAPHQL_ENDPOINT = \"https://api.runpod.io/graphql\";"
+     }
+    ]
+   },
+   {
+    "host": "api.x.ai",
+    "registrable": "x.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/orchestrator/grok-backend.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/orchestrator/grok-backend.js",
+      "line": 408,
+      "comment": true,
+      "text": "* HTTP adapter hitting `https://api.x.ai/v1`, reusing the same 6-tool router as"
+     },
+     {
+      "file": "dist/orchestrator/grok-backend.js",
+      "line": 1080,
+      "comment": true,
+      "text": "// Hits `https://api.x.ai/v1/responses` with the OAuth bearer resolved from"
+     },
+     {
+      "file": "dist/orchestrator/grok-backend.js",
+      "line": 1109,
+      "comment": false,
+      "text": "export const GROK_XAI_API_BASE = \"https://api.x.ai/v1\";"
+     }
+    ]
+   },
+   {
+    "host": "api.z.ai",
+    "registrable": "z.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/code-provider-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/code-provider-auth.js",
+      "line": 31,
+      "comment": false,
+      "text": "export const GLM_CODE_DEFAULT_BASE = \"https://api.z.ai/api/coding/paas/v4\";"
+     }
+    ]
+   },
+   {
+    "host": "auth.kimi.ai",
+    "registrable": "kimi.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/code-provider-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/code-provider-auth.js",
+      "line": 30,
+      "comment": false,
+      "text": "const KIMI_OAUTH_TOKEN_URL_GLOBAL = \"https://auth.kimi.ai/api/oauth/token\";"
+     }
+    ]
+   },
+   {
+    "host": "auth.kimi.com",
+    "registrable": "kimi.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/code-provider-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/code-provider-auth.js",
+      "line": 29,
+      "comment": false,
+      "text": "const KIMI_OAUTH_TOKEN_URL_MAINLAND = \"https://auth.kimi.com/api/oauth/token\";"
+     }
+    ]
+   },
+   {
+    "host": "auth.x.ai",
+    "registrable": "x.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/oauth-flow.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/oauth-flow.js",
+      "line": 289,
+      "comment": false,
+      "text": "authorizeUrl: \"https://auth.x.ai/oauth2/authorize\","
+     },
+     {
+      "file": "dist/services/oauth-flow.js",
+      "line": 290,
+      "comment": false,
+      "text": "tokenUrl: \"https://auth.x.ai/oauth2/token\","
+     }
+    ]
+   },
+   {
+    "host": "chatgpt.com",
+    "registrable": "chatgpt.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/orchestrator/chatgpt-oauth-backend.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/orchestrator/chatgpt-oauth-backend.js",
+      "line": 14,
+      "comment": false,
+      "text": "const CODEX_RESPONSES_URL = \"https://chatgpt.com/backend-api/codex/responses\";"
+     }
+    ]
+   },
+   {
+    "host": "civitai.com",
+    "registrable": "civitai.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/civitai-resolver.js",
+     "dist/services/download-failure-hint.js",
+     "dist/services/model-resolver.js",
+     "dist/tools/model-explorer.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/tools/model-explorer.js",
+      "line": 56,
+      "comment": false,
+      "text": "const res = await fetch(`https://civitai.com/api/v1/model-versions/${versionId}`, {"
+     },
+     {
+      "file": "dist/tools/model-explorer.js",
+      "line": 75,
+      "comment": false,
+      "text": "? `https://civitai.com/models/${modelId}?modelVersionId=${versionId}`"
+     },
+     {
+      "file": "dist/tools/model-explorer.js",
+      "line": 76,
+      "comment": false,
+      "text": ": `https://civitai.com/api/v1/model-versions/${versionId}`,"
+     }
+    ]
+   },
+   {
+    "host": "cloud.comfy.org",
+    "registrable": "comfy.org",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/comfyui/cloud-client.js",
+     "dist/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/config.js",
+      "line": 498,
+      "comment": false,
+      "text": "comfyuiCloudUrl: z.string().default(\"https://cloud.comfy.org\"),"
+     },
+     {
+      "file": "dist/comfyui/cloud-client.js",
+      "line": 3,
+      "comment": true,
+      "text": "// `uploadImageHttp`, etc.) but talks to https://cloud.comfy.org over HTTPS"
+     }
+    ]
+   },
+   {
+    "host": "cmcp-apps-registry.artokun.workers.dev",
+    "registrable": "workers.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/tools/apps.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/tools/apps.js",
+      "line": 62,
+      "comment": false,
+      "text": "return [\"https://cmcp-apps-registry.artokun.workers.dev\", ...extra];"
+     }
+    ]
+   },
+   {
+    "host": "comfy.org",
+    "registrable": "comfy.org",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/tools/report-issue.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/tools/report-issue.js",
+      "line": 444,
+      "comment": false,
+      "text": "comfy_agent: \"https://comfy.org/agent\","
+     },
+     {
+      "file": "dist/tools/report-issue.js",
+      "line": 446,
+      "comment": false,
+      "text": "comfy_mcp: \"https://comfy.org/mcp/\","
+     }
+    ]
+   },
+   {
+    "host": "comfyui-mcp-issue-worker.artokun.workers.dev",
+    "registrable": "workers.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/tools/report-issue.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/tools/report-issue.js",
+      "line": 18,
+      "comment": false,
+      "text": "const DEFAULT_WORKER_URL = \"https://comfyui-mcp-issue-worker.artokun.workers.dev\";"
+     }
+    ]
+   },
+   {
+    "host": "console.runpod.io",
+    "registrable": "runpod.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/services/runpod-client.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/runpod-client.js",
+      "line": 38,
+      "comment": false,
+      "text": "return `https://console.runpod.io/deploy?template=${RUNPOD_TEMPLATE_ID}&ref=${RUNPOD_REF_CODE}`;"
+     }
+    ]
+   },
+   {
+    "host": "docs.comfy.org",
+    "registrable": "comfy.org",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/services/node-authoring.js",
+     "dist/tools/report-issue.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/tools/report-issue.js",
+      "line": 445,
+      "comment": false,
+      "text": "docs: \"https://docs.comfy.org/agent-tools\","
+     },
+     {
+      "file": "dist/services/node-authoring.js",
+      "line": 15,
+      "comment": true,
+      "text": "// (https://docs.comfy.org/registry/publishing) and the custom-node walkthrough"
+     },
+     {
+      "file": "dist/services/node-authoring.js",
+      "line": 16,
+      "comment": true,
+      "text": "// (https://docs.comfy.org/custom-nodes/walkthrough):"
+     }
+    ]
+   },
+   {
+    "host": "download.pytorch.org",
+    "registrable": "pytorch.org",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/trainer-bootstrap.js",
+     "dist/tools/train.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/tools/train.js",
+      "line": 587,
+      "comment": false,
+      "text": "\"./venv/bin/python -m pip install --no-cache-dir torch==2.9.1 torchvision==0.24.1 torchaudio==2.9.1 --index-url https://download.pytorch.org/whl/cu128\","
+     },
+     {
+      "file": "dist/services/trainer-bootstrap.js",
+      "line": 15,
+      "comment": false,
+      "text": "const TORCH_INDEX = \"https://download.pytorch.org/whl/cu128\";"
+     }
+    ]
+   },
+   {
+    "host": "gpu-cli.sh",
+    "registrable": "gpu-cli.sh",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/runpod-client.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/runpod-client.js",
+      "line": 31,
+      "comment": true,
+      "text": "*  gpu-cli (https://gpu-cli.sh), a great cloud-GPU CLI. Surfaced in the control"
+     },
+     {
+      "file": "dist/services/runpod-client.js",
+      "line": 33,
+      "comment": false,
+      "text": "export const GPU_CLI_URL = \"https://gpu-cli.sh\";"
+     }
+    ]
+   },
+   {
+    "host": "hf-mirror.com",
+    "registrable": "hf-mirror.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/model-resolver.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/model-resolver.js",
+      "line": 182,
+      "comment": false,
+      "text": "\"(e.g. https://hf-mirror.com) and retry.\","
+     },
+     {
+      "file": "dist/services/model-resolver.js",
+      "line": 1051,
+      "comment": true,
+      "text": "*  mirror var (e.g. https://hf-mirror.com) by rewriting huggingface.co URLs at"
+     }
+    ]
+   },
+   {
+    "host": "huggingface.co",
+    "registrable": "huggingface.co",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/missing-models.js",
+     "dist/services/model-resolver.js",
+     "dist/services/storage/hf.js",
+     "dist/services/upscale-image.js",
+     "dist/tools/missing-models.js"
+    ],
+    "evidence": [
+     {
+      "file": "scripts/tool-doc-examples.ts",
+      "line": 662,
+      "comment": false,
+      "text": "url: \"https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/flux1-schnell.safetensors\","
+     },
+     {
+      "file": "scripts/sync-agents.mjs",
+      "line": 157,
+      "comment": false,
+      "text": "url: \"https://huggingface.co/mcp\","
+     },
+     {
+      "file": "dist/tools/missing-models.js",
+      "line": 46,
+      "comment": false,
+      "text": "const res = await fetch(`https://huggingface.co/api/models/${path}/tree/main`, {"
+     }
+    ]
+   },
+   {
+    "host": "huggingface.co.evil.com",
+    "registrable": "evil.com",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/services/model-resolver.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/services/model-resolver.js",
+      "line": 1037,
+      "comment": true,
+      "text": "* `https://huggingface.co.evil.com/...` both parse to a non-HF host and get NO token"
+     }
+    ]
+   },
+   {
+    "host": "mcp.civitai.com",
+    "registrable": "civitai.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/orchestrator/panel-tools.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/orchestrator/panel-tools.js",
+      "line": 20169,
+      "comment": false,
+      "text": "def(\"panel_add_mcp\", \"Write a new MCP server into the user's Claude config (~/.claude.json), where their normal `claude` session and this panel's Claude backend"
+     }
+    ]
+   },
+   {
+    "host": "ollama.com",
+    "registrable": "ollama.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/orchestrator/ollama-backend.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/orchestrator/ollama-backend.js",
+      "line": 916,
+      "comment": false,
+      "text": ": `Ollama is not reachable at ${this.host} (${msgOf(err)}). Start it with \\`ollama serve\\` (install: https://ollama.com/download), then \\`ollama pull ${this.mod"
+     }
+    ]
+   },
+   {
+    "host": "openrouter.ai",
+    "registrable": "openrouter.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/orchestrator/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/orchestrator/index.js",
+      "line": 1400,
+      "comment": false,
+      "text": "const OPENROUTER_BASE_URL = \"https://openrouter.ai/api/v1\";"
+     },
+     {
+      "file": "dist/orchestrator/index.js",
+      "line": 4180,
+      "comment": false,
+      "text": "\"or set the OPENROUTER_API_KEY environment variable and restart the orchestrator. Keys: https://openrouter.ai/keys\")}`,"
+     }
+    ]
+   },
+   {
+    "host": "pi.dev",
+    "registrable": "pi.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/orchestrator/index.js",
+     "dist/orchestrator/pi-backend.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/orchestrator/index.js",
+      "line": 4198,
+      "comment": false,
+      "text": "\"a models.json provider with no `apiKey`, or GOOGLE_APPLICATION_CREDENTIALS pointing at a missing file cannot authenticate. https://pi.dev\")}`,"
+     },
+     {
+      "file": "dist/orchestrator/index.js",
+      "line": 4321,
+      "comment": false,
+      "text": "? dtr(\"pi\", \"The background agent isn't responding \u2014 the pi CLI couldn't run `pi --list-models`. Install it from https://pi.dev (`curl -fsSL https://pi.dev/inst"
+     },
+     {
+      "file": "dist/orchestrator/pi-backend.js",
+      "line": 3,
+      "comment": true,
+      "text": "// coding agent from earendil-works (https://pi.dev). Unlike codex/gemini (ACP /"
+     }
+    ]
+   },
+   {
+    "host": "registry.comfy.org",
+    "registrable": "comfy.org",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/services/node-authoring.js",
+     "dist/tools/registry-search.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/tools/registry-search.js",
+      "line": 119,
+      "comment": false,
+      "text": "`- \u2026and ${details.versions.length - 5} older version(s) not shown (fixed 5-version preview \u2014 full history at https://registry.comfy.org/)`,"
+     },
+     {
+      "file": "dist/services/node-authoring.js",
+      "line": 471,
+      "comment": false,
+      "text": "\"https://registry.comfy.org and export it as REGISTRY_ACCESS_TOKEN before publishing.\");"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "scripts/run-checks.mjs",
+     "line": 3,
+     "text": "import { spawnSync } from \"node:child_process\";"
+    },
+    {
+     "file": "scripts/run-checks.mjs",
+     "line": 36,
+     "text": "const result = spawnSync(check.cmd, check.args, {"
+    },
+    {
+     "file": "scripts/codex-parity-smoke.mjs",
+     "line": 13,
+     "text": "import { spawn } from \"node:child_process\";"
+    },
+    {
+     "file": "scripts/codex-comfyui-mcp-check.mjs",
+     "line": 4,
+     "text": "import { spawn } from \"node:child_process\";"
+    },
+    {
+     "file": "scripts/test-agent.mjs",
+     "line": 14,
+     "text": "import { spawn } from \"node:child_process\";"
+    }
+   ],
+   "home_dir": [
+    {
+     "file": "dist/config.js",
+     "line": 22,
+     "text": "const homeEnvPath = join(homedir(), \".comfyui-mcp\", \".env\");"
+    },
+    {
+     "file": "dist/config.js",
+     "line": 98,
+     "text": "const home = homedir();"
+    },
+    {
+     "file": "dist/config.js",
+     "line": 149,
+     "text": "const home = homedir();"
+    },
+    {
+     "file": "dist/config.js",
+     "line": 545,
+     "text": "const keyFile = join(homedir(), \".comfy-api-key\");"
+    },
+    {
+     "file": "dist/config.js",
+     "line": 711,
+     "text": "return process.env.COMFYUI_MCP_LOCAL_TARGET_FILE || join(homedir(), \".comfyui-mcp\", \"local-target.json\");"
+    }
+   ],
+   "secret_env": [
+    {
+     "file": "dist/config.js",
+     "line": 518,
+     "text": "const cloudApiKey = process.env.COMFYUI_API_KEY?.trim() || undefined;"
+    },
+    {
+     "file": "dist/config.js",
+     "line": 541,
+     "text": "const env = process.env.COMFY_API_KEY;"
+    },
+    {
+     "file": "dist/config.js",
+     "line": 576,
+     "text": "comfyuiAuthToken: process.env.COMFYUI_AUTH_TOKEN,"
+    },
+    {
+     "file": "dist/config.js",
+     "line": 578,
+     "text": "cfAccessClientSecret: process.env.CF_ACCESS_CLIENT_SECRET,"
+    },
+    {
+     "file": "dist/config.js",
+     "line": 581,
+     "text": "huggingfaceToken: process.env.HF_TOKEN || process.env.HUGGINGFACE_TOKEN,"
+    }
+   ],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "dist/config.js",
+     "line": 410,
+     "text": "res = await fetch(target, {"
+    },
+    {
+     "file": "dist/config.js",
+     "line": 421,
+     "text": "res = await fetch(fallback, {"
+    },
+    {
+     "file": "scripts/verify-render.mjs",
+     "line": 42,
+     "text": "const objectInfo = await fetch(`${COMFY}/object_info`).then((r) => r.json());"
+    },
+    {
+     "file": "scripts/verify-render.mjs",
+     "line": 48,
+     "text": "const r = await fetch(`${COMFY}/object_info/${encodeURIComponent(t)}`);"
+    },
+    {
+     "file": "scripts/verify-render.mjs",
+     "line": 70,
+     "text": "const res = await fetch(`${COMFY}/prompt`, {"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "scripts/i18n-build-en.mjs",
+     "line": 815,
+     "text": "fs.writeFileSync(path.join(outDir, \"main.json\"), serialized);"
+    },
+    {
+     "file": "scripts/sync-agents.mjs",
+     "line": 60,
+     "text": "fs.writeFileSync(destPath, newContent, 'utf8');"
+    },
+    {
+     "file": "scripts/sync-agents.mjs",
+     "line": 127,
+     "text": "fs.writeFileSync(destPath, tomlContent, 'utf8');"
+    },
+    {
+     "file": "scripts/sync-agents.mjs",
+     "line": 141,
+     "text": "fs.writeFileSync(hooksDest, hooksContent, 'utf8');"
+    },
+    {
+     "file": "scripts/sync-agents.mjs",
+     "line": 164,
+     "text": "fs.writeFileSync(mcpConfigPath, JSON.stringify(mcpConfig, null, 2), 'utf8');"
+    }
+   ]
+  },
+  "secret_env_names": [
+   "ANTHROPIC_API_KEY",
+   "AWS_ACCESS_KEY_ID",
+   "AWS_CONTAINER_CREDENTIALS_FULL_URI",
+   "AWS_CONTAINER_CREDENTIALS_RELATIVE_URI",
+   "AWS_SECRET_ACCESS_KEY",
+   "AWS_SESSION_TOKEN",
+   "AWS_SHARED_CREDENTIALS_FILE",
+   "AWS_WEB_IDENTITY_TOKEN_FILE",
+   "AZURE_STORAGE_KEY",
+   "BAILIAN_CODING_PLAN_API_KEY",
+   "CF_ACCESS_CLIENT_SECRET",
+   "CIVITAI_API_TOKEN",
+   "COMFYUI_API_KEY",
+   "COMFYUI_AUTH_TOKEN",
+   "COMFYUI_MCP_AGENT_TOKEN",
+   "COMFYUI_MCP_BRIDGE_TOKEN",
+   "COMFYUI_MCP_COPILOT_TOKEN_URL",
+   "COMFYUI_MCP_CUSTOM_API_KEY",
+   "COMFYUI_MCP_MANIFEST_OUTCOME_SECRET",
+   "COMFYUI_MCP_OLLAMA_API_KEY",
+   "COMFYUI_MCP_OLLAMA_MAX_TOKENS",
+   "COMFYUI_MCP_PAIR_TOKEN",
+   "COMFYUI_MCP_PAIR_TOKEN_FILE",
+   "COMFYUI_MCP_PANEL_SECRETS",
+   "COMFYUI_MCP_RELAY_KEY",
+   "COMFYUI_MCP_RELAY_SECRET",
+   "COMFY_API_KEY",
+   "DASHSCOPE_API_KEY",
+   "GEMINI_API_KEY",
+   "GITHUB_TOKEN",
+   "HF_TOKEN",
+   "KIMI_API_KEY",
+   "OPENROUTER_API_KEY"
+  ],
+  "summary": {
+   "hosts_in_code": 31,
+   "undocumented_hosts_in_code": [
+    "atlascloud.ai",
+    "chatgpt.com",
+    "civitai.com",
+    "githubcopilot.com",
+    "gpu-cli.sh",
+    "hf-mirror.com",
+    "huggingface.co",
+    "kimi.ai",
+    "kimi.com",
+    "minimax.io",
+    "moonshot.ai",
+    "ollama.com",
+    "openrouter.ai",
+    "pi.dev",
+    "pytorch.org",
+    "workers.dev",
+    "x.ai",
+    "z.ai"
+   ],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": true,
+   "eval": false,
+   "secret_env": 33,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 117113
+ },
+ {
+  "package": "@drawio/mcp",
+  "version": "1.10.0",
+  "files_scanned": 18,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "cursor.com",
+   "diagrams.net",
+   "draw.io",
+   "example.com",
+   "github.com",
+   "modelcontextprotocol.io",
+   "opencode.ai"
+  ],
+  "hosts": [
+   {
+    "host": "app.diagrams.net",
+    "registrable": "diagrams.net",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "src/index.js",
+     "src/shape-search.js"
+    ],
+    "evidence": [
+     {
+      "file": "src/shape-search.js",
+      "line": 127,
+      "comment": false,
+      "text": "var IMAGE_BASE_URL = \"https://app.diagrams.net/\";"
+     },
+     {
+      "file": "src/index.js",
+      "line": 19,
+      "comment": false,
+      "text": "const DRAWIO_BASE_URL = process.env.DRAWIO_BASE_URL || \"https://app.diagrams.net/\";"
+     }
+    ]
+   },
+   {
+    "host": "icons.diagrams.net",
+    "registrable": "diagrams.net",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "src/icon-search.js"
+    ],
+    "evidence": [
+     {
+      "file": "src/icon-search.js",
+      "line": 17,
+      "comment": false,
+      "text": "export var DEFAULT_ICON_SERVICE_URL = \"https://icons.diagrams.net/api/icons\";"
+     }
+    ]
+   },
+   {
+    "host": "viewer.diagrams.net",
+    "registrable": "diagrams.net",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "src/cdn-cache.js"
+    ],
+    "evidence": [
+     {
+      "file": "src/cdn-cache.js",
+      "line": 42,
+      "comment": false,
+      "text": "url: \"https://viewer.diagrams.net/js/libavoid-js/libavoid-routing.js\","
+     },
+     {
+      "file": "src/cdn-cache.js",
+      "line": 51,
+      "comment": false,
+      "text": "\"https://viewer.diagrams.net/js/elk/drawio-elk.min.js\","
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "src/index.js",
+     "line": 12,
+     "text": "import { spawn } from \"child_process\";"
+    }
+   ],
+   "home_dir": [
+    {
+     "file": "src/cdn-cache.js",
+     "line": 83,
+     "text": "base = join(homedir(), \"Library\", \"Caches\");"
+    },
+    {
+     "file": "src/cdn-cache.js",
+     "line": 87,
+     "text": "base = process.env.LOCALAPPDATA || join(homedir(), \"AppData\", \"Local\");"
+    },
+    {
+     "file": "src/cdn-cache.js",
+     "line": 91,
+     "text": "base = join(homedir(), \".cache\");"
+    }
+   ],
+   "secret_env": [],
+   "eval": [
+    {
+     "file": "vendor/libavoid/libavoid-node.mjs",
+     "line": 16,
+     "text": "${l}`;let[v,y]=[p,l];return t=new Function(...v,y)(...n),we(e,t)}for(var je=(e,t)=>{for(var r=[],n=0;n<e;n++)r.push(h[t+4*n>>2]);return r},Ot=e=>{e=e.trim();let"
+    },
+    {
+     "file": "vendor/libavoid/libavoid-node.mjs",
+     "line": 20,
+     "text": "`),e=new Function(...s,i+`};"
+    }
+   ],
+   "network_calls": [
+    {
+     "file": "src/cdn-cache.js",
+     "line": 188,
+     "text": "var res = await fetch(source.url,"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 3,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": true,
+   "eval": true,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 116312
+ },
+ {
+  "package": "@winor30/mcp-server-datadog",
+  "version": "1.8.0",
+  "files_scanned": 1,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "codecov.io",
+   "datadoghq.eu",
+   "github.com",
+   "glama.ai",
+   "shields.io",
+   "smithery.ai"
+  ],
+  "hosts": [
+   {
+    "host": "app.datadoghq.com",
+    "registrable": "datadoghq.com",
+    "in_code": true,
+    "telemetry": true,
+    "documented": false,
+    "files": [
+     "build/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/index.js",
+      "line": 429,
+      "comment": false,
+      "text": "url: `https://app.datadoghq.com/dashboard/${dashboard.id}`"
+     },
+     {
+      "file": "build/index.js",
+      "line": 705,
+      "comment": false,
+      "text": "url: `https://app.datadoghq.com/infrastructure?host=${host.name}`"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "build/index.js",
+     "line": 1137,
+     "text": "if (!process.env.DATADOG_API_KEY || !process.env.DATADOG_APP_KEY) {"
+    },
+    {
+     "file": "build/index.js",
+     "line": 1141,
+     "text": "apiKeyAuth: process.env.DATADOG_API_KEY,"
+    },
+    {
+     "file": "build/index.js",
+     "line": 1142,
+     "text": "appKeyAuth: process.env.DATADOG_APP_KEY,"
+    }
+   ],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "DATADOG_API_KEY",
+   "DATADOG_APP_KEY"
+  ],
+  "summary": {
+   "hosts_in_code": 1,
+   "undocumented_hosts_in_code": [
+    "datadoghq.com"
+   ],
+   "telemetry_hosts": [
+    "app.datadoghq.com"
+   ],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 2,
+   "network_calls": false,
+   "fs_write": false
+  },
+  "downloads_last_month": 113345
+ },
+ {
+  "package": "@transcend-io/mcp-server-admin",
+  "version": "1.1.3",
+  "files_scanned": 5,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "transcend.io"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": false,
+   "fs_write": false
+  },
+  "downloads_last_month": 88742
+ },
+ {
+  "package": "@shortcut/mcp",
+  "version": "0.25.0",
+  "files_scanned": 4,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "shields.io",
+   "shortcut.com",
+   "twitter.com"
+  ],
+  "hosts": [
+   {
+    "host": "mcp.shortcut.com",
+    "registrable": "shortcut.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/server.js",
+     "dist/workflows-BkfU2W9x.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/workflows-BkfU2W9x.js",
+      "line": 639,
+      "comment": false,
+      "text": "const DEPRECATION_NOTICE = \"\u26a0\ufe0f DEPRECATED: This self-hosted Shortcut MCP server is deprecated and no longer maintained. Please migrate to the official hosted se"
+     },
+     {
+      "file": "dist/server.js",
+      "line": 37,
+      "comment": false,
+      "text": "console.error(\"\u26a0\ufe0f DEPRECATED: This self-hosted Shortcut MCP server is deprecated and no longer maintained. Please migrate to the official hosted server at https"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "dist/server.js",
+     "line": 6,
+     "text": "let apiToken = process.env.SHORTCUT_API_TKN || process.env.SHORTCUT_API_TOKEN;"
+    }
+   ],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "SHORTCUT_API_TOKEN"
+  ],
+  "summary": {
+   "hosts_in_code": 1,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 1,
+   "network_calls": false,
+   "fs_write": false
+  },
+  "downloads_last_month": 76505
+ },
+ {
+  "package": "@eslint/mcp",
+  "version": "0.3.15",
+  "files_scanned": 2,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "1password.com",
+   "algolia.com",
+   "citadel-ai.com",
+   "coderabbit.ai",
+   "cybozu.co.jp",
+   "discord.com",
+   "eslint.org",
+   "forceindexer.com",
+   "gitbook.com",
+   "github.com",
+   "githubusercontent.com",
+   "liftoff.io",
+   "modelcontextprotocol.io",
+   "netlify.com",
+   "opencollective.com",
+   "qlty.sh",
+   "sap.com",
+   "stackblitz.com",
+   "testmuai.com",
+   "visualstudio.com",
+   "vite.dev"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": false,
+   "fs_write": false
+  },
+  "downloads_last_month": 71334
+ },
+ {
+  "package": "@turbopuffer/turbopuffer-mcp",
+  "version": "2.7.0",
+  "files_scanned": 67,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "cursor.com",
+   "github.com",
+   "modelcontextprotocol.io",
+   "stainless.com",
+   "stlmcp.com"
+  ],
+  "hosts": [
+   {
+    "host": "api.stainless.com",
+    "registrable": "stainless.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "code-tool.js",
+     "code-tool.mjs",
+     "instructions.js",
+     "instructions.mjs",
+     "src/code-tool.ts"
+    ],
+    "evidence": [
+     {
+      "file": "instructions.js",
+      "line": 48,
+      "comment": false,
+      "text": "const response = await fetch((0, util_1.readEnv)('CODE_MODE_INSTRUCTIONS_URL') ?? 'https://api.stainless.com/api/ai/instructions/turbopuffer', {"
+     },
+     {
+      "file": "code-tool.mjs",
+      "line": 103,
+      "comment": false,
+      "text": "const codeModeEndpoint = readEnv('CODE_MODE_ENDPOINT_URL') ?? 'https://api.stainless.com/api/ai/code-tool';"
+     },
+     {
+      "file": "code-tool.js",
+      "line": 139,
+      "comment": false,
+      "text": "const codeModeEndpoint = (0, util_1.readEnv)('CODE_MODE_ENDPOINT_URL') ?? 'https://api.stainless.com/api/ai/code-tool';"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "code-tool.mjs",
+     "line": 160,
+     "text": "execSync('command -v deno', { stdio: 'ignore' });"
+    },
+    {
+     "file": "code-tool.js",
+     "line": 194,
+     "text": "const { execSync } = await Promise.resolve().then(() => __importStar(require('node:child_process')));"
+    },
+    {
+     "file": "code-tool.js",
+     "line": 196,
+     "text": "execSync('command -v deno', { stdio: 'ignore' });"
+    },
+    {
+     "file": "src/code-tool.ts",
+     "line": 230,
+     "text": "execSync('command -v deno', { stdio: 'ignore' });"
+    }
+   ],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "instructions.js",
+     "line": 48,
+     "text": "const response = await fetch((0, util_1.readEnv)('CODE_MODE_INSTRUCTIONS_URL') ?? 'https://api.stainless.com/api/ai/instructions/turbopuffer', {"
+    },
+    {
+     "file": "docs-search-tool.mjs",
+     "line": 60,
+     "text": "const result = await fetch(`${docsSearchURL}?${query}`, {"
+    },
+    {
+     "file": "code-tool.mjs",
+     "line": 112,
+     "text": "const res = await fetch(codeModeEndpoint, {"
+    },
+    {
+     "file": "code-tool.js",
+     "line": 148,
+     "text": "const res = await fetch(codeModeEndpoint, {"
+    },
+    {
+     "file": "local-docs-search.mjs",
+     "line": 674,
+     "text": "content: \"# Turbopuffer TypeScript API Library\\n\\n[![NPM version](https://img.shields.io/npm/v/@turbopuffer/turbopuffer.svg?label=npm%20(stable))](https://npmjs"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 1,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 70801
+ },
+ {
+  "package": "@vantasdk/vanta-mcp-server",
+  "version": "1.2.0",
+  "files_scanned": 28,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "modelcontextprotocol.com",
+   "modelcontextprotocol.io",
+   "vanta.com"
+  ],
+  "hosts": [
+   {
+    "host": "api.vanta.com",
+    "registrable": "vanta.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "build/api.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/api.js",
+      "line": 1,
+      "comment": false,
+      "text": "export const BASE_API_URL = \"https://api.vanta.com\";"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "build/eval/eval.js",
+     "line": 591,
+     "text": "apiKey: process.env.OPENAI_API_KEY,"
+    }
+   ],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "build/auth.js",
+     "line": 43,
+     "text": "const response = await fetch(`${BASE_API_URL}/oauth/token`, {"
+    },
+    {
+     "file": "build/operations/common/utils.js",
+     "line": 26,
+     "text": "let response = await fetch(url, requestOptions);"
+    },
+    {
+     "file": "build/operations/common/utils.js",
+     "line": 39,
+     "text": "response = await fetch(url, retryOptions);"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "OPENAI_API_KEY"
+  ],
+  "summary": {
+   "hosts_in_code": 1,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 1,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 70088
+ },
+ {
+  "package": "@claude-flow/mcp",
+  "version": "3.1.1",
+  "files_scanned": 17,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "modelcontextprotocol.io",
+   "npmjs.com",
+   "opensource.org",
+   "shields.io",
+   "typescriptlang.org",
+   "your-domain.com"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "dist/oauth.js",
+     "line": 99,
+     "text": "const response = await fetch(this.config.tokenEndpoint, {"
+    },
+    {
+     "file": "dist/oauth.js",
+     "line": 134,
+     "text": "const response = await fetch(this.config.tokenEndpoint, {"
+    },
+    {
+     "file": "dist/sampling.js",
+     "line": 238,
+     "text": "const response = await fetch('https://api.anthropic.com/v1/messages', {"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 66131
+ },
+ {
+  "package": "@primer/mcp",
+  "version": "1.1.1",
+  "files_scanned": 10,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "shields.io",
+   "vscode.dev"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [
+    {
+     "file": "dist/server-malh_dny.js",
+     "line": 9,
+     "text": "import { spawn } from \"child_process\";"
+    },
+    {
+     "file": "src/primitives.ts",
+     "line": 3,
+     "text": "import {spawn} from 'child_process'"
+    }
+   ],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "dist/server-malh_dny.js",
+     "line": 736,
+     "text": "const response = await fetch(url);"
+    },
+    {
+     "file": "dist/server-malh_dny.js",
+     "line": 789,
+     "text": "const llmsResponse = await fetch(llmsUrl);"
+    },
+    {
+     "file": "dist/server-malh_dny.js",
+     "line": 824,
+     "text": "const llmsResponse = await fetch(llmsUrl, { signal: controller.signal });"
+    },
+    {
+     "file": "dist/server-malh_dny.js",
+     "line": 851,
+     "text": "const response = await fetch(url);"
+    },
+    {
+     "file": "dist/server-malh_dny.js",
+     "line": 877,
+     "text": "const response = await fetch(url);"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 65900
+ },
+ {
+  "package": "exa-mcp-server",
+  "version": "3.4.2",
+  "files_scanned": 1,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "agent-plugins.org",
+   "chatgpt.com",
+   "claude.com",
+   "cursor.com",
+   "demolab.com",
+   "exa.ai",
+   "github.com",
+   "lmstudio.ai",
+   "npmjs.com",
+   "replit.com",
+   "shields.io",
+   "v0.app",
+   "vscode.dev"
+  ],
+  "hosts": [
+   {
+    "host": "api.agnost.ai",
+    "registrable": "agnost.ai",
+    "in_code": true,
+    "telemetry": true,
+    "documented": false,
+    "files": [
+     "dist/stdio.cjs"
+    ],
+    "evidence": [
+     {
+      "file": "dist/stdio.cjs",
+      "line": 40363,
+      "comment": false,
+      "text": "var ge = { endpoint: \"https://api.agnost.ai\", disableInput: false, disableOutput: false, disableError: false, disableLogs: false, enableRequestQueuing: true, ba"
+     },
+     {
+      "file": "dist/stdio.cjs",
+      "line": 45568,
+      "comment": false,
+      "text": "endpoint: \"https://api.agnost.ai\","
+     }
+    ]
+   },
+   {
+    "host": "api.exa.ai",
+    "registrable": "exa.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/stdio.cjs"
+    ],
+    "evidence": [
+     {
+      "file": "dist/stdio.cjs",
+      "line": 42252,
+      "comment": false,
+      "text": "constructor(apiKey, baseURL = \"https://api.exa.ai\") {"
+     }
+    ]
+   },
+   {
+    "host": "dashboard.exa.ai",
+    "registrable": "exa.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/stdio.cjs"
+    ],
+    "evidence": [
+     {
+      "file": "dist/stdio.cjs",
+      "line": 42835,
+      "comment": false,
+      "text": "var EXA_API_KEYS_URL = \"https://dashboard.exa.ai/api-keys\";"
+     }
+    ]
+   },
+   {
+    "host": "exa.ai",
+    "registrable": "exa.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/stdio.cjs"
+    ],
+    "evidence": [
+     {
+      "file": "dist/stdio.cjs",
+      "line": 45625,
+      "comment": false,
+      "text": "websiteUrl: \"https://exa.ai\","
+     },
+     {
+      "file": "dist/stdio.cjs",
+      "line": 45627,
+      "comment": false,
+      "text": "{ src: \"https://exa.ai/images/favicon-32x32.png\", mimeType: \"image/png\", sizes: [\"32x32\"] }"
+     }
+    ]
+   },
+   {
+    "host": "mathiasbynens.be",
+    "registrable": "mathiasbynens.be",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/stdio.cjs"
+    ],
+    "evidence": [
+     {
+      "file": "dist/stdio.cjs",
+      "line": 6509,
+      "comment": true,
+      "text": "// For test cases: https://mathiasbynens.be/demo/url-regex"
+     }
+    ]
+   },
+   {
+    "host": "mcp.exa.ai",
+    "registrable": "exa.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/stdio.cjs"
+    ],
+    "evidence": [
+     {
+      "file": "dist/stdio.cjs",
+      "line": 42838,
+      "comment": false,
+      "text": "Fix: Create API key at ${EXA_API_KEYS_URL} , and then update Exa MCP URL to this https://mcp.exa.ai/mcp?exaApiKey=YOUR_EXA_API_KEY`;"
+     }
+    ]
+   },
+   {
+    "host": "www.safaribooksonline.com",
+    "registrable": "safaribooksonline.com",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/stdio.cjs"
+    ],
+    "evidence": [
+     {
+      "file": "dist/stdio.cjs",
+      "line": 6513,
+      "comment": true,
+      "text": "// optimized https://www.safaribooksonline.com/library/view/regular-expressions-cookbook/9780596802837/ch07s16.html"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "dist/stdio.cjs",
+     "line": 42255,
+     "text": "apiKey = process.env.EXA_API_KEY;"
+    },
+    {
+     "file": "dist/stdio.cjs",
+     "line": 42780,
+     "text": "typeof exaApiKey === \"string\" && exaApiKey.length > 0 ? exaApiKey : process.env.EXA_API_KEY || \"\""
+    }
+   ],
+   "eval": [
+    {
+     "file": "dist/stdio.cjs",
+     "line": 2943,
+     "text": "const makeValidate = new Function(`${names_1.default.self}`, `${names_1.default.scope}`, sourceCode);"
+    }
+   ],
+   "network_calls": [
+    {
+     "file": "dist/stdio.cjs",
+     "line": 20134,
+     "text": "// node_modules/node-fetch/lib/index.js"
+    },
+    {
+     "file": "dist/stdio.cjs",
+     "line": 20136,
+     "text": "\"node_modules/node-fetch/lib/index.js\"(exports2, module2) {"
+    },
+    {
+     "file": "dist/stdio.cjs",
+     "line": 21092,
+     "text": "headers.set(\"User-Agent\", \"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)\");"
+    },
+    {
+     "file": "dist/stdio.cjs",
+     "line": 37514,
+     "text": "var kAxiosSocketListener = Symbol(\"axios.http.socketListener\");"
+    },
+    {
+     "file": "dist/stdio.cjs",
+     "line": 37515,
+     "text": "var kAxiosCurrentReq = Symbol(\"axios.http.currentReq\");"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "EXA_API_KEY"
+  ],
+  "summary": {
+   "hosts_in_code": 5,
+   "undocumented_hosts_in_code": [
+    "agnost.ai"
+   ],
+   "telemetry_hosts": [
+    "api.agnost.ai"
+   ],
+   "exec": false,
+   "home_dir": false,
+   "eval": true,
+   "secret_env": 1,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 64791
+ },
+ {
+  "package": "pptx-viewer-mcp",
+  "version": "2.8.6",
+  "files_scanned": 10,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "github.io",
+   "githubusercontent.com",
+   "modelcontextprotocol.io",
+   "npmjs.com",
+   "shields.io"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": false,
+   "fs_write": false
+  },
+  "downloads_last_month": 61783
+ },
+ {
+  "package": "@benborla29/mcp-server-mysql",
+  "version": "2.0.9",
+  "files_scanned": 9,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "archestra.ai",
+   "github.com"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "dist/index.js",
+     "line": 69,
+     "text": "sslKey: process.env.MYSQL_SSL_KEY || \"not set\","
+    },
+    {
+     "file": "dist/src/config/index.js",
+     "line": 74,
+     "text": "export const REMOTE_SECRET_KEY = process.env.REMOTE_SECRET_KEY || \"\";"
+    },
+    {
+     "file": "dist/src/config/index.js",
+     "line": 123,
+     "text": "...(process.env.MYSQL_SSL_KEY"
+    },
+    {
+     "file": "dist/src/config/index.js",
+     "line": 124,
+     "text": "? { key: readSSLFile(process.env.MYSQL_SSL_KEY, 'client private key') }"
+    }
+   ],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "MYSQL_SSL_KEY",
+   "REMOTE_SECRET_KEY"
+  ],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 2,
+   "network_calls": false,
+   "fs_write": false
+  },
+  "downloads_last_month": 49410
+ },
+ {
+  "package": "@alisaitteke/photoshop-mcp",
+  "version": "1.7.37",
+  "files_scanned": 172,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "alisait.com",
+   "cursor.com",
+   "github.com",
+   "glama.ai",
+   "linkedin.com",
+   "mcptoplist.com",
+   "modelcontextprotocol.io",
+   "npmjs.com",
+   "opensource.org",
+   "photoshop-mcp.com",
+   "shields.io",
+   "typesafe.ai",
+   "typescriptlang.org",
+   "vscode.dev"
+  ],
+  "hosts": [
+   {
+    "host": "hey.sideguard.io",
+    "registrable": "sideguard.io",
+    "in_code": true,
+    "telemetry": true,
+    "documented": false,
+    "files": [
+     "dist/analytics/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/analytics/config.js",
+      "line": 1,
+      "comment": false,
+      "text": "const DEFAULT_RYBBIT_HOST = 'https://hey.sideguard.io';"
+     }
+    ]
+   },
+   {
+    "host": "openrouter.ai",
+    "registrable": "openrouter.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/ui/providers/openrouter.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/ui/providers/openrouter.js",
+      "line": 57,
+      "comment": false,
+      "text": "const res = await fetch('https://openrouter.ai/api/v1/auth/key', {"
+     }
+    ]
+   },
+   {
+    "host": "vuejs.org",
+    "registrable": "vuejs.org",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "web/dist/assets/index-D8j0GaOT.js"
+    ],
+    "evidence": [
+     {
+      "file": "web/dist/assets/index-D8j0GaOT.js",
+      "line": 13,
+      "comment": true,
+      "text": "**/function eo(e,t,n,s){try{return s?e(...s):e()}catch(o){sr(o,t,n)}}function kt(e,t,n,s){if(pe(e)){const o=eo(e,t,n,s);return o&&za(o)&&o.catch(r=>{sr(r,t,n)})"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "scripts/prepare.mjs",
+     "line": 8,
+     "text": "import { spawnSync } from 'node:child_process';"
+    },
+    {
+     "file": "scripts/prepare.mjs",
+     "line": 18,
+     "text": "const result = spawnSync('npm', ['run', 'build'], {"
+    },
+    {
+     "file": "dist/platform/install-font.js",
+     "line": 1,
+     "text": "import { execFile } from 'node:child_process';"
+    },
+    {
+     "file": "dist/platform/windows-detector.js",
+     "line": 1,
+     "text": "import { exec } from 'child_process';"
+    },
+    {
+     "file": "dist/platform/macos-detector.js",
+     "line": 1,
+     "text": "import { exec } from 'child_process';"
+    }
+   ],
+   "home_dir": [
+    {
+     "file": "dist/platform/install-font.js",
+     "line": 19,
+     "text": "const base = process.env.LOCALAPPDATA || join(homedir(), 'AppData', 'Local');"
+    },
+    {
+     "file": "dist/platform/install-font.js",
+     "line": 23,
+     "text": "return join(homedir(), 'Library', 'Fonts');"
+    },
+    {
+     "file": "dist/lib/export-paths.js",
+     "line": 24,
+     "text": "return join(homedir(), '.photoshop-mcp');"
+    }
+   ],
+   "secret_env": [
+    {
+     "file": "dist/analytics/config.js",
+     "line": 24,
+     "text": "const key = process.env.RYBBIT_API_KEY?.trim();"
+    }
+   ],
+   "eval": [
+    {
+     "file": "dist/utils/extendscript-result.js",
+     "line": 22,
+     "text": "return new Function(`return ${trimmed}`)();"
+    },
+    {
+     "file": "dist/utils/extendscript-result.js",
+     "line": 27,
+     "text": "return new Function(`return ${trimmed.slice(1, -1)}`)();"
+    },
+    {
+     "file": "dist/api/extendscript.js",
+     "line": 259,
+     "text": "var opts2 = eval('new ' + saveCandidates[c] + '()');"
+    }
+   ],
+   "network_calls": [
+    {
+     "file": "uxp-plugin/main.js",
+     "line": 15,
+     "text": "await fetch(`${BRIDGE_BASE}/result`, {"
+    },
+    {
+     "file": "uxp-plugin/main.js",
+     "line": 105,
+     "text": "const res = await fetch(`${BRIDGE_BASE}/poll`);"
+    },
+    {
+     "file": "web/dist/assets/index-D8j0GaOT.js",
+     "line": 1,
+     "text": "(function(){const t=document.createElement(\"link\").relList;if(t&&t.supports&&t.supports(\"modulepreload\"))return;for(const o of document.querySelectorAll('link[r"
+    },
+    {
+     "file": "dist/ui/server.js",
+     "line": 363,
+     "text": "const res = await fetch(url, { headers });"
+    },
+    {
+     "file": "dist/platform/uxp-bridge-client.js",
+     "line": 22,
+     "text": "const res = await fetch(`http://127.0.0.1:${port}/health`, {"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "RYBBIT_API_KEY"
+  ],
+  "summary": {
+   "hosts_in_code": 2,
+   "undocumented_hosts_in_code": [
+    "openrouter.ai",
+    "sideguard.io"
+   ],
+   "telemetry_hosts": [
+    "hey.sideguard.io"
+   ],
+   "exec": true,
+   "home_dir": true,
+   "eval": true,
+   "secret_env": 1,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 40281
+ },
+ {
+  "package": "@taiga-ai/mcp-server",
+  "version": "0.31.0",
+  "files_scanned": 1,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "api.eu"
+  ],
+  "hosts": [
+   {
+    "host": "api.eu",
+    "registrable": "api.eu",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 25022,
+      "comment": false,
+      "text": "const DEFAULT_API_URL = \"https://api.eu.tai.ga\";"
+     }
+    ]
+   },
+   {
+    "host": "spec.commonmark.org",
+    "registrable": "commonmark.org",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 36358,
+      "comment": true,
+      "text": "* <https://spec.commonmark.org/0.30/#html-blocks>."
+     },
+     {
+      "file": "dist/index.js",
+      "line": 36434,
+      "comment": true,
+      "text": "* <https://spec.commonmark.org/0.30/#html-blocks>."
+     }
+    ]
+   },
+   {
+    "host": "www.unicode.org",
+    "registrable": "unicode.org",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 32863,
+      "comment": true,
+      "text": "* [The Unicode Standard](https://www.unicode.org/versions/)."
+     },
+     {
+      "file": "dist/index.js",
+      "line": 32884,
+      "comment": true,
+      "text": "* [The Unicode Standard](https://www.unicode.org/versions/)."
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [
+    {
+     "file": "dist/index.js",
+     "line": 222,
+     "text": "new Function(\"\");"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 15225,
+     "text": "const validate = new Function(`${names_1.default.self}`, `${names_1.default.scope}`, sourceCode)(this, this.scope.get());"
+    }
+   ],
+   "network_calls": [
+    {
+     "file": "dist/index.js",
+     "line": 6348,
+     "text": "* undici's whole error hierarchy (vendored into Node as fetch), googleapis/gaxios"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 22269,
+     "text": "const response = await fetch(url, {"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 22286,
+     "text": "const response = await fetch(`${this.baseUrl}/v1${path}`, {"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 25462,
+     "text": "/** What went wrong on the wire: undici's message is the constant \"fetch failed\", the cause says why. */"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 29814,
+     "text": "const response = await fetch(url, {"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 1,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": true,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 36925
+ },
+ {
+  "package": "@imgly/codesign-mcp",
+  "version": "0.4.2",
+  "files_scanned": 162,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "img.ly",
+   "nodejs.org",
+   "npmjs.com",
+   "shields.io"
+  ],
+  "hosts": [
+   {
+    "host": "cdn.img.ly",
+    "registrable": "img.ly",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "assets/ai-plugins/apps.mjs",
+     "dist/engine/asset-sources.js",
+     "dist/tools/import-formats/idml.js",
+     "dist/tools/import-formats/pdf.js",
+     "dist/viewer/cesdk-cdn.js"
+    ],
+    "evidence": [
+     {
+      "file": "assets/ai-plugins/apps.mjs",
+      "line": 731,
+      "comment": false,
+      "text": "`,eQ=XZ,tQ=typeof global==\"object\"&&global&&global.Object===Object&&global,Gf=tQ,rQ=typeof self==\"object\"&&self&&self.Object===Object&&self,iQ=Gf||rQ||Function("
+     },
+     {
+      "file": "dist/viewer/cesdk-cdn.js",
+      "line": 16,
+      "comment": false,
+      "text": "? `https://cdn.img.ly/nightlies/${version}/${pkgPath}`"
+     },
+     {
+      "file": "dist/viewer/cesdk-cdn.js",
+      "line": 17,
+      "comment": false,
+      "text": ": `https://cdn.img.ly/${pkgPath}`;"
+     }
+    ]
+   },
+   {
+    "host": "clerk.img.ly",
+    "registrable": "img.ly",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/auth/auth-config.generated.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/auth/auth-config.generated.js",
+      "line": 4,
+      "comment": false,
+      "text": "export const BAKED_AUTH_ISSUER = \"https://clerk.img.ly\";"
+     }
+    ]
+   },
+   {
+    "host": "gateway.img.ly",
+    "registrable": "img.ly",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/auth/ai-token.js",
+     "dist/auth/auto-redeem.js",
+     "dist/diagnostics/status.js",
+     "dist/gateway/local.js",
+     "dist/viewer/router.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/auth/auto-redeem.js",
+      "line": 18,
+      "comment": false,
+      "text": "const DEFAULT_GATEWAY_URL = 'https://gateway.img.ly';"
+     },
+     {
+      "file": "dist/auth/ai-token.js",
+      "line": 2,
+      "comment": false,
+      "text": "const DEFAULT_GATEWAY_URL = 'https://gateway.img.ly';"
+     },
+     {
+      "file": "dist/viewer/router.js",
+      "line": 55,
+      "comment": false,
+      "text": "gatewayBaseUrl: opts.gatewayBaseUrl ?? 'https://gateway.img.ly',"
+     }
+    ]
+   },
+   {
+    "host": "img.ly",
+    "registrable": "img.ly",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/server.js",
+     "dist/tools/generate-copy.js",
+     "dist/tools/usage-ledger.js",
+     "dist/viewer/spa-assets.generated.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/server.js",
+      "line": 10,
+      "comment": true,
+      "text": "// The IMG.LY mark (the brand-purple disc of https://img.ly/favicon.svg),"
+     },
+     {
+      "file": "dist/server.js",
+      "line": 39,
+      "comment": false,
+      "text": "websiteUrl: 'https://img.ly/codesign',"
+     },
+     {
+      "file": "dist/tools/generate-copy.js",
+      "line": 6,
+      "comment": false,
+      "text": "const TOPUP_URL = 'https://img.ly/dashboard/credit-balance';"
+     }
+    ]
+   },
+   {
+    "host": "underscorejs.org",
+    "registrable": "underscorejs.org",
+    "in_code": false,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "assets/ai-plugins/apps.mjs",
+     "assets/ai-plugins/image-gateway.mjs",
+     "assets/ai-plugins/text-gateway.mjs"
+    ],
+    "evidence": [
+     {
+      "file": "assets/ai-plugins/text-gateway.mjs",
+      "line": 85,
+      "comment": true,
+      "text": "* Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>"
+     },
+     {
+      "file": "assets/ai-plugins/apps.mjs",
+      "line": 741,
+      "comment": true,
+      "text": "* Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>"
+     },
+     {
+      "file": "assets/ai-plugins/image-gateway.mjs",
+      "line": 151,
+      "comment": true,
+      "text": "* Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "dist/durable-root.js",
+     "line": 11,
+     "text": "import { execFile } from 'node:child_process';"
+    },
+    {
+     "file": "dist/auth/browser.js",
+     "line": 9,
+     "text": "import { spawn } from 'node:child_process';"
+    },
+    {
+     "file": "dist/assets/inline.generated.js",
+     "line": 567,
+     "text": "\"docs/guide/plugins/print-ready-pdf.md\": \"> This is one page of the CE.SDK Node.js documentation. For a complete overview, see the [Node.js Documentation Index]"
+    },
+    {
+     "file": "dist/assets/inline.generated.js",
+     "line": 619,
+     "text": "\"docs/launch-video/reference/sound.md\": \"# Sound \u2014 music, beat map, effects, voice\\n\\nReference for the `launch-video` skill: score the video before building it"
+    }
+   ],
+   "home_dir": [
+    {
+     "file": "dist/platform-dirs.js",
+     "line": 21,
+     "text": "const home = homedir();"
+    },
+    {
+     "file": "dist/durable-root.js",
+     "line": 17,
+     "text": "export const DEFAULT_DURABLE_ROOT = join(homedir(), '.codesign');"
+    },
+    {
+     "file": "dist/auth/auto-redeem.js",
+     "line": 20,
+     "text": "return join(homedir(), '.codesign', 'redemptions.json');"
+    },
+    {
+     "file": "dist/auth/token-store.js",
+     "line": 11,
+     "text": "return join(homedir(), '.codesign', 'auth.json');"
+    },
+    {
+     "file": "dist/cli/stdio.js",
+     "line": 72,
+     "text": "const DEFAULT_WORKSPACE = joinPath(homedir(), '.codesign', 'workspace');"
+    }
+   ],
+   "secret_env": [
+    {
+     "file": "dist/assets/inline.generated.js",
+     "line": 402,
+     "text": "\"docs/guide/concepts/headless-mode.md\": \"> This is one page of the CE.SDK Node.js documentation. For a complete overview, see the [Node.js Documentation Index]("
+    },
+    {
+     "file": "dist/assets/inline.generated.js",
+     "line": 461,
+     "text": "\"docs/guide/edit-image/transform/scale.md\": \"> This is one page of the CE.SDK Node.js documentation. For a complete overview, see the [Node.js Documentation Ind"
+    },
+    {
+     "file": "dist/assets/inline.generated.js",
+     "line": 469,
+     "text": "\"docs/guide/edit-video/transform/flip.md\": \"> This is one page of the CE.SDK Node.js documentation. For a complete overview, see the [Node.js Documentation Inde"
+    }
+   ],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "assets/ai-plugins/text-gateway.mjs",
+     "line": 73,
+     "text": "`;var G=class extends Error{constructor(e){super(Sr(e)),this.name=\"GatewayError\",this.code=e.code,this.status=e.status,this.operation=e.operation,this.provider="
+    },
+    {
+     "file": "assets/ai-plugins/apps.mjs",
+     "line": 76,
+     "text": "`;var ZJ=5*60*1e3;var du={en:{\"common.generate\":\"Generate\",\"panel.ly.img.ai.generation.confirmCancel.content\":\"Are you sure you want to cancel the generation?\","
+    },
+    {
+     "file": "assets/ai-plugins/apps.mjs",
+     "line": 394,
+     "text": "`,qN=BN;function GN(e,t,r,i){let n=`property.${r}${i?`.${i}`:\"\"}`,a=[`ly.img.plugin-ai-${t}-generation-web.${e}.${n}`,`ly.img.plugin-ai-generation-web.${n}`,`ly"
+    },
+    {
+     "file": "assets/ai-plugins/apps.mjs",
+     "line": 641,
+     "text": "`}var wq=vq,ko=\"changeTextTo\",Ie=`ly.img.${ko}`,n1=`ly.img.plugin-ai-text-generation-web.quickAction.${ko}`,o1=`ly.img.plugin-ai-text-generation-web.defaults.qu"
+    },
+    {
+     "file": "assets/ai-plugins/image-gateway.mjs",
+     "line": 73,
+     "text": "`;var ve=class extends Error{constructor(e){super(na(e)),this.name=\"GatewayError\",this.code=e.code,this.status=e.status,this.operation=e.operation,this.provider"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "dist/tools/export.js",
+     "line": 277,
+     "text": "await fs.writeFile(relPath, bytes);"
+    },
+    {
+     "file": "dist/tools/edit.js",
+     "line": 517,
+     "text": "await fs.writeFile(`exports/${shard}/${rest}/preview.webp`, bytes);"
+    },
+    {
+     "file": "dist/tools/import.js",
+     "line": 612,
+     "text": "await fs.writeFile(`exports/${shard}/${rest}/preview.webp`, thumb);"
+    },
+    {
+     "file": "dist/workspace/s3.js",
+     "line": 176,
+     "text": "// node:fs.rm(path,{recursive:true}) removes the path itself too; an S3"
+    },
+    {
+     "file": "dist/workspace/content-hash.js",
+     "line": 24,
+     "text": "await fs.writeFile(relPath, bytes);"
+    }
+   ]
+  },
+  "secret_env_names": [
+   "LICENSE_KEY"
+  ],
+  "summary": {
+   "hosts_in_code": 4,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": true,
+   "eval": false,
+   "secret_env": 1,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 34980
+ },
+ {
+  "package": "@ivotoby/openapi-mcp-server",
+  "version": "1.16.1",
+  "files_scanned": 3,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "example.com",
+   "github.com",
+   "smithery.ai",
+   "stainless.com"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "dist/bundle.js",
+     "line": 25242,
+     "text": "clientKeyPath: argv[\"client-key\"] || process.env.CLIENT_KEY_PATH,"
+    },
+    {
+     "file": "dist/bundle.js",
+     "line": 25244,
+     "text": "clientKeyPassphrase: argv[\"client-key-passphrase\"] || process.env.CLIENT_KEY_PASSPHRASE,"
+    },
+    {
+     "file": "dist/cli.js",
+     "line": 25242,
+     "text": "clientKeyPath: argv[\"client-key\"] || process.env.CLIENT_KEY_PATH,"
+    },
+    {
+     "file": "dist/cli.js",
+     "line": 25244,
+     "text": "clientKeyPassphrase: argv[\"client-key-passphrase\"] || process.env.CLIENT_KEY_PASSPHRASE,"
+    }
+   ],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "dist/bundle.js",
+     "line": 14482,
+     "text": "const response = await fetch(url2);"
+    },
+    {
+     "file": "dist/bundle.js",
+     "line": 18983,
+     "text": "// node_modules/axios/lib/axios.js"
+    },
+    {
+     "file": "dist/bundle.js",
+     "line": 18995,
+     "text": "axios.Axios = Axios_default;"
+    },
+    {
+     "file": "dist/bundle.js",
+     "line": 18996,
+     "text": "axios.CanceledError = CanceledError_default;"
+    },
+    {
+     "file": "dist/bundle.js",
+     "line": 18997,
+     "text": "axios.CancelToken = CancelToken_default;"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "dist/bundle.js",
+     "line": 21562,
+     "text": "shim.fs.writeFile(languageFile, serializedLocale, \"utf-8\", function(err) {"
+    },
+    {
+     "file": "dist/cli.js",
+     "line": 21562,
+     "text": "shim.fs.writeFile(languageFile, serializedLocale, \"utf-8\", function(err) {"
+    }
+   ]
+  },
+  "secret_env_names": [
+   "CLIENT_KEY_PASSPHRASE",
+   "CLIENT_KEY_PATH"
+  ],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 2,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 31394
+ },
+ {
+  "package": "@phantom/mcp-server",
+  "version": "1.2.9",
+  "files_scanned": 8,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "phantom.app"
+  ],
+  "hosts": [
+   {
+    "host": "api.phantom.app",
+    "registrable": "phantom.app",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "scripts/test-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "scripts/test-auth.js",
+      "line": 80,
+      "comment": false,
+      "text": "console.error(`  API URL:     ${config.apiBaseUrl || \"https://api.phantom.app\"}`);"
+     },
+     {
+      "file": "scripts/test-auth.js",
+      "line": 81,
+      "comment": false,
+      "text": "console.error(`  Wallets API: ${config.walletsApiBaseUrl || \"https://api.phantom.app/v1/wallets\"}`);"
+     }
+    ]
+   },
+   {
+    "host": "auth.phantom.app",
+    "registrable": "phantom.app",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "scripts/test-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "scripts/test-auth.js",
+      "line": 78,
+      "comment": false,
+      "text": "console.error(`  Auth URL:    ${config.authBaseUrl || \"https://auth.phantom.app\"}`);"
+     }
+    ]
+   },
+   {
+    "host": "connect.phantom.app",
+    "registrable": "phantom.app",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "scripts/test-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "scripts/test-auth.js",
+      "line": 79,
+      "comment": false,
+      "text": "console.error(`  Connect URL: ${config.connectBaseUrl || \"https://connect.phantom.app\"}`);"
+     }
+    ]
+   },
+   {
+    "host": "staging-api.phantom.app",
+    "registrable": "phantom.app",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "scripts/test-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "scripts/test-auth.js",
+      "line": 39,
+      "comment": false,
+      "text": "process.env.PHANTOM_WALLETS_API_BASE_URL = \"https://staging-api.phantom.app/v1/wallets\";"
+     }
+    ]
+   },
+   {
+    "host": "staging-auth.phantom.app",
+    "registrable": "phantom.app",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "scripts/test-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "scripts/test-auth.js",
+      "line": 37,
+      "comment": false,
+      "text": "process.env.PHANTOM_AUTH_BASE_URL = \"https://staging-auth.phantom.app\";"
+     }
+    ]
+   },
+   {
+    "host": "staging-connect.phantom.app",
+    "registrable": "phantom.app",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "scripts/test-auth.js"
+    ],
+    "evidence": [
+     {
+      "file": "scripts/test-auth.js",
+      "line": 38,
+      "comment": false,
+      "text": "process.env.PHANTOM_CONNECT_BASE_URL = \"https://staging-connect.phantom.app\";"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "scripts/test-pack.mjs",
+     "line": 12,
+     "text": "import { execSync } from \"child_process\";"
+    },
+    {
+     "file": "scripts/test-pack.mjs",
+     "line": 27,
+     "text": "const packOut = execSync(\"yarn pack --json\", { cwd: PKG_DIR }).toString().trim();"
+    },
+    {
+     "file": "scripts/test-pack.mjs",
+     "line": 53,
+     "text": "const rawList = execSync(`tar tzf ${tarballPath}`).toString();"
+    },
+    {
+     "file": "scripts/test-smoke.mjs",
+     "line": 17,
+     "text": "import { spawn } from \"child_process\";"
+    }
+   ],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "scripts/test-auth.js",
+     "line": 66,
+     "text": "const hasClientSecret = !!process.env.PHANTOM_CLIENT_SECRET;"
+    }
+   ],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": [
+    {
+     "file": "scripts/test-pack.mjs",
+     "line": 78,
+     "text": "fs.unlinkSync(tarballPath);"
+    }
+   ]
+  },
+  "secret_env_names": [
+   "PHANTOM_CLIENT_SECRET"
+  ],
+  "summary": {
+   "hosts_in_code": 6,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 1,
+   "network_calls": false,
+   "fs_write": true
+  },
+  "downloads_last_month": 28216
+ },
+ {
+  "package": "@iobroker/mcp-server",
+  "version": "1.2.3",
+  "files_scanned": 5,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "example.com",
+   "github.com",
+   "modelcontextprotocol.io"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [
+    {
+     "file": "build/index.js",
+     "line": 12,
+     "text": "const node_child_process_1 = require(\"node:child_process\");"
+    }
+   ],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": false,
+   "fs_write": false
+  },
+  "downloads_last_month": 24484
+ },
+ {
+  "package": "@primeng/mcp",
+  "version": "22.1.2",
+  "files_scanned": 1,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "modelcontextprotocol.io",
+   "primeng.dev",
+   "primetek.com.tr",
+   "primeui.dev"
+  ],
+  "hosts": [
+   {
+    "host": "primeng.dev",
+    "registrable": "primeng.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 21,
+      "comment": false,
+      "text": "homepage: \"https://primeng.dev\","
+     }
+    ]
+   },
+   {
+    "host": "support.primeui.dev",
+    "registrable": "primeui.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 29,
+      "comment": false,
+      "text": "url: \"https://support.primeui.dev\""
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 2,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": false,
+   "fs_write": false
+  },
+  "downloads_last_month": 22598
+ },
+ {
+  "package": "@coinbase/cds-mcp-server",
+  "version": "9.29.0",
+  "files_scanned": 5,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [],
+  "hosts": [
+   {
+    "host": "api.developer.coinbase.com",
+    "registrable": "coinbase.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "esm/analytics.js"
+    ],
+    "evidence": [
+     {
+      "file": "esm/analytics.js",
+      "line": 13,
+      "comment": false,
+      "text": "const ANALYTICS_URL = 'https://api.developer.coinbase.com/analytics';"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "esm/setup.js",
+     "line": 8,
+     "text": "import { execSync } from 'node:child_process';"
+    },
+    {
+     "file": "esm/setup.js",
+     "line": 61,
+     "text": "const gitRoot = execSync('git rev-parse --show-toplevel', {"
+    }
+   ],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "esm/analytics.js",
+     "line": 18,
+     "text": "fetch(ANALYTICS_URL, {"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "esm/setup.js",
+     "line": 84,
+     "text": "fs.writeFileSync(outputFile, mdcContent);"
+    },
+    {
+     "file": "esm/setup.js",
+     "line": 111,
+     "text": "fs.writeFileSync(claudeMdPath, updatedContent);"
+    },
+    {
+     "file": "esm/setup.js",
+     "line": 118,
+     "text": "fs.writeFileSync(claudeMdPath, \"\".concat(claudeRulesReference, \"\\n\"));"
+    },
+    {
+     "file": "esm/setup.js",
+     "line": 159,
+     "text": "fs.writeFileSync(mcpServerConfigPath, JSON.stringify(newMcpServerConfig, null, 2));"
+    },
+    {
+     "file": "esm/setup.js",
+     "line": 187,
+     "text": "fs.writeFileSync(mcpServerConfigPath, JSON.stringify(newMcpServerConfig, null, 2));"
+    }
+   ]
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 1,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 20133
+ },
+ {
+  "package": "@mantine/mcp-server",
+  "version": "9.7.3",
+  "files_scanned": 13,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "mantine.dev"
+  ],
+  "hosts": [
+   {
+    "host": "mantine.dev",
+    "registrable": "mantine.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "cjs/data-client.cjs",
+     "cjs/server.cjs",
+     "esm/data-client.mjs",
+     "esm/server.mjs"
+    ],
+    "evidence": [
+     {
+      "file": "esm/data-client.mjs",
+      "line": 14,
+      "comment": false,
+      "text": "constructor(baseUrl = \"https://mantine.dev/mcp\", timeoutMs = 1e4) {"
+     },
+     {
+      "file": "esm/server.mjs",
+      "line": 10,
+      "comment": false,
+      "text": "const dataUrl = process.env.MANTINE_MCP_DATA_URL || \"https://mantine.dev/mcp\";"
+     },
+     {
+      "file": "cjs/data-client.cjs",
+      "line": 14,
+      "comment": false,
+      "text": "constructor(baseUrl = \"https://mantine.dev/mcp\", timeoutMs = 1e4) {"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "esm/data-client.mjs",
+     "line": 30,
+     "text": "const response = await fetch(url, {"
+    },
+    {
+     "file": "cjs/data-client.cjs",
+     "line": 30,
+     "text": "const response = await fetch(url, {"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 1,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 19904
+ },
+ {
+  "package": "@zapier/zapier-sdk-mcp",
+  "version": "0.27.9",
+  "files_scanned": 2,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "gitlab.com",
+   "modelcontextprotocol.io"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": false,
+   "fs_write": false
+  },
+  "downloads_last_month": 15948
+ },
+ {
+  "package": "@browserless.io/mcp",
+  "version": "1.39.0",
+  "files_scanned": 59,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "browserless.io",
+   "chaijs.com",
+   "example.com",
+   "github.com",
+   "lobehub.com",
+   "mochajs.org",
+   "sinonjs.org"
+  ],
+  "hosts": [
+   {
+    "host": "api.beta.devin.ai",
+    "registrable": "devin.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "build/src/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/config.js",
+      "line": 23,
+      "comment": false,
+      "text": "'https://api.beta.devin.ai/mcp/oauth/callback', // Devin beta"
+     }
+    ]
+   },
+   {
+    "host": "api.browserless.io",
+    "registrable": "browserless.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "build/src/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/config.js",
+      "line": 5,
+      "comment": false,
+      "text": "export const DEFAULT_API_SERVER_URL = 'https://api.browserless.io';"
+     }
+    ]
+   },
+   {
+    "host": "api.devin.ai",
+    "registrable": "devin.ai",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "build/src/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/config.js",
+      "line": 22,
+      "comment": false,
+      "text": "'https://api.devin.ai/mcp/oauth/callback', // Devin prod"
+     }
+    ]
+   },
+   {
+    "host": "api.itsdev.in",
+    "registrable": "itsdev.in",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "build/src/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/config.js",
+      "line": 24,
+      "comment": false,
+      "text": "'https://api.itsdev.in/mcp/oauth/callback', // Devin dev"
+     }
+    ]
+   },
+   {
+    "host": "chatgpt.com",
+    "registrable": "chatgpt.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "build/src/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/config.js",
+      "line": 16,
+      "comment": false,
+      "text": "'https://chatgpt.com/connector/oauth/*', // ChatGPT / OpenAI Apps SDK connector (current per-connector callback id)"
+     },
+     {
+      "file": "build/src/config.js",
+      "line": 17,
+      "comment": false,
+      "text": "'https://chatgpt.com/connector_platform_oauth_redirect', // ChatGPT MCP connector (legacy, still honored for already-published apps)"
+     }
+    ]
+   },
+   {
+    "host": "docs.browserless.io",
+    "registrable": "browserless.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "build/src/resources/api-docs.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/resources/api-docs.js",
+      "line": 48,
+      "comment": false,
+      "text": "'- [Browserless Docs](https://docs.browserless.io/)',"
+     },
+     {
+      "file": "build/src/resources/api-docs.js",
+      "line": 49,
+      "comment": false,
+      "text": "'- [REST APIs](https://docs.browserless.io/rest-apis/intro)',"
+     }
+    ]
+   },
+   {
+    "host": "eu1.make.celonis.com",
+    "registrable": "celonis.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "build/src/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/config.js",
+      "line": 27,
+      "comment": false,
+      "text": "'https://eu1.make.celonis.com/oauth/cb/mcp', // Make.com Celonis-hosted (enterprise) \u2014 EU region"
+     }
+    ]
+   },
+   {
+    "host": "grok.com",
+    "registrable": "grok.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "build/src/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/config.js",
+      "line": 18,
+      "comment": false,
+      "text": "'https://grok.com/connectors/oauth/callback', // Grok Build web"
+     },
+     {
+      "file": "build/src/config.js",
+      "line": 19,
+      "comment": false,
+      "text": "'https://grok.com/connectors/oauth/callback/', // Grok Build web (trailing-slash variant)"
+     }
+    ]
+   },
+   {
+    "host": "insiders.vscode.dev",
+    "registrable": "vscode.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "build/src/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/config.js",
+      "line": 14,
+      "comment": false,
+      "text": "'https://insiders.vscode.dev/redirect', // VS Code Insiders redirect relay"
+     }
+    ]
+   },
+   {
+    "host": "mcp.browserless.io",
+    "registrable": "browserless.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "build/src/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/config.js",
+      "line": 87,
+      "comment": false,
+      "text": "mcpBaseUrl: process.env.MCP_BASE_URL ?? 'https://mcp.browserless.io',"
+     }
+    ]
+   },
+   {
+    "host": "production-sfo.browserless.io",
+    "registrable": "browserless.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "build/src/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/config.js",
+      "line": 4,
+      "comment": false,
+      "text": "export const DEFAULT_API_URL = 'https://production-sfo.browserless.io';"
+     }
+    ]
+   },
+   {
+    "host": "us1.make.celonis.com",
+    "registrable": "celonis.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "build/src/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/config.js",
+      "line": 26,
+      "comment": false,
+      "text": "'https://us1.make.celonis.com/oauth/cb/mcp', // Make.com Celonis-hosted (enterprise) \u2014 US region"
+     }
+    ]
+   },
+   {
+    "host": "vscode.dev",
+    "registrable": "vscode.dev",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "build/src/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/config.js",
+      "line": 13,
+      "comment": false,
+      "text": "'https://vscode.dev/redirect', // VS Code stable redirect relay"
+     }
+    ]
+   },
+   {
+    "host": "www.make.com",
+    "registrable": "make.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": false,
+    "files": [
+     "build/src/config.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/src/config.js",
+      "line": 25,
+      "comment": false,
+      "text": "'https://www.make.com/oauth/cb/mcp', // Make.com MCP client (canonical www host even for regional orgs)"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [
+    {
+     "file": "build/src/lib/session-replay-artifact.js",
+     "line": 1,
+     "text": "import { spawn } from 'node:child_process';"
+    }
+   ],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "build/src/config.js",
+     "line": 57,
+     "text": "browserlessToken: process.env.BROWSERLESS_TOKEN,"
+    },
+    {
+     "file": "build/src/config.js",
+     "line": 73,
+     "text": "amplitudeApiKey: process.env.AMPLITUDE_API_KEY,"
+    },
+    {
+     "file": "build/src/config.js",
+     "line": 85,
+     "text": "supabaseOAuthClientSecret: process.env.SUPABASE_OAUTH_CLIENT_SECRET ?? '',"
+    },
+    {
+     "file": "build/src/config.js",
+     "line": 86,
+     "text": "supabaseServiceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY ?? '',"
+    }
+   ],
+   "eval": [
+    {
+     "file": "build/src/lib/oauth-register-rate-limit.js",
+     "line": 19,
+     "text": "const result = (await opts.redis.eval(HIT_SCRIPT, 1, `mcp:dcr-rl:${ip}:${window}`));"
+    }
+   ],
+   "network_calls": [
+    {
+     "file": "build/src/tools/crawl.js",
+     "line": 151,
+     "text": "const res = await fetch(contentUrl, { signal: AbortSignal.timeout(10000) });"
+    },
+    {
+     "file": "build/src/resources/api-docs.js",
+     "line": 39,
+     "text": "'1. HTTP fetch (fast, no browser)',"
+    },
+    {
+     "file": "build/src/lib/session-replay-artifact.js",
+     "line": 65,
+     "text": "response = await fetch(requestUrl.toString(), {"
+    },
+    {
+     "file": "build/src/lib/agent-client.js",
+     "line": 515,
+     "text": "const res = await fetch(url, { signal: AbortSignal.timeout(10_000) });"
+    },
+    {
+     "file": "build/src/lib/agent-client.js",
+     "line": 682,
+     "text": "res = await fetch(url.toString(), {"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "AMPLITUDE_API_KEY",
+   "BROWSERLESS_TOKEN",
+   "SUPABASE_OAUTH_CLIENT_SECRET",
+   "SUPABASE_SERVICE_ROLE_KEY"
+  ],
+  "summary": {
+   "hosts_in_code": 14,
+   "undocumented_hosts_in_code": [
+    "celonis.com",
+    "chatgpt.com",
+    "devin.ai",
+    "grok.com",
+    "itsdev.in",
+    "make.com",
+    "vscode.dev"
+   ],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": false,
+   "eval": true,
+   "secret_env": 4,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 11839
+ },
+ {
+  "package": "@nexus2520/jira-mcp-server",
+  "version": "1.2.0",
+  "files_scanned": 13,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "atlassian.com",
+   "atlassian.net",
+   "fury.io",
+   "github.com",
+   "npmjs.com",
+   "opensource.org",
+   "shields.io"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "build/index.js",
+     "line": 18,
+     "text": "const JIRA_API_TOKEN = process.env.JIRA_API_TOKEN;"
+    }
+   ],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "build/tools/definitions.js",
+     "line": 45,
+     "text": "description: 'JIRA fields to fetch (e.g. [\"summary\",\"status\",\"priority\",\"duedate\",\"assignee\"]). Default: [\"summary\"]. Optional for: issues',"
+    },
+    {
+     "file": "build/utils/api-client.js",
+     "line": 28,
+     "text": "this.client = axios.create({"
+    },
+    {
+     "file": "build/utils/api-client.js",
+     "line": 93,
+     "text": "const response = await axios.get(`${this.baseUrl}/rest/api/3/attachment/content/${attachmentId}`, {"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "JIRA_API_TOKEN"
+  ],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 1,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 10528
+ },
+ {
+  "package": "@ahrefs/mcp",
+  "version": "0.0.11",
+  "files_scanned": 3,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "ahrefs.com",
+   "modelcontextprotocol.io",
+   "nodejs.org"
+  ],
+  "hosts": [
+   {
+    "host": "api.ahrefs.com",
+    "registrable": "ahrefs.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "build/server.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/server.js",
+      "line": 6,
+      "comment": false,
+      "text": "const API_BASE_URL = process.env.API_BASE_URL || 'https://api.ahrefs.com/v3';"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "build/server.js",
+     "line": 7,
+     "text": "const API_KEY = process.env.API_KEY;"
+    }
+   ],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "build/server.js",
+     "line": 5308,
+     "text": "if (axios.isAxiosError(error)) {"
+    },
+    {
+     "file": "build/server.js",
+     "line": 5338,
+     "text": "axiosInstance = axios.create({"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "API_KEY"
+  ],
+  "summary": {
+   "hosts_in_code": 1,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 1,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 9311
+ },
+ {
+  "package": "@openbnb/mcp-server-airbnb",
+  "version": "0.3.0",
+  "files_scanned": 3,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "airbnb.com",
+   "github.com",
+   "komoot.io",
+   "nodejs.org",
+   "npmjs.com",
+   "openbnb.ai",
+   "openbnb.org",
+   "openstreetmap.org",
+   "osmfoundation.org",
+   "shields.io"
+  ],
+  "hosts": [
+   {
+    "host": "nominatim.openstreetmap.org",
+    "registrable": "openstreetmap.org",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 213,
+      "comment": false,
+      "text": "const nomUrl = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(location)}&format=json&limit=1`;"
+     }
+    ]
+   },
+   {
+    "host": "photon.komoot.io",
+    "registrable": "komoot.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 166,
+      "comment": false,
+      "text": "const url = `https://photon.komoot.io/api/?q=${encodeURIComponent(location)}&limit=5`;"
+     }
+    ]
+   },
+   {
+    "host": "www.airbnb.com",
+    "registrable": "airbnb.com",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "dist/index.js"
+    ],
+    "evidence": [
+     {
+      "file": "dist/index.js",
+      "line": 137,
+      "comment": false,
+      "text": "const BASE_URL = \"https://www.airbnb.com\";"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "dist/index.js",
+     "line": 5,
+     "text": "import fetch from \"node-fetch\";"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 169,
+     "text": "response = await fetch(url, {"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 216,
+     "text": "nomResponse = await fetch(nomUrl, {"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 284,
+     "text": "log('info', 'Skipping robots.txt fetch (ignored by configuration)');"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 292,
+     "text": "const response = await fetch(`${BASE_URL}/robots.txt`, {"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "sync-version.js",
+     "line": 22,
+     "text": "fs.writeFileSync(manifestJsonPath, JSON.stringify(manifestJson, null, 2) + '\\n');"
+    }
+   ]
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 3,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 8457
+ },
+ {
+  "package": "@kazuph/mcp-fetch",
+  "version": "1.6.3",
+  "files_scanned": 1,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "claude.ai",
+   "example.com",
+   "github.com",
+   "glama.ai"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [],
+   "home_dir": [
+    {
+     "file": "dist/index.js",
+     "line": 238,
+     "text": "const homeDir = process.env.HOME || process.env.USERPROFILE || \"\";"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 574,
+     "text": "const homeDir = process.env.HOME || process.env.USERPROFILE || \"\";"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 614,
+     "text": "const homeDir = process.env.HOME || process.env.USERPROFILE || \"\";"
+    }
+   ],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "dist/index.js",
+     "line": 157,
+     "text": "const resp = await fetch(current, reqInit);"
+    }
+   ],
+   "fs_write": [
+    {
+     "file": "dist/index.js",
+     "line": 589,
+     "text": "await fs.writeFile(filePath, imageBuffer);"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 625,
+     "text": "await fs.writeFile(filePath, imageBuffer);"
+    }
+   ]
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": true,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": true,
+   "fs_write": true
+  },
+  "downloads_last_month": 7031
+ },
+ {
+  "package": "@burtthecoder/mcp-shodan",
+  "version": "1.0.34",
+  "files_scanned": 14,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "github.com",
+   "github.io",
+   "modelcontextprotocol.io",
+   "npmjs.com",
+   "shields.io",
+   "shodan.io",
+   "smithery.ai"
+  ],
+  "hosts": [
+   {
+    "host": "api.shodan.io",
+    "registrable": "shodan.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "build/helpers.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/helpers.js",
+      "line": 4,
+      "comment": false,
+      "text": "export const API_BASE_URL = \"https://api.shodan.io\";"
+     }
+    ]
+   },
+   {
+    "host": "cvedb.shodan.io",
+    "registrable": "shodan.io",
+    "in_code": true,
+    "telemetry": false,
+    "documented": true,
+    "files": [
+     "build/helpers.js"
+    ],
+    "evidence": [
+     {
+      "file": "build/helpers.js",
+      "line": 5,
+      "comment": false,
+      "text": "export const CVEDB_API_URL = \"https://cvedb.shodan.io\";"
+     }
+    ]
+   }
+  ],
+  "caps": {
+   "exec": [],
+   "home_dir": [],
+   "secret_env": [
+    {
+     "file": "build/index.js",
+     "line": 19,
+     "text": "if (!process.env.SHODAN_API_KEY) {"
+    },
+    {
+     "file": "build/helpers.js",
+     "line": 6,
+     "text": "export const SHODAN_API_KEY = process.env.SHODAN_API_KEY;"
+    }
+   ],
+   "eval": [],
+   "network_calls": [
+    {
+     "file": "build/helpers.js",
+     "line": 9,
+     "text": "const response = await axios.get(`${API_BASE_URL}${endpoint}`, {"
+    },
+    {
+     "file": "build/helpers.js",
+     "line": 23,
+     "text": "const response = await axios.get(`${CVEDB_API_URL}/cve/${encodeURIComponent(cveId)}`, {"
+    },
+    {
+     "file": "build/helpers.js",
+     "line": 40,
+     "text": "const response = await axios.get(`${CVEDB_API_URL}/cpes`, { params, timeout: 10000 });"
+    },
+    {
+     "file": "build/helpers.js",
+     "line": 52,
+     "text": "const response = await axios.get(`${CVEDB_API_URL}/cves`, { params, timeout: 10000 });"
+    }
+   ],
+   "fs_write": []
+  },
+  "secret_env_names": [
+   "SHODAN_API_KEY"
+  ],
+  "summary": {
+   "hosts_in_code": 2,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": false,
+   "home_dir": false,
+   "eval": false,
+   "secret_env": 1,
+   "network_calls": true,
+   "fs_write": false
+  },
+  "downloads_last_month": 1828
+ },
+ {
+  "package": "@agent-infra/mcp-server-filesystem",
+  "version": "1.2.29",
+  "files_scanned": 4,
+  "bundled_deps": false,
+  "readme": true,
+  "documented_domains": [
+   "cursor.com",
+   "github.com",
+   "modelcontextprotocol.io",
+   "npmjs.com",
+   "shields.io",
+   "vscode.dev",
+   "windsurf.com"
+  ],
+  "hosts": [],
+  "caps": {
+   "exec": [
+    {
+     "file": "dist/index.js",
+     "line": 6,
+     "text": "import * as __WEBPACK_EXTERNAL_MODULE_node_child_process_27f17141__ from \"node:child_process\";"
+    },
+    {
+     "file": "dist/index.cjs",
+     "line": 203,
+     "text": "module.exports = require(\"node:child_process\");"
+    }
+   ],
+   "home_dir": [
+    {
+     "file": "dist/server.js",
+     "line": 5609,
+     "text": "if (filepath.startsWith('~/') || '~' === filepath) return path_0.join(os.homedir(), filepath.slice(1));"
+    },
+    {
+     "file": "dist/index.js",
+     "line": 7372,
+     "text": "if (filepath.startsWith('~/') || '~' === filepath) return path_0.join(os.homedir(), filepath.slice(1));"
+    },
+    {
+     "file": "dist/server.cjs",
+     "line": 5653,
+     "text": "if (filepath.startsWith('~/') || '~' === filepath) return external_path_default().join(external_os_default().homedir(), filepath.slice(1));"
+    },
+    {
+     "file": "dist/index.cjs",
+     "line": 7399,
+     "text": "if (filepath.startsWith('~/') || '~' === filepath) return external_path_default().join(external_os_default().homedir(), filepath.slice(1));"
+    }
+   ],
+   "secret_env": [],
+   "eval": [],
+   "network_calls": [],
+   "fs_write": []
+  },
+  "secret_env_names": [],
+  "summary": {
+   "hosts_in_code": 0,
+   "undocumented_hosts_in_code": [],
+   "telemetry_hosts": [],
+   "exec": true,
+   "home_dir": true,
+   "eval": false,
+   "secret_env": 0,
+   "network_calls": false,
+   "fs_write": false
+  },
+  "downloads_last_month": 1377
+ }
+]
