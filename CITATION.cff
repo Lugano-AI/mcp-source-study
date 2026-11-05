@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+type: software
+title: "MCP source study: scanner, sample and hand review"
+authors:
+  - name: "Lugano Labs"
+license: Apache-2.0
+repository-code: "https://github.com/Lugano-AI/mcp-source-study"
+url: "https://lugano.ai/research/mcp-access-study/"
+abstract: "A static study of the published source of 50 MCP server packages: the scanner, the sample, the hand review and file-and-line evidence. Source flags are review questions; they don't establish runtime behavior or vulnerabilities."
+keywords:
+  - "Model Context Protocol"
+  - "static analysis"
+  - "software supply chain"
+preferred-citation:
+  type: report
+  title: "What access comes with an AI tool?"
+  authors:
+    - name: "Lugano Labs"
+  institution:
+    name: "Lugano Labs"
+  url: "https://lugano.ai/research/mcp-access-study/"
