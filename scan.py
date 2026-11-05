@@ -61,6 +61,25 @@ CAPS = {
 PRIVATE_IP = re.compile(r"^(10\.|127\.|0\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.|255\.)")
 
 
+
+def inside(path, root):
+    """True for a regular file inside root. Symlinks, and anything that resolves outside the package, are skipped."""
+    try:
+        return (not path.is_symlink()) and path.is_file() and path.resolve().is_relative_to(root.resolve())
+    except OSError:
+        return False
+
+
+VERSION_RE = re.compile(r"^[0-9A-Za-z.+-]{1,64}$")
+
+
+def md_cell(value):
+    """Escape a value from package data before it goes into a Markdown table cell."""
+    text = str(value).replace("\r", " ").replace("\n", " ")
+    for ch in "\\`|<>[]!*_":
+        text = text.replace(ch, "\\" + ch)
+    return text
+
 def registrable(host):
     host = host.lower().strip(".")
     parts = host.split(".")
@@ -86,11 +105,11 @@ def vendor_domains(name, pkg):
     root = pkg
     for cand in ("README.md", "readme.md", "README", "Readme.md", "README.MD", "readme.markdown"):
         p = root / cand
-        if p.exists():
+        if inside(p, root):
             text += p.read_text(errors="ignore")
     pj = root / "package.json"
     meta = {}
-    if pj.exists():
+    if inside(pj, root):
         try:
             meta = json.loads(pj.read_text(errors="ignore"))
         except Exception:
@@ -114,7 +133,7 @@ def scan_package(name, pkg):
     nfiles = 0
     bundled = (pkg / "node_modules").exists()
     for path in pkg.rglob("*"):
-        if not path.is_file() or path.suffix.lower() not in CODE_EXT:
+        if path.suffix.lower() not in CODE_EXT or not inside(path, pkg):
             continue
         if any(part in SKIP_DIRS for part in path.relative_to(pkg).parts[:-1]):
             continue
@@ -160,7 +179,8 @@ def scan_package(name, pkg):
                         secrets.add(m.group(1))
                     break
     has_readme = any((pkg / c).exists() for c in ("README.md", "readme.md", "README", "Readme.md", "README.MD", "readme.markdown"))
-    result = {"package": name, "version": meta.get("version"), "files_scanned": nfiles, "bundled_deps": bundled, "readme": has_readme,
+    version = meta.get("version")
+    result = {"package": name, "version": version if isinstance(version, str) and VERSION_RE.match(version) else "invalid", "files_scanned": nfiles, "bundled_deps": bundled, "readme": has_readme,
               "documented_domains": sorted(doms), "hosts": []}
     for h, e in sorted(hosts.items()):
         rd = registrable(h)
@@ -194,6 +214,10 @@ def main():
             if not root:
                 print("missing", n, file=sys.stderr)
                 continue
+            if root.is_symlink() or not root.is_dir() or not root.resolve().is_relative_to(PKGS.resolve()):
+                print("skipping unsafe package root", n, file=sys.stderr)
+                continue
+            root = root.resolve()
             r = scan_package(n, root)
             r["downloads_last_month"] = ranked.get(n, 0)
             results.append(r)
@@ -216,9 +240,9 @@ def main():
              "|---|---|---:|---:|---|---|---|---|---:|---|"]
     for r in sorted(results, key=lambda r: -r["downloads_last_month"]):
         s = r["summary"]
-        lines.append(f"| `{r['package']}` | {r['version']} | {r['downloads_last_month']:,} | {s['hosts_in_code']} | "
-                     f"{', '.join(s['undocumented_hosts_in_code'][:4])}{' …' if len(s['undocumented_hosts_in_code'])>4 else ''} | "
-                     f"{', '.join(s['telemetry_hosts'][:3])} | {'yes' if s['exec'] else ''} | {'yes' if s['home_dir'] else ''} | "
+        lines.append(f"| `{md_cell(r['package'])}` | {md_cell(r['version'])} | {r['downloads_last_month']:,} | {s['hosts_in_code']} | "
+                     f"{', '.join(md_cell(h) for h in s['undocumented_hosts_in_code'][:4])}{' …' if len(s['undocumented_hosts_in_code'])>4 else ''} | "
+                     f"{', '.join(md_cell(h) for h in s['telemetry_hosts'][:3])} | {'yes' if s['exec'] else ''} | {'yes' if s['home_dir'] else ''} | "
                      f"{s['secret_env'] or ''} | {'yes' if s['eval'] else ''} |")
     summary = {
         "packages": n, "with_undocumented_hosts_in_code": len(undoc), "with_telemetry_hosts": len(tele),
