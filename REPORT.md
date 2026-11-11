@@ -15,12 +15,16 @@ So these 50 packages are not the 50 most-downloaded MCP servers in the candidate
 
 The scanner's rules are also wider than this report first said. It reads eight file types (.js, .mjs, .cjs, .jsx, .ts, .tsx, .mts and .cts). Its process marker also matches `execFileSync`. It skips test, example, documentation, `.github` and `node_modules` directories and `.d.ts` files, and it checks only the first 20,000 characters of each line. See [scan.py](scan.py).
 
-The per-package table below shows the scanner's raw flags. Its "Hosts in code" and "Undocumented" columns come before the hand review; after it, 7 packages name a third-party endpoint their README omits, as the headline findings say.
+The per-package table below shows the scanner's raw flags. Its "Hosts in code" and "Undocumented" columns come before the hand review; after it, 8 packages name a third-party endpoint their README omits, as the headline findings say.
+
+## Correction, 10 November 2026
+
+The hand review first counted 7 packages whose code names a third-party endpoint their README omits. Under this report's own rule the count is 8. The review had cleared `@alisaitteke/photoshop-mcp`, but its 1.7.37 README mentions neither of the two hosts in its code, `hey.sideguard.io` and `openrouter.ai`. It says anonymous usage analytics run by default and can be turned off, and it links `docs/anonymous-usage-analytics.md`, which the published package doesn't include. That note is in the project's GitHub repository, and at the v1.7.37 tag it names the analytics host, `hey.sideguard.io`, and the `ANALYTICS_DISABLED` opt-out, but not `openrouter.ai`. [review.json](review.json) and [headline.json](headline.json) carry the corrected entry. 4 of the 8 name analytics hosts.
 
 ## Headline findings
 
-- **7 of 50 (14%) include a third-party endpoint in source that the sampled README does not name.**
-- **5 of 50 (10%) include source markers associated with analytics or telemetry.** 2 sampled READMEs say nothing about those markers (`figma-developer-mcp`, `exa-mcp-server`); 1 shows only a config key (`nx-mcp`); 2 document it.
+- **8 of 50 (16%) include a third-party endpoint in source that the sampled README does not name.**
+- **5 of 50 (10%) include source markers associated with analytics or telemetry.** 2 sampled READMEs say nothing about those markers (`figma-developer-mcp`, `exa-mcp-server`); 1 shows only a config key (`nx-mcp`); 2 mention it.
 - **20 of 50 (40%) contain process-spawning markers** (`child_process` import or `execSync`/`spawnSync`/`execFileSync`).
 - **16 of 50 (32%) contain home-directory resolution markers.**
 - **24 of 50 (48%) read environment-variable names commonly used for API keys, tokens, or secrets.**
@@ -34,10 +38,10 @@ None of these observations is an accusation. Many reflect ordinary engineering c
 | Package | Downloads/mo | Source observation | README |
 |---|---:|---|---|
 | `figma-developer-mcp` | 336,096 | `us.i.posthog.com` — Source contains a PostHog host and hardcoded project key; the cited code includes FRAMELINK_TELEMETRY=off and DO_NOT_TRACK opt-outs plus redaction logic. | none |
-| `n8n-mcp` | 305,791 | `telemetry.n8n-mcp.com` — Source names a first-party telemetry endpoint. | documented |
+| `n8n-mcp` | 305,791 | `telemetry.n8n-mcp.com` — Source names a first-party telemetry endpoint. | links a privacy and telemetry note (PRIVACY.md) in the project's GitHub repository that names the host and how to opt out; the package doesn't ship the note |
 | `nx-mcp` | 236,569 | `www.google-analytics.com` — Source contains Google Analytics Measurement Protocol references with fields including user_id, editor, OS, app, and Nx versions. | config key only (disableTelemetry); what is sent and where is not described |
 | `exa-mcp-server` | 64,791 | `api.agnost.ai` — Source contains an Agnost MCP analytics SDK call; the cited call site disables tool inputs, outputs, and errors. | none |
-| `@alisaitteke/photoshop-mcp` | 40,281 | `hey.sideguard.io` — Source names a Rybbit analytics host. | documented, with opt-out |
+| `@alisaitteke/photoshop-mcp` | 40,281 | `hey.sideguard.io` — Source names a Rybbit analytics host. | says anonymous usage analytics run by default and can be turned off, and links docs/anonymous-usage-analytics.md, a note in the project's GitHub repository that names the Rybbit host; the README names neither hey.sideguard.io nor openrouter.ai, and the package doesn't ship the note |
 
 ## Third-party endpoints not named in the sampled README
 
@@ -48,8 +52,9 @@ None of these observations is an accusation. Many reflect ordinary engineering c
 | `@sentry/mcp-server` | 462,862 | ai-gateway.vercel.sh, openrouter.ai, api.vercel.com: source includes bundled AI SDK provider defaults; the package ships without a README |
 | `figma-developer-mcp` | 336,096 | us.i.posthog.com (see telemetry) |
 | `nx-mcp` | 236,569 | www.google-analytics.com (see telemetry) |
-| `comfyui-mcp` | 117,113 | api.atlascloud.ai, api.x.ai, api.z.ai, hf-mirror.com: source names model-provider endpoints that the sampled README does not name (Kimi, MiniMax, OpenRouter, Civitai, and Ollama are named) |
+| `comfyui-mcp` | 117,113 | api.atlascloud.ai, api.x.ai, api.z.ai: source names model-provider endpoints that the sampled README does not name (Kimi, MiniMax, OpenRouter, Civitai, Ollama, Grok, and GLM are named) |
 | `exa-mcp-server` | 64,791 | api.agnost.ai (see telemetry) |
+| `@alisaitteke/photoshop-mcp` | 40,281 | hey.sideguard.io, openrouter.ai: source names a Rybbit analytics host and the OpenRouter API; the README names neither host (see telemetry) |
 
 ## Additional static observations
 

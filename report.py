@@ -54,7 +54,11 @@ w("The scanner's rules are also wider than this report first said. It reads eigh
   ".mts and .cts). Its process marker also matches `execFileSync`. It skips test, example, documentation, `.github` and "
   "`node_modules` directories and `.d.ts` files, and it checks only the first 20,000 characters of each line. See [scan.py](scan.py).")
 w("")
-w('The per-package table below shows the scanner\'s raw flags. Its "Hosts in code" and "Undocumented" columns come before the hand review; after it, 7 packages name a third-party endpoint their README omits, as the headline findings say.')
+w(f'The per-package table below shows the scanner\'s raw flags. Its "Hosts in code" and "Undocumented" columns come before the hand review; after it, {len(undoc)} packages name a third-party endpoint their README omits, as the headline findings say.')
+w("")
+w("## Correction, 10 November 2026")
+w("")
+w("The hand review first counted 7 packages whose code names a third-party endpoint their README omits. Under this report's own rule the count is 8. The review had cleared `@alisaitteke/photoshop-mcp`, but its 1.7.37 README mentions neither of the two hosts in its code, `hey.sideguard.io` and `openrouter.ai`. It says anonymous usage analytics run by default and can be turned off, and it links `docs/anonymous-usage-analytics.md`, which the published package doesn't include. That note is in the project's GitHub repository, and at the v1.7.37 tag it names the analytics host, `hey.sideguard.io`, and the `ANALYTICS_DISABLED` opt-out, but not `openrouter.ai`. [review.json](review.json) and [headline.json](headline.json) carry the corrected entry. 4 of the 8 name analytics hosts.")
 w("")
 w("## Headline findings")
 w("")
@@ -62,7 +66,7 @@ w(f"- **{len(undoc)} of {n} ({pct(len(undoc))}) include a third-party endpoint i
 w(f"- **{len(tele)} of {n} ({pct(len(tele))}) include source markers associated with analytics or telemetry.** {len(undisclosed)} sampled READMEs "
   "say nothing about those markers "
   f"({', '.join('`'+k+'`' for k in undisclosed)}); {len(partial)} shows only a config key ({', '.join('`'+k+'`' for k in partial)}); "
-  f"{len(tele) - len(undisclosed) - len(partial)} document it.")
+  f"{len(tele) - len(undisclosed) - len(partial)} mention it.")
 w(f"- **{len(exec_)} of {n} ({pct(len(exec_))}) contain process-spawning markers** (`child_process` import or `execSync`/`spawnSync`/`execFileSync`).")
 w(f"- **{len(home)} of {n} ({pct(len(home))}) contain home-directory resolution markers.**")
 w(f"- **{len(secrets)} of {n} ({pct(len(secrets))}) read environment-variable names commonly used for API keys, tokens, or secrets.**")
