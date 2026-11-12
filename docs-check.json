@@ -1,0 +1,292 @@
+{
+ "what": "Each host the hand review kept for the nine packages in the essay's table, checked against wider documentation sets at the sampled versions. A wider rule can only remove packages from the count, so these nine are the only packages it can change.",
+ "checked_on": "2026-11-11",
+ "rules": {
+  "study_rule": "The host's registrable domain appears as a web address or quoted domain in the README file at the package root (README.md, readme.md, Readme.md, README.MD, README or readme.markdown) or in package.json homepage, description, author, repository or bugs; or the host contains the package scope.",
+  "wider_rule": "The study rule, plus every README file anywhere in the package in any language, every other Markdown or text document shipped for the user, and every package.json field. Instruction files bundled for the AI app (skills, agent prompts, AGENTS.md) are left out.",
+  "wider_rule_with_bundled_instructions": "The wider rule, plus instruction files bundled for the AI app."
+ },
+ "counts": {
+  "study_rule": 8,
+  "wider_rule": 7,
+  "wider_rule_with_bundled_instructions": 6
+ },
+ "analytics_or_telemetry_packages": 5,
+ "packages": [
+  {
+   "package": "@upstash/context7-mcp",
+   "version": "4.4.4",
+   "tarball": "https://registry.npmjs.org/@upstash/context7-mcp/-/context7-mcp-4.4.4.tgz",
+   "integrity": "sha512-T2DkjhweDnC2mRAclDiTrPG3KI1zYKhhjgY2SMKD9PVrbEaGD8x35VsIOqpwwDc2qiKBvfYCF/jqr+jQMu5PUA==",
+   "sha256": "2ae37c3a2b41ff4d591a275ff1dc56883cb60bfc71e34c399c14ebd38837bb38",
+   "file_count": 29,
+   "flagged_hosts": [
+    {
+     "host": "login.microsoftonline.com",
+     "main_readme": false,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [],
+     "package_json_any_field": false
+    }
+   ],
+   "counted": {
+    "study_rule": true,
+    "wider_rule": true,
+    "wider_rule_with_bundled_instructions": true
+   }
+  },
+  {
+   "package": "@sentry/mcp-server",
+   "version": "0.42.0",
+   "tarball": "https://registry.npmjs.org/@sentry/mcp-server/-/mcp-server-0.42.0.tgz",
+   "integrity": "sha512-KmwfBOUMzJdcxeM9Iv6EN4XEjXbGyopTeKizgQr46pW35NTFTRBddVepZytVITS4pnx5pXj6bRHadSowaaRHQQ==",
+   "sha256": "edca513afe52b7cff5da482b647a05711e9282ca7cebdc312ce6cf3386cf0a8b",
+   "file_count": 160,
+   "flagged_hosts": [
+    {
+     "host": "ai-gateway.vercel.sh",
+     "main_readme": false,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [],
+     "package_json_any_field": false
+    },
+    {
+     "host": "openrouter.ai",
+     "main_readme": false,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [],
+     "package_json_any_field": false
+    },
+    {
+     "host": "api.vercel.com",
+     "main_readme": false,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [],
+     "package_json_any_field": false
+    }
+   ],
+   "counted": {
+    "study_rule": true,
+    "wider_rule": true,
+    "wider_rule_with_bundled_instructions": true
+   }
+  },
+  {
+   "package": "comfyui-mcp",
+   "version": "0.52.206",
+   "tarball": "https://registry.npmjs.org/comfyui-mcp/-/comfyui-mcp-0.52.206.tgz",
+   "integrity": "sha512-LwNEKZTbA6BP/T4ANky2wlX0AN//3YmRIYgdWHEWM56oU73Zjan245KzE3RIST6tMGELfjiLTdp3xY/Q8rMHRw==",
+   "sha256": "7cb986a06963d21d79c01d1ca22a0d37190ca3c4f0ab7f8ec133119109c017f3",
+   "file_count": 1168,
+   "flagged_hosts": [
+    {
+     "host": "api.atlascloud.ai",
+     "main_readme": false,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [],
+     "package_json_any_field": false
+    },
+    {
+     "host": "api.x.ai",
+     "main_readme": false,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [],
+     "package_json_any_field": false
+    },
+    {
+     "host": "api.z.ai",
+     "main_readme": false,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [],
+     "package_json_any_field": false
+    }
+   ],
+   "counted": {
+    "study_rule": true,
+    "wider_rule": true,
+    "wider_rule_with_bundled_instructions": true
+   }
+  },
+  {
+   "package": "hostinger-api-mcp",
+   "version": "3.3.1",
+   "tarball": "https://registry.npmjs.org/hostinger-api-mcp/-/hostinger-api-mcp-3.3.1.tgz",
+   "integrity": "sha512-IsGkcecP6ChZzOdEwS/ZIa5KWWBc3cXwz7e30niHt+92Es7fI8MnVMkm3tMX+U3fFL88pRD2/4ufdT12F34VYQ==",
+   "sha256": "61c712131eb82b7557b3257d85342b0de6f6bb6c0b203e1401454c4a69dc7f52",
+   "file_count": 114,
+   "flagged_hosts": [
+    {
+     "host": "api.ipify.org",
+     "main_readme": false,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [
+      "skills/migrate-to-hosting/SKILL.md"
+     ],
+     "package_json_any_field": false
+    }
+   ],
+   "counted": {
+    "study_rule": true,
+    "wider_rule": true,
+    "wider_rule_with_bundled_instructions": false
+   }
+  },
+  {
+   "package": "figma-developer-mcp",
+   "version": "0.13.2",
+   "tarball": "https://registry.npmjs.org/figma-developer-mcp/-/figma-developer-mcp-0.13.2.tgz",
+   "integrity": "sha512-7Flx0S/3gI7dIm+9G6BCogwne0o9LdYaCxtDLappiZZUZgqoNiXws/T1kn2R2tqr1iRzFPStqlwf+bPrcscQ0Q==",
+   "sha256": "475e5d4d753451e087bcb402d67283173d97b671c3f9fe1d46edf9cb80d7a93a",
+   "file_count": 15,
+   "flagged_hosts": [
+    {
+     "host": "us.i.posthog.com",
+     "main_readme": false,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [],
+     "package_json_any_field": false
+    }
+   ],
+   "counted": {
+    "study_rule": true,
+    "wider_rule": true,
+    "wider_rule_with_bundled_instructions": true
+   }
+  },
+  {
+   "package": "exa-mcp-server",
+   "version": "3.4.2",
+   "tarball": "https://registry.npmjs.org/exa-mcp-server/-/exa-mcp-server-3.4.2.tgz",
+   "integrity": "sha512-2pqkOuXnABXrwVkB6VyMYA9ywr1aqjBGKlLtcgTBMkWtIn74yY+pMPn8Km2SAGfLeENfWaIHv1L7/kF0b+E5BQ==",
+   "sha256": "a7d76442a45d809393eae6ec439ac4ebbbfa9f89e30789008069f8c5236b3f97",
+   "file_count": 19,
+   "flagged_hosts": [
+    {
+     "host": "api.agnost.ai",
+     "main_readme": false,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [],
+     "package_json_any_field": false
+    }
+   ],
+   "counted": {
+    "study_rule": true,
+    "wider_rule": true,
+    "wider_rule_with_bundled_instructions": true
+   }
+  },
+  {
+   "package": "nx-mcp",
+   "version": "0.25.0",
+   "tarball": "https://registry.npmjs.org/nx-mcp/-/nx-mcp-0.25.0.tgz",
+   "integrity": "sha512-pSERsq6Cz1Yz5kddGZgTw8Cr3lyA4+YYEh4VLCYr1dfgBTzY3PtLs2uXr4O0W49ipvnM+v6lfKniyDurrVX4UA==",
+   "sha256": "606584b22ef4c06530c46597628895289d32119b17236a17e984c0162997e15f",
+   "file_count": 4,
+   "flagged_hosts": [
+    {
+     "host": "www.google-analytics.com",
+     "main_readme": false,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [],
+     "package_json_any_field": false
+    }
+   ],
+   "counted": {
+    "study_rule": true,
+    "wider_rule": true,
+    "wider_rule_with_bundled_instructions": true
+   }
+  },
+  {
+   "package": "@alisaitteke/photoshop-mcp",
+   "version": "1.7.37",
+   "tarball": "https://registry.npmjs.org/@alisaitteke/photoshop-mcp/-/photoshop-mcp-1.7.37.tgz",
+   "integrity": "sha512-sibpGz4r1XABJsvbzbJEpE1ly23cbTOSa/nvBDJb7S3/k0QLQ2TfjcuJ1wXduvvMAmgdCKH6LRoDMJYxJFwiGQ==",
+   "sha256": "1cea0061e179bcf6729e683e0d15207b58c07d1dc40498885b2273ce12a044ed",
+   "file_count": 698,
+   "flagged_hosts": [
+    {
+     "host": "hey.sideguard.io",
+     "main_readme": false,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [
+      "README.de.md",
+      "README.es.md",
+      "README.ja.md",
+      "README.tr.md",
+      "README.zh-CN.md"
+     ],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [],
+     "package_json_any_field": false
+    },
+    {
+     "host": "openrouter.ai",
+     "main_readme": false,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [
+      "README.de.md",
+      "README.es.md",
+      "README.ja.md",
+      "README.tr.md",
+      "README.zh-CN.md"
+     ],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [],
+     "package_json_any_field": false
+    }
+   ],
+   "counted": {
+    "study_rule": true,
+    "wider_rule": false,
+    "wider_rule_with_bundled_instructions": false
+   }
+  },
+  {
+   "package": "n8n-mcp",
+   "version": "2.94.3",
+   "tarball": "https://registry.npmjs.org/n8n-mcp/-/n8n-mcp-2.94.3.tgz",
+   "integrity": "sha512-VrCwq+MDTWk2Uq1iiZ9WU2lj+voPvUzOkvdTWom6iucLFTHJWKuYD9wYS8G0x7t23XM6EYV26VNTLQpuSIvB0Q==",
+   "sha256": "f3b104c334742c3471bddb7ee152f70b4397e1ff75f0429ed3d204d0a3aba8e3",
+   "file_count": 970,
+   "flagged_hosts": [
+    {
+     "host": "telemetry.n8n-mcp.com",
+     "main_readme": true,
+     "main_readme_names_exact_host": false,
+     "other_readmes": [],
+     "other_user_docs": [],
+     "bundled_ai_instructions": [],
+     "package_json_any_field": false
+    }
+   ],
+   "counted": {
+    "study_rule": false,
+    "wider_rule": false,
+    "wider_rule_with_bundled_instructions": false
+   }
+  }
+ ]
+}

@@ -1,27 +1,26 @@
 {
   "reviewed_on": "2026-10-20",
-  "corrected_on": "2026-11-10",
-  "correction": "@alisaitteke/photoshop-mcp moved from documented to not named in the README. Its 1.7.37 README names neither hey.sideguard.io nor openrouter.ai, so third_party_endpoints_not_in_readme now holds 8 packages. Its README links docs/anonymous-usage-analytics.md in the project's GitHub repository, which at the v1.7.37 tag names the analytics host, hey.sideguard.io, but not openrouter.ai.",
+  "documentation_baseline": "A host counts as documented when its registrable domain appears in the README file at the package root or in package.json homepage, description, author, repository or bugs, or when the host contains the package scope. READMEs in other languages and other shipped documents are outside this baseline; docs-check.json checks the flagged hosts against them.",
   "method": "Every package flagged by scan.py was read by hand at the cited file and line. Findings below are the ones that survived. Everything else the scanner flagged was a documentation link, a test fixture, an OAuth redirect allowlist, an example domain, or the vendor's own product.",
   "telemetry": {
     "figma-developer-mcp": {"host": "us.i.posthog.com", "what": "Source contains a PostHog host and hardcoded project key; the cited code includes FRAMELINK_TELEMETRY=off and DO_NOT_TRACK opt-outs plus redaction logic.", "readme_disclosure": "none"},
     "exa-mcp-server": {"host": "api.agnost.ai", "what": "Source contains an Agnost MCP analytics SDK call; the cited call site disables tool inputs, outputs, and errors.", "readme_disclosure": "none"},
-    "nx-mcp": {"host": "www.google-analytics.com", "what": "Source contains Google Analytics Measurement Protocol references with fields including user_id, editor, OS, app, and Nx versions.", "readme_disclosure": "config key only (disableTelemetry); what is sent and where is not described"},
+    "nx-mcp": {"host": "www.google-analytics.com", "what": "Source contains Google Analytics Measurement Protocol references with fields including user_id, editor, OS, app, and Nx versions.", "readme_disclosure": "config key only (disableTelemetry); the README does not describe what the telemetry code would send or where"},
     "n8n-mcp": {"host": "telemetry.n8n-mcp.com", "what": "Source names a first-party telemetry endpoint.", "readme_disclosure": "links a privacy and telemetry note (PRIVACY.md) in the project's GitHub repository that names the host and how to opt out; the package doesn't ship the note"},
-    "@alisaitteke/photoshop-mcp": {"host": "hey.sideguard.io", "what": "Source names a Rybbit analytics host.", "readme_disclosure": "says anonymous usage analytics run by default and can be turned off, and links docs/anonymous-usage-analytics.md, a note in the project's GitHub repository that names the Rybbit host; the README names neither hey.sideguard.io nor openrouter.ai, and the package doesn't ship the note"}
+    "@alisaitteke/photoshop-mcp": {"host": "hey.sideguard.io", "what": "Source names a Rybbit analytics host.", "readme_disclosure": "the main README says anonymous usage analytics run by default and can be turned off, and links docs/anonymous-usage-analytics.md, a note in the project's GitHub repository that names the Rybbit host; the main README names neither hey.sideguard.io nor openrouter.ai, and the package doesn't ship the note; the package's README.de.md, README.es.md, README.ja.md, README.tr.md and README.zh-CN.md name both hosts"}
   },
   "third_party_endpoints_not_in_readme": {
-    "@upstash/context7-mcp": ["login.microsoftonline.com: source fetches Entra JWKS for JWT validation; Entra is not mentioned in the sampled README"],
+    "@upstash/context7-mcp": ["login.microsoftonline.com: source contains code that fetches Entra JWKS (signing keys) to validate JWTs; Entra is not mentioned in the main README"],
     "@sentry/mcp-server": ["ai-gateway.vercel.sh, openrouter.ai, api.vercel.com: source includes bundled AI SDK provider defaults; the package ships without a README"],
-    "comfyui-mcp": ["api.atlascloud.ai, api.x.ai, api.z.ai: source names model-provider endpoints that the sampled README does not name (Kimi, MiniMax, OpenRouter, Civitai, Ollama, Grok, and GLM are named)"],
-    "hostinger-api-mcp": ["api.ipify.org: a bundled skill contains the instruction `curl -s https://api.ipify.org`"],
+    "comfyui-mcp": ["api.atlascloud.ai, api.x.ai, api.z.ai: source names model-provider endpoints that the main README does not name (Kimi, MiniMax, OpenRouter, Civitai, Ollama, Grok, and GLM are named)"],
+    "hostinger-api-mcp": ["api.ipify.org: a bundled skill contains the instruction `curl -s https://api.ipify.org`; the address appears only in that skill text, not in code that calls it"],
     "figma-developer-mcp": ["us.i.posthog.com (see telemetry)"],
     "exa-mcp-server": ["api.agnost.ai (see telemetry)"],
     "nx-mcp": ["www.google-analytics.com (see telemetry)"],
-    "@alisaitteke/photoshop-mcp": ["hey.sideguard.io, openrouter.ai: source names a Rybbit analytics host and the OpenRouter API; the README names neither host (see telemetry)"]
+    "@alisaitteke/photoshop-mcp": ["hey.sideguard.io, openrouter.ai: source names a Rybbit analytics host and the OpenRouter API; the main README names neither host, and the package's READMEs in five other languages name both (see telemetry)"]
   },
   "notable": {
-    "comfyui-mcp": "Source defines `panel_add_mcp`, which writes new MCP-server entries to the user's ~/.claude.json.",
+    "comfyui-mcp": "Source defines `panel_add_mcp`, whose code can add new MCP-server entries to the user's ~/.claude.json.",
     "@sentry/mcp-server": "No README in the published tarball; package.json was the documentation baseline checked in this study.",
     "@supabase/mcp-server-supabase": "No README in the published tarball."
   },
